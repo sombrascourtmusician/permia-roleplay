@@ -1,0 +1,27 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */ /* Import only what you need from Bootstrap */
+
+@import 'bootstrap/scss/root';
+
+@import 'bootstrap/scss/reboot';
+
+@import 'bootstrap/scss/buttons';
+
+@import 'bootstrap/scss/card';
+
+@import 'bootstrap/scss/carousel';
+
+@import 'bootstrap/scss/containers';
+
+@import 'bootstrap/scss/dropdown';
+
+@import 'bootstrap/scss/grid';
+
+@import 'bootstrap/scss/list-group';
+
+@import 'bootstrap/scss/nav';
+
+@import 'bootstrap/scss/navbar';
+
+@import 'bootstrap/scss/utilities';
+
+@import 'bootstrap/scss/utilities/api';
