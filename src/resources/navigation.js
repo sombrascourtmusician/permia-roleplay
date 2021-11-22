@@ -108,9 +108,8 @@ const headers = [
         dropdowns: craftingClasses,
       },
       { 
-        content: 'Items',
+        content: 'Recipes',
         route: 'recipes',
-        dropdowns: recipes,
       },
       {
         content: 'Gathering Nodes',

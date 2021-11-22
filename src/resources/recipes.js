@@ -113,6 +113,269 @@ const armor = [
 
 ];
 
+const consumable = [
+  {
+    "name": "Yellow Potion",
+    "effects": "Heals 40 Stamina",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Health Potion",
+    "effects": "Heals 60 hp",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Blue Potion (Heals 80 Mana)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Green Potion (Heals 30 stamina and 60 mana)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Purple Potion (Heals 30 hp and 60 Mana)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Orange Potion (Heals 30 HP and 30 Stamina)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Antivenom (Removes all poisons from the target)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Cleaner (Removes all buffs and debuffs)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 2 },
+    ],
+  },
+  {
+    "name": "Explosive Potion (40 damage)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 6,
+    "ingredients": [
+      { name: "Vitriol Oil", count: 2 },
+      { name: "Arcane Powder", count: 1 }
+    ],
+  },
+  {
+    "name": "Rejuvenation Potion (Medium + Strong HOT)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 7,
+    "ingredients": [
+      { name: "Vitriol Oil", count: 2 },
+      { name: "Runestone", count: 1 }
+    ],
+  },
+  {
+    "name": "Potion of Weakness (-2 to all stats)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 8,
+    "ingredients": [
+      { name: "Vitriol Oil", count: 3 },
+      { name: "Arcane Powder", count: 1 },
+    ],
+  },
+  {
+    "name": "Love Potion (-15 accuracy, -2 to all stats)",
+    "effects": "",
+    "crafter": "Alchemist",
+    "level": 9,
+    "ingredients": [
+      { name: "Refined Crystal", count: 1 },
+      { name: "Arcane Powder", count: 1 },
+    ],
+  },
+  {
+    "name": "Apple Pie (30 HP, +2 to Str for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 2,
+    "ingredients": [
+      { name: "Fruits", count: 1 },
+      { name: "Flour", count: 2 },
+    ],
+  },
+  {
+    "name": "Brain Food (30 HP, +2 to Int/Wis for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 2,
+    "ingredients": [
+      { name: "Fish", count: 1 },
+      { name: "Fruits", count: 2 }
+    ],
+  },
+  {
+    "name": "Lightning Brew (30 HP, +2 to Dex for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 2,
+    "ingredients": [
+      { name: "Zap Honey", count: 1 },
+      { name: "Aqua Vitae", count: 1 }
+    ],
+  },
+  {
+    "name": "Mead (30 HP, +2 to Chr for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 2,
+    "ingredients": [
+      { name: "Aqua Vitae", count: 1 },
+      { name: "Gathered Hops", count: 1 }
+    ],
+  },
+  {
+    "name": "Nigiri (30 HP, Weak HOT, +2 Int/Wis for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 3,
+    "ingredients": [
+      { name: "Fish", count: 1 },
+      { name: "Rice", count: 1 }
+    ],
+  },
+  {
+    "name": "Lavash (30 HP, Weak HOT, +2 Dex for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 3,
+    "ingredients": [
+      { name: "Flour", count: 2 }
+    ],
+  },
+  {
+    "name": "Steak and Eggs (35 HP, Weak HOT, +2 Str for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 4,
+    "ingredients": [
+      { name: "Cooked Meat", count: 1 },
+      { name: "Eggs", count: 1 }
+    ],
+  },
+  {
+    "name": "Falafel (35 HP, Weak HOT, +2 Chr for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 4,
+    "ingredients": [
+      { name: "Flour", count: 1 },
+      { name: "Herb Blend", count: 1 },
+      { name: "Rice", count: 1 },
+    ],
+  },
+  {
+    "name": "Grilled Fish (35 HP, Medium HOT, +2 Dex for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 5,
+    "ingredients": [
+      { name: "Fish", count: 1 },
+      { name: "Spices", count: 1 },
+      { name: "Rice", count: 1 },
+    ],
+  },
+  {
+    "name": "Pilaf (35 HP, Medium HOT, +2 Str for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 5,
+    "ingredients": [
+      { name: "Cooked Meat", count: 1 },
+      { name: "Spice", count: 1 },
+      { name: "Rice", count: 1 },
+    ],
+  },
+  {
+    "name": "Sweet Roll (40 HP, Medium HOT, +2 Int/Wis for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 7,
+    "ingredients": [
+      { name: "Fruits", count: 1 },
+      { name: "Spices", count: 1 },
+      { name: "Flour", count: 3 },
+    ],
+  },
+  {
+    "name": "Chocolate Cake (40 HP, Medium HOT, +2 Chr for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 7,
+    "ingredients": [
+      { name: "Chocolate", count: 2 },
+      { name: "Flour", count: 2 },
+      { name: "Zap Honey", count: 1 },
+    ],
+  },
+  {
+    "name": "Baklava (40 HP, Medium HOT, +2 Dex for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 7,
+    "ingredients": [
+      { name: "Zap Honey", count: 1 },
+      { name: "Spices", count: 1 },
+      { name: "Lavash", count: 1 },
+    ],
+  },
+  {
+    "name": "Royal Feast (40 HP, Strong HOT, +3 Con for 30 minutes)",
+    "effects": "",
+    "crafter": "Chef",
+    "level": 9,
+    "ingredients": [
+      { name: "Spun Crystal", count: 1 },
+      { name: "Cooked Meat", count: 1 },
+      { name: "Rice", count: 1 },
+      { name: "Fish", count: 1 },
+      { name: "Aqua Vitae", count: 1 },
+    ],
+  },
+];
+
 const other = [
   {
     "name": "Potion Belt (+1 consumable slot)",
@@ -416,7 +679,7 @@ const reagent = [
   },
   {
     "name": "Smelt Iron",
-    "type": "Reagent",
+    "crafter": "Blacksmith",
     "level": 1,
     "ingredients": [
       { name: "Iron Scraps", count: 2 }
@@ -424,7 +687,7 @@ const reagent = [
   },
   {
     "name": "Smelt Steel",
-    "type": "Reagent",
+    "crafter": "Blacksmith",
     "level": 5,
     "ingredients": [
       { name: "Iron Scraps", count: 2 },
@@ -433,7 +696,7 @@ const reagent = [
   },
   {
     "name": "Smelt Mythril",
-    "type": "Reagent",
+    "crafter": "Blacksmith",
     "level": 8,
     "ingredients": [
       { name: "Smelt Steel", count: 3 },
@@ -443,7 +706,7 @@ const reagent = [
   },
   {
     "name": "Leather",
-    "type": "Reagent",
+    "crafter": "Leatherworker",
     "level": 1,
     "ingredients": [
       { name: "Hide Scrap", count: 2 }
@@ -451,7 +714,7 @@ const reagent = [
   },
   {
     "name": "Etched Leather",
-    "type": "Reagent",
+    "crafter": "Leatherworker",
     "level": 5,
     "ingredients": [
       { name: "Full Hide", count: 2 },
@@ -460,7 +723,7 @@ const reagent = [
   },
   {
     "name": "Enchanted Leather",
-    "type": "Reagent",
+    "crafter": "Leatherworker",
     "level": 8,
     "ingredients": [
       { name: "Flawless Hide", count: 2 },
@@ -469,7 +732,7 @@ const reagent = [
   },
   {
     "name": "Arcane Powder",
-    "type": "Reagent",
+    "crafter": "Enchanter",
     "level": 1,
     "ingredients": [
       { name: "Crystal Shards", count: 2 }
@@ -477,7 +740,7 @@ const reagent = [
   },
   {
     "name": "Runestone",
-    "type": "Reagent",
+    "crafter": "Enchanter",
     "level": 5,
     "ingredients": [
       { name: "Vitriol Oil", count: 1 },
@@ -486,7 +749,7 @@ const reagent = [
   },
   {
     "name": "Processed Crystal",
-    "type": "Reagent",
+    "crafter": "Enchanter",
     "level": 8,
     "ingredients": [
       { name: "Flawless Crystal", count: 1 },
@@ -496,7 +759,7 @@ const reagent = [
   },
   {
     "name": "Aqua Vitae",
-    "type": "Reagent",
+    "crafter": "Alchemist",
     "level": 1,
     "ingredients": [
       { name: "Corn", count: 2 }
@@ -504,7 +767,7 @@ const reagent = [
   },
   {
     "name": "Vitriol Oil",
-    "type": "Reagent",
+    "crafter": "Alchemist",
     "level": 5,
     "ingredients": [
       { name: "Aqua Vitae", count: 2 },
@@ -513,7 +776,7 @@ const reagent = [
   },
   {
     "name": "Refined Crystal",
-    "type": "Reagent",
+    "crafter": "Alchemist",
     "level": 8,
     "ingredients": [
       { name: "Flawless Crystal", count: 1 },
@@ -523,7 +786,7 @@ const reagent = [
   },
   {
     "name": "Cut Gem",
-    "type": "Reagent",
+    "crafter": "Jeweler",
     "level": 1,
     "ingredients": [
       { name: "Gem", count: 2 }
@@ -531,7 +794,7 @@ const reagent = [
   },
   {
     "name": "Shaped Gem",
-    "type": "Reagent",
+    "crafter": "Jeweler",
     "level": 5,
     "ingredients": [
       { name: "Vitriol Oil", count: 1 },
@@ -540,7 +803,7 @@ const reagent = [
   },
   {
     "name": "Magic Gem",
-    "type": "Reagent",
+    "crafter": "Jeweler",
     "level": 8,
     "ingredients": [
       { name: "Perfect Gem", count: 1 },
@@ -550,7 +813,7 @@ const reagent = [
   },
   {
     "name": "Flour",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 1,
     "ingredients": [
       { name: "Wheat", count: 2 }
@@ -558,7 +821,7 @@ const reagent = [
   },
   {
     "name": "Fish",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 1,
     "ingredients": [
       { name: "Raw Fish", count: 2 }
@@ -566,7 +829,7 @@ const reagent = [
   },
   {
     "name": "Fruits",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 1,
     "ingredients": [
       { name: "Apples", count: 2 },
@@ -574,7 +837,7 @@ const reagent = [
   },
   {
     "name": "Gathered Hops",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 1,
     "ingredients": [
       { name: "Hops", count: 2 },
@@ -582,7 +845,7 @@ const reagent = [
   },
   {
     "name": "Zap Honey",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 2,
     "ingredients": [
       { name: "Honey", count: 1 },
@@ -591,7 +854,7 @@ const reagent = [
   },
   {
     "name": "Spices",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 4,
     "ingredients": [
       { name: "Herb Blend", count: 2 },
@@ -599,7 +862,7 @@ const reagent = [
   },
   {
     "name": "Cooked Meat",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 4,
     "ingredients": [
       { name: "Meat", count: 2 }
@@ -607,7 +870,7 @@ const reagent = [
   },
   {
     "name": "Chocolate",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 6,
     "ingredients": [
       { name: "Cocoa", count: 2 },
@@ -615,7 +878,7 @@ const reagent = [
   },
   {
     "name": "Spun Crystal",
-    "type": "Reagent",
+    "crafter": "Chef",
     "level": 8,
     "ingredients": [
       { name: "Flawless Crystal", count: 3 },
@@ -684,12 +947,12 @@ const weapons = [
   },
 ];
 
-const recipes = {
-  'armor': { 'title': 'Armor', content: armor },
-  'consumable': { 'title': 'Consumables', content: [] },
-  'other': { 'title': 'Other', content: other },
-  'reagent': { 'title': 'Reagents', content: [] },
-  'weapon': { 'title': 'Weapons', content: weapons },
-};
+const recipes = [
+  { 'title': 'Armor', content: armor },
+  { 'title': 'Consumables', content: consumable },
+  { 'title': 'Other', content: other },
+  { 'title': 'Reagents', content: reagent },
+  { 'title': 'Weapons', content: weapons },
+];
 
 export default recipes;
