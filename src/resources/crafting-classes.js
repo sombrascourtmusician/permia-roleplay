@@ -6,57 +6,46 @@ const tailor = {
   "recipes": [
     {
       "name": "Spun Thread",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Novice Robes",
-      "type": "Armor",
       "level": 2,
     },
     {
       "name": "Bound Book",
-      "type": "Weapon",
       "level": 4,
     },
     {
       "name": "Acolyte Robes",
-      "type": "Armor",
       "level": 3,
     },
     {
       "name": "Fancy Suit",
-      "type": "Armor",
       "level": 3,
     },
     {
       "name": "Arcane Thread",
-      "type": "Reagent",
       "level": 5,
     },
     {
       "name": "Seer's Circlet",
-      "type": "Other",
       "level": 5,
     },
     {
       "name": "Master's Robe",
-      "type": "Armor",
       "level": 7,
     },
     {
       "name": "Noble's Attire",
-      "type": "Armor",
       "level": 7,
     },
     {
       "name": "Runic Thread",
-      "type": "Reagent",
       "level": 8,
     },
     {
       "name": "Sage's Crown",
-      "type": "Other",
       "level": 9,
     },
   ]
@@ -70,52 +59,42 @@ const blacksmith = {
   "recipes": [
     {
       "name": "Smelt Iron",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Iron Armor",
-      "type": "Armor",
       "level": 2,
     },
     {
       "name": "Iron Dagger",
-      "type": "Weapon",
       "level": 3,
     },
     {
       "name": "Iron Shield",
-      "type": "Other",
       "level": 4,
     },
     {
       "name": "Smelt Steel",
-      "type": "Reagent",
       "level": 5,
     },
     {
       "name": "Steel Sword",
-      "type": "Weapon",
       "level": 6,
     },
     {
       "name": "Steel Plate",
-      "type": "Armor",
       "level": 7,
     },
     {
       "name": "Steel Shield",
-      "type": "Other",
       "level": 7,
     },
     {
       "name": "Smelt Mythril",
-      "type": "Reagent",
       "level": 8,
     },
     {
       "name": "Mythril Armor",
-      "type": "Armor",
       "level": 9,
     },
   ]
@@ -129,57 +108,46 @@ const leatherworker = {
   "recipes": [
     {
       "name": "Leather",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Leather Armor",
-      "type": "Armor",
       "level": 2,
     },
     {
       "name": "Potion Belt",
-      "type": "Other",
       "level": 3,
     },
     {
       "name": "Eyepatch",
-      "type": "Other",
       "level": 4,
     },
     {
       "name": "Leather Vambraces",
-      "type": "Other",
       "level": 5,
     },
     {
       "name": "Etched Leather",
-      "type": "Reagent",
       "level": 5,
     },
     {
       "name": "Utility Belt",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Etched Leather Armor",
-      "type": "Armor",
       "level": 7,
     },
     {
       "name": "Enchanted Leather",
-      "type": "Reagent",
       "level": 8,
     },
     {
       "name": "Enchanted Leather Armor",
-      "type": "Armor",
       "level": 9,
     },
     {
       "name": "Bladed Bracers",
-      "type": "Other",
       "level": 9,
     },
   ]
@@ -204,52 +172,42 @@ const enchanter = {
   "recipes": [
     {
       "name": "Arcane Powder",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Enchanted Tome",
-      "type": "Weapon",
       "level": 2,
     },
     {
       "name": "Focus Shard",
-      "type": "Other",
       "level": 3,
     },
     {
       "name": "Healing Shard",
-      "type": "Other",
       "level": 4,
     },
     {
       "name": "Shield Belt",
-      "type": "Other",
       "level": 4,
     },
     {
       "name": "Runestone",
-      "type": "Reagent",
       "level": 5,
     },
     {
       "name": "Book of Runes",
-      "type": "Weapon",
       "level": 6,
     },
     {
       "name": "Enchanted Violin",
-      "type": "Weapon",
       "level": 7,
     },
     {
       "name": "Processed Crystal",
-      "type": "Reagent",
       "level": 8,
     },
     {
       "name": "Apex Crystal",
-      "type": "Other",
       "level": 9,
     },
   ]
@@ -263,118 +221,63 @@ const alchemist = {
   "recipes": [
     {
       "name": "Aqua Vitae",
-      "type": "Reagent",
       "level": 1,
     },
     {
-      "name": "Yellow Potion (Heals 40 Stamina)",
-      "type": "Consumable",
+      "name": "Yellow Potion",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Health Potion (Heals 60 hp)",
-      "type": "Consumable",
+      "name": "Health Potion",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Blue Potion (Heals 80 Mana)",
-      "type": "Consumable",
+      "name": "Blue Potion",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Green Potion (Heals 30 stamina and 60 mana)",
-      "type": "Consumable",
+      "name": "Green Potion",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Purple Potion (Heals 30 hp and 60 Mana)",
-      "type": "Consumable",
+      "name": "Purple Potion",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Orange Potion (Heals 30 HP and 30 Stamina)",
-      "type": "Consumable",
+      "name": "Orange Potion",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Antivenom (Removes all poisons from the target)",
-      "type": "Consumable",
+      "name": "Antivenom",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
-      "name": "Cleaner (Removes all buffs and debuffs)",
-      "type": "Consumable",
+      "name": "Cleaner",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 2 },
-      ],
     },
     {
       "name": "Vitriol Oil",
-      "type": "Reagent",
       "level": 5,
     },
     {
-      "name": "Explosive Potion (40 damage)",
-      "type": "Consumable",
+      "name": "Explosive Potion",
       "level": 6,
-      "ingredients": [
-        { name: "Vitriol Oil", count: 2 },
-        { name: "Arcane Powder", count: 1 }
-      ],
     },
     {
-      "name": "Rejuvenation Potion (Medium + Strong HOT)",
-      "type": "Consumable",
+      "name": "Rejuvenation Potion",
       "level": 7,
-      "ingredients": [
-        { name: "Vitriol Oil", count: 2 },
-        { name: "Runestone", count: 1 }
-      ],
     },
     {
-      "name": "Potion of Weakness (-2 to all stats)",
-      "type": "Consumable",
+      "name": "Potion of Weakness",
       "level": 8,
-      "ingredients": [
-        { name: "Vitriol Oil", count: 3 },
-        { name: "Arcane Powder", count: 1 },
-      ],
     },
     {
       "name": "Refined Crystal",
-      "type": "Reagent",
       "level": 8,
     },
     {
-      "name": "Love Potion (-15 accuracy, -2 to all stats)",
-      "type": "Consumable",
+      "name": "Love Potion",
       "level": 9,
-      "ingredients": [
-        { name: "Refined Crystal", count: 1 },
-        { name: "Arcane Powder", count: 1 },
-      ],
     },
   ]
 }
@@ -387,107 +290,86 @@ const jeweler = {
   "recipes": [
     {
       "name": "Cut Gem",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Ring of Constitution",
-      "type": "Other",
       "level": 2,
     },
     {
       "name": "Ring of Dexterity",
-      "type": "Other",
       "level": 2,
     },
     {
       "name": "Ring of Strength",
-      "type": "Other",
       "level": 2,
     },
     {
       "name": "Ring of Intelligence",
-      "type": "Other",
       "level": 2,
     },
     {
       "name": "Ring of Wisdom",
-      "type": "Other",
       "level": 2,
     },
     {
       "name": "Ring of Charisma",
-      "type": "Other",
       "level": 2,
     },
     {
       "name": "Pendant of the Horde",
-      "type": "Other",
       "level": 3,
     },
     {
       "name": "Pendant of the Sarkada",
-      "type": "Other",
       "level": 3,
     },
     {
       "name": "Pendant of the Hold",
-      "type": "Other",
       "level": 3,
     },
     {
       "name": "Pendant of the Coalition",
-      "type": "Other",
       "level": 3,
     },
     {
       "name": "Shaped Gem",
-      "type": "Reagent",
       "level": 5,
     },
     {
       "name": "Pendant of Constitution",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Pendant of Dexterity",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Pendant of Strength",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Pendant of Intelligence",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Pendant of Wisdom",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Pendant of Charisma",
-      "type": "Other",
       "level": 6,
     },
     {
       "name": "Ring of Frailty",
-      "type": "Other",
       "level": 7,
     },
     {
       "name": "Magic Gem",
-      "type": "Reagent",
       "level": 8,
     },
     {
       "name": "Star Pendant",
-      "type": "Other",
       "level": 9,
     },
   ]
@@ -501,182 +383,95 @@ const chef = {
   "recipes": [
     {
       "name": "Flour",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Fish",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Fruits",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Gathered Hops",
-      "type": "Reagent",
       "level": 1,
     },
     {
       "name": "Zap Honey",
-      "type": "Reagent",
       "level": 2,
     },
     {
-      "name": "Apple Pie (30 HP, +2 to Str for 30 minutes)",
-      "type": "Consumable",
+      "name": "Apple Pie",
       "level": 2,
-      "ingredients": [
-        { name: "Fruits", count: 1 },
-        { name: "Flour", count: 2 },
-      ],
     },
     {
-      "name": "Brain Food (30 HP, +2 to Int/Wis for 30 minutes)",
-      "type": "Consumable",
+      "name": "Brain Food",
       "level": 2,
-      "ingredients": [
-        { name: "Fish", count: 1 },
-        { name: "Fruits", count: 2 }
-      ],
     },
     {
-      "name": "Lightning Brew (30 HP, +2 to Dex for 30 minutes)",
-      "type": "Consumable",
+      "name": "Lightning Brew",
       "level": 2,
-      "ingredients": [
-        { name: "Zap Honey", count: 1 },
-        { name: "Aqua Vitae", count: 1 }
-      ],
     },
     {
-      "name": "Mead (30 HP, +2 to Chr for 30 minutes)",
-      "type": "Consumable",
+      "name": "Mead",
       "level": 2,
-      "ingredients": [
-        { name: "Aqua Vitae", count: 1 },
-        { name: "Gathered Hops", count: 1 }
-      ],
     },
     {
-      "name": "Nigiri (30 HP, Weak HOT, +2 Int/Wis for 30 minutes)",
-      "type": "Consumable",
+      "name": "Nigiri",
       "level": 3,
-      "ingredients": [
-        { name: "Fish", count: 1 },
-        { name: "Rice", count: 1 }
-      ],
     },
     {
-      "name": "Lavash (30 HP, Weak HOT, +2 Dex for 30 minutes)",
-      "type": "Consumable",
+      "name": "Lavash",
       "level": 3,
-      "ingredients": [
-        { name: "Flour", count: 2 }
-      ],
     },
     {
       "name": "Spices",
-      "type": "Reagent",
       "level": 4,
     },
     {
       "name": "Cooked Meat",
-      "type": "Reagent",
       "level": 4,
     },
     {
-      "name": "Steak and Eggs (35 HP, Weak HOT, +2 Str for 30 minutes)",
-      "type": "Consumable",
+      "name": "Steak and Eggs",
       "level": 4,
-      "ingredients": [
-        { name: "Cooked Meat", count: 1 },
-        { name: "Eggs", count: 1 }
-      ],
     },
     {
-      "name": "Falafel (35 HP, Weak HOT, +2 Chr for 30 minutes)",
-      "type": "Consumable",
+      "name": "Falafel",
       "level": 4,
-      "ingredients": [
-        { name: "Flour", count: 1 },
-        { name: "Herb Blend", count: 1 },
-        { name: "Rice", count: 1 },
-      ],
     },
     {
-      "name": "Grilled Fish (35 HP, Medium HOT, +2 Dex for 30 minutes)",
-      "type": "Consumable",
+      "name": "Grilled Fish",
       "level": 5,
-      "ingredients": [
-        { name: "Fish", count: 1 },
-        { name: "Spices", count: 1 },
-        { name: "Rice", count: 1 },
-      ],
     },
     {
-      "name": "Pilaf (35 HP, Medium HOT, +2 Str for 30 minutes)",
-      "type": "Consumable",
+      "name": "Pilaf",
       "level": 5,
-      "ingredients": [
-        { name: "Cooked Meat", count: 1 },
-        { name: "Spice", count: 1 },
-        { name: "Rice", count: 1 },
-      ],
     },
     {
       "name": "Chocolate",
-      "type": "Reagent",
       "level": 6,
     },
     {
-      "name": "Sweet Roll (40 HP, Medium HOT, +2 Int/Wis for 30 minutes)",
-      "type": "Consumable",
+      "name": "Sweet Roll",
       "level": 7,
-      "ingredients": [
-        { name: "Fruits", count: 1 },
-        { name: "Spices", count: 1 },
-        { name: "Flour", count: 3 },
-      ],
     },
     {
-      "name": "Chocolate Cake (40 HP, Medium HOT, +2 Chr for 30 minutes)",
-      "type": "Consumable",
+      "name": "Chocolate Cake",
       "level": 7,
-      "ingredients": [
-        { name: "Chocolate", count: 2 },
-        { name: "Flour", count: 2 },
-        { name: "Zap Honey", count: 1 },
-      ],
     },
     {
-      "name": "Baklava (40 HP, Medium HOT, +2 Dex for 30 minutes)",
-      "type": "Consumable",
+      "name": "Baklava",
       "level": 7,
-      "ingredients": [
-        { name: "Zap Honey", count: 1 },
-        { name: "Spices", count: 1 },
-        { name: "Lavash", count: 1 },
-      ],
     },
     {
       "name": "Spun Crystal",
-      "type": "Reagent",
       "level": 8,
     },
     {
-      "name": "Royal Feast (40 HP, Strong HOT, +3 Con for 30 minutes)",
-      "type": "Consumable",
+      "name": "Royal Feast",
       "level": 9,
-      "ingredients": [
-        { name: "Spun Crystal", count: 1 },
-        { name: "Cooked Meat", count: 1 },
-        { name: "Rice", count: 1 },
-        { name: "Fish", count: 1 },
-        { name: "Aqua Vitae", count: 1 },
-      ],
     },
   ]
 }

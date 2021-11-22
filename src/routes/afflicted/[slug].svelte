@@ -50,7 +50,10 @@
         {/if}
       </div>
     </div>
-    {@html shifter.summary}
+    
+    {#each shifter.summary as summary}
+      <p>{summary}</p>
+    {/each}
     
 		<ul class="list-group">
 			{#each shifter.subTypes as subType}

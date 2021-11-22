@@ -13,6 +13,7 @@
 
 <script>
   import Card from "$lib/Card.svelte";
+  import { recipeSearch } from "$lib/RecipeSearch";
 
   export let _class;
 </script>
@@ -47,8 +48,7 @@
       <li class="list-group-item list-group-item-dark">
         <div class="row">
           <div class="col-sm-8">
-            <a href="/recipes/{recipe.type.toLowerCase()}#{recipe.name}" class="fw-bold text-dark">{recipe.name}</a>
-            <span class="text-muted"> - {recipe.type}</span>
+            <a href="/recipes" on:click={() => recipeSearch.set(recipe.name)} class="fw-bold text-dark">{recipe.name}</a>
           </div>
           <div class="col-sm-4 text-sm-end">
             Requires level {recipe.level}
