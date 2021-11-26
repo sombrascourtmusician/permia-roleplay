@@ -1,11 +1,24 @@
 <script context="module">
 	import classes from '../../../resources/crafting-classes.js';
+  import recipes from '../../../resources/recipes.js';
 
 	/** @type {import('@sveltejs/kit').Load} */
 	export async function load({ page }) {
+    const slug = page.params.slug;
+    const recipeList = [];
+
+    recipes.forEach(category => {
+      category.content.forEach(recipe => {
+        if (recipe.crafter.toLowerCase() == slug) {
+          recipeList.push(recipe);
+        }
+      });
+    });
+
 		return {
       props: {
-        _class: classes[page.params.slug]
+        _class: classes[slug],
+        recipeList: recipeList,
       }
 		};
 	}
@@ -16,6 +29,7 @@
   import { recipeSearch } from "$lib/RecipeSearch";
 
   export let _class;
+  export let recipeList;
 </script>
 
 <svelte:head>
@@ -44,7 +58,7 @@
   </p>
 
   <ul class="list-group">
-    {#each _class.recipes as recipe}
+    {#each recipeList as recipe}
       <li class="list-group-item list-group-item-dark">
         <div class="row">
           <div class="col-sm-8">
