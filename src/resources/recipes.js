@@ -1,7 +1,7 @@
 const armor = [
   {
     "name": "Novice Robes",
-    "effects": "+3 Con, +2 Int/Wis, +1 Magic Defense",
+    "effects": "+4 Con, +1 Int/Wis, +2 Magic Defense",
     "crafter": "Tailor",
     "level": 2,
     "ingredients": [
@@ -10,7 +10,7 @@ const armor = [
   },
   {
     "name": "Iron Armor",
-    "effects": "+1 Str/Dex, +4 Con, 2 Physical defense",
+    "effects": "+5 Con, 4 Physical defense",
     "crafter": "Blacksmith",
     "level": 2,
     "ingredients": [
@@ -19,7 +19,7 @@ const armor = [
   },
   {
     "name": "Leather Armor",
-    "effects": "+3 Con, +2 Dex/Str, 1 Physical defense",
+    "effects": "+4 Con, +1 Dex/Str, 2 Physical defense",
     "crafter": "Leatherworker",
     "level": 2,
     "ingredients": [
@@ -28,7 +28,7 @@ const armor = [
   },
   {
     "name": "Acolyte Robes",
-    "effects": "+2 Con, +3 Int/Wis, +1 Magic Defense",
+    "effects": "+5 Con, +1 Int/Wis, +2 Magic Defense",
     "crafter": "Tailor",
     "level": 3,
     "ingredients": [
@@ -38,7 +38,7 @@ const armor = [
   },
   {
     "name": "Fancy Suit",
-    "effects": "+2 Con, +3 Chr, +1 Magic Defense",
+    "effects": "+5 Con, +1 Chr, +2 Magic Defense",
     "crafter": "Tailor",
     "level": 3,
     "ingredients": [
@@ -48,7 +48,7 @@ const armor = [
   },
   {
     "name": "Master's Robe",
-    "effects": "4 Con, 3 Int/Wis, +2 Magic Defense",
+    "effects": "+6 Con, +1 Int/Wis, +4 defenses",
     "crafter": "Tailor",
     "level": 7,
     "ingredients": [
@@ -59,7 +59,7 @@ const armor = [
   },
   {
     "name": "Noble's Attire",
-    "effects": "4 Con, 3 Chr, +2 Magic Defense",
+    "effects": "+6 Con, +1 Chr, +4 defenses",
     "crafter": "Tailor",
     "level": 7,
     "ingredients": [
@@ -70,7 +70,7 @@ const armor = [
   },
   {
     "name": "Steel Plate",
-    "effects": "+1 Str/Dex, +5 Con, +3 physical defense",
+    "effects": "+6 Con, +3 defense",
     "crafter": "Blacksmith",
     "level": 7,
     "ingredients": [
@@ -80,7 +80,7 @@ const armor = [
   },
   {
     "name": "Etched Leather Armor",
-    "effects": "+3 Con/Dex/Str, +1 defense",
+    "effects": "+5 Con, +1 Dex/Str, +3 physical defense",
     "crafter": "Leatherworker",
     "level": 7,
     "ingredients": [
@@ -90,7 +90,7 @@ const armor = [
   },
   {
     "name": "Mythril Armor",
-    "effects": "6 Con, +3 defenses, 1 Str/Dex",
+    "effects": "+7 Con, +6 defenses",
     "crafter": "Blacksmith",
     "level": 9,
     "ingredients": [
@@ -101,7 +101,7 @@ const armor = [
   },
   {
     "name": "Enchanted Leather Armor",
-    "effects": "+4 Con, +3 Dex/Str, +1 defenses",
+    "effects": "+6 Con, +1 Dex/Str, +4 defenses",
     "crafter": "Leatherworker",
     "level": 9,
     "ingredients": [
@@ -133,8 +133,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Blue Potion (Heals 80 Mana)",
-    "effects": "",
+    "name": "Blue Potion",
+    "effects": "Heals 80 Mana",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -142,8 +142,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Green Potion (Heals 30 stamina and 60 mana)",
-    "effects": "",
+    "name": "Green Potion",
+    "effects": "Heals 30 stamina and 60 mana",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -151,8 +151,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Purple Potion (Heals 30 hp and 60 Mana)",
-    "effects": "",
+    "name": "Purple Potion",
+    "effects": "Heals 30 hp and 60 Mana",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -160,8 +160,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Orange Potion (Heals 30 HP and 30 Stamina)",
-    "effects": "",
+    "name": "Orange Potion",
+    "effects": "Heals 30 HP and 30 Stamina",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -169,8 +169,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Antivenom (Removes all poisons from the target)",
-    "effects": "",
+    "name": "Antivenom",
+    "effects": "Removes all poisons from the target",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -178,8 +178,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Cleaner (Removes all buffs and debuffs)",
-    "effects": "",
+    "name": "Cleaner",
+    "effects": "Removes all buffs and debuffs",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -187,8 +187,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Explosive Potion (40 damage)",
-    "effects": "",
+    "name": "Explosive Potion",
+    "effects": "40 damage to up to 3 targets",
     "crafter": "Alchemist",
     "level": 6,
     "ingredients": [
@@ -197,8 +197,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Rejuvenation Potion (Medium + Strong HOT)",
-    "effects": "",
+    "name": "Rejuvenation Potion",
+    "effects": "Medium + Strong HOT",
     "crafter": "Alchemist",
     "level": 7,
     "ingredients": [
@@ -207,8 +207,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Potion of Weakness (-2 to all stats)",
-    "effects": "",
+    "name": "Potion of Weakness",
+    "effects": "-5 to all stats",
     "crafter": "Alchemist",
     "level": 8,
     "ingredients": [
@@ -217,8 +217,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Love Potion (-15 accuracy, -2 to all stats)",
-    "effects": "",
+    "name": "Love Potion",
+    "effects": "-15 accuracy, -5 to all stats",
     "crafter": "Alchemist",
     "level": 9,
     "ingredients": [
@@ -227,8 +227,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Apple Pie (30 HP, +2 to Str for 30 minutes)",
-    "effects": "",
+    "name": "Apple Pie",
+    "effects": "30 HP, +2 to Str for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -237,8 +237,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Brain Food (30 HP, +2 to Int/Wis for 30 minutes)",
-    "effects": "",
+    "name": "Brain Food",
+    "effects": "30 HP, +2 to Int/Wis for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -247,8 +247,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Lightning Brew (30 HP, +2 to Dex for 30 minutes)",
-    "effects": "",
+    "name": "Lightning Brew",
+    "effects": "30 HP, +2 to Dex for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -257,8 +257,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Mead (30 HP, +2 to Chr for 30 minutes)",
-    "effects": "",
+    "name": "Mead",
+    "effects": "30 HP, +2 to Chr for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -267,8 +267,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Nigiri (30 HP, Weak HOT, +2 Int/Wis for 30 minutes)",
-    "effects": "",
+    "name": "Nigiri",
+    "effects": "35 HP, Weak HOT for 4 turns, +2 Int/Wis for 30 minutes",
     "crafter": "Chef",
     "level": 3,
     "ingredients": [
@@ -277,8 +277,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Lavash (30 HP, Weak HOT, +2 Dex for 30 minutes)",
-    "effects": "",
+    "name": "Lavash",
+    "effects": "35 HP, Weak HOT for 4 turns, +2 Dex for 30 minutes",
     "crafter": "Chef",
     "level": 3,
     "ingredients": [
@@ -286,8 +286,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Steak and Eggs (35 HP, Weak HOT, +2 Str for 30 minutes)",
-    "effects": "",
+    "name": "Steak and Eggs",
+    "effects": "40 HP, Weak HOT for 4 turns, +2 Str for 30 minutes",
     "crafter": "Chef",
     "level": 4,
     "ingredients": [
@@ -296,8 +296,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Falafel (35 HP, Weak HOT, +2 Chr for 30 minutes)",
-    "effects": "",
+    "name": "Falafel",
+    "effects": "40 HP, Weak HOT for 4 turns, +2 Chr for 30 minutes",
     "crafter": "Chef",
     "level": 4,
     "ingredients": [
@@ -307,8 +307,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Grilled Fish (35 HP, Medium HOT, +2 Dex for 30 minutes)",
-    "effects": "",
+    "name": "Grilled Fish",
+    "effects": "40 HP, Medium HOT for 4 turns, +2 Dex for 30 minutes",
     "crafter": "Chef",
     "level": 5,
     "ingredients": [
@@ -318,8 +318,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Pilaf (35 HP, Medium HOT, +2 Str for 30 minutes)",
-    "effects": "",
+    "name": "Pilaf",
+    "effects": "40 HP, Medium HOT for 4 turns, +2 Str for 30 minutes",
     "crafter": "Chef",
     "level": 5,
     "ingredients": [
@@ -329,8 +329,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Sweet Roll (40 HP, Medium HOT, +2 Int/Wis for 30 minutes)",
-    "effects": "",
+    "name": "Sweet Roll",
+    "effects": "45 HP, Medium HOT for 4 turns, +2 Int/Wis for 30 minutes",
     "crafter": "Chef",
     "level": 7,
     "ingredients": [
@@ -340,8 +340,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Chocolate Cake (40 HP, Medium HOT, +2 Chr for 30 minutes)",
-    "effects": "",
+    "name": "Chocolate Cake",
+    "effects": "45 HP, Medium HOT for 4 turns, +2 Chr for 30 minutes",
     "crafter": "Chef",
     "level": 7,
     "ingredients": [
@@ -351,8 +351,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Baklava (40 HP, Medium HOT, +2 Dex for 30 minutes)",
-    "effects": "",
+    "name": "Baklava",
+    "effects": "45 HP, Medium HOT for 4 turns, +2 Dex for 30 minutes",
     "crafter": "Chef",
     "level": 7,
     "ingredients": [
@@ -362,8 +362,8 @@ const consumable = [
     ],
   },
   {
-    "name": "Royal Feast (40 HP, Strong HOT, +3 Con for 30 minutes)",
-    "effects": "",
+    "name": "Royal Feast",
+    "effects": "50 HP, Strong HOT for 4 turns, +3 Con for 30 minutes",
     "crafter": "Chef",
     "level": 9,
     "ingredients": [
@@ -374,11 +374,89 @@ const consumable = [
       { name: "Aqua Vitae", count: 1 },
     ],
   },
+  {
+    "name": "Infused Bandages",
+    "effects": "Heals 40, removes all DOTS, and gives a weak HOT",
+    "crafter": "Tailor",
+    "level": 7,
+    "ingredients": [
+      { name: "Cotton Fiber", count: 6 },
+      { name: "Arcane Bowder", count: 1 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
+  {
+    "name": "Encahnted Rope",
+    "effects": "-5 Str/Dex on target, +2 charisma on user",
+    "crafter": "Tailor",
+    "level": 7,
+    "ingredients": [
+      { name: "Cotton Fiber", count: 6 },
+      { name: "Arcane Bowder", count: 1 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
+  {
+    "name": "Armor Polish",
+    "effects": "+20 to each defense for 2 hours",
+    "crafter": "Blacksmith",
+    "level": 6,
+    "ingredients": [
+      { name: "Sulfur", count: 4 },
+      { name: "Carbon", count: 2 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
+  {
+    "name": "Weapon Oil",
+    "effects": "+20 to accuracy and +2 dex/str for 2 hours",
+    "crafter": "Blacksmith",
+    "level": 6,
+    "ingredients": [
+      { name: "Sulfur", count: 4 },
+      { name: "Carbon", count: 2 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
+  {
+    "name": "Prismatic Crystal",
+    "effects": "+3 to all stats and +3 to defenses, weak HOT for 7 turns",
+    "crafter": "Enchanter",
+    "level": 7,
+    "ingredients": [
+      { name: "Runestone", count: 1 },
+      { name: "Arcane Powder", count: 3 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
+  {
+    "name": "Aether Converter",
+    "effects": "Restores 20 stamina and 30 mana per turn for 4 turns",
+    "crafter": "Enchanter",
+    "level": 7,
+    "ingredients": [
+      { name: "Flawless Crystal", count: 3 },
+      { name: "Arcane Powder", count: 2 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
+  {
+    "name": "Crystalized Dagger",
+    "effects": "Deals 10 flat damage, if user is reduced to 0 via this, they become afflicted over time (USER CONSENT REQUIRED)",
+    "crafter": "Enchanter",
+    "level": 7,
+    "ingredients": [
+      { name: "Flawless Crystal", count: 3 },
+      { name: "Arcane Powder", count: 1 },
+      { name: "Magic Beans", count: 1 },
+    ],
+  },
 ];
 
 const other = [
   {
-    "name": "Potion Belt (+1 consumable slot)",
+    "name": "Potion Belt",
+    "effects": "+1 consumable slot",
     "crafter": "Leatherworker",
     "level": 3,
     "ingredients": [
@@ -386,7 +464,19 @@ const other = [
     ],
   },
   {
-    "name": "Eyepatch (+10 accuracy)",
+    "name": "Gathering Gloves",
+    "effects": "+1 to all gathers",
+    "crafter": "Leatherworker",
+    "level": 6,
+    "ingredients": [
+      { name: "Magic Beans", count: 3 },
+      { name: "Etched Leather", count: 2 },
+      { name: "Arcane Powder", count: 1 },
+    ],
+  },
+  {
+    "name": "Eyepatch",
+    "effects": "+10 accuracy",
     "crafter": "Leatherworker",
     "level": 4,
     "ingredients": [
@@ -394,7 +484,8 @@ const other = [
     ],
   },
   {
-    "name": "Leather Vambraces (+2 defenses)",
+    "name": "Leather Vambraces",
+    "effects": "+2 defenses",
     "crafter": "Leatherworker",
     "level": 5,
     "ingredients": [
@@ -402,7 +493,8 @@ const other = [
     ],
   },
   {
-    "name": "Iron Shield (+3 physical defense, +1 magic defense)",
+    "name": "Iron Shield",
+    "effects": "+3 physical defense, +1 magic defense",
     "crafter": "Blacksmith",
     "level": 4,
     "ingredients": [
@@ -420,7 +512,8 @@ const other = [
     ]
   },
   {
-    "name": "Utility Belt (+3 to reagent inventory)",
+    "name": "Utility Belt",
+    "effects": "+3 to reagent inventory",
     "crafter": "Leatherworker",
     "level": 6,
     "ingredients": [
@@ -429,7 +522,8 @@ const other = [
     ],
   },
   {
-    "name": "Steel Shield (+1 Con, +3 physical defense, +2 magic defense)",
+    "name": "Steel Shield",
+    "effects": "+1 Con, +3 physical defense, +2 magic defense",
     "crafter": "Blacksmith",
     "level": 7,
     "ingredients": [
@@ -449,17 +543,19 @@ const other = [
     ],
   },
   {
-    "name": "Bladed Bracers (+4 Dex/Str, +4 physical defense, +2 magical defense)",
+    "name": "Bladed Bracers",
+    "effects": "+4 Dex/Str, +4 physical defense, +2 magical defense",
     "crafter": "Leatherworker",
     "level": 9,
     "ingredients": [
       { name: "Enchanted Leather", count: 3 },
-      { name: "Steel", count: 3 },
+      { name: "Smelt Steel", count: 3 },
       { name: "Magic gem", count: 2 },
     ],
   },
   {
-    "name": "Focus Shard (+1 to all stats except constitution)",
+    "name": "Focus Shard",
+    "effects": "+1 to all stats except constitution",
     "crafter": "Enchanter",
     "level": 3,
     "ingredients": [
@@ -467,7 +563,8 @@ const other = [
     ],
   },
   {
-    "name": "Healing Shard (Adds a weak heal over time for 10 turns)",
+    "name": "Healing Shard",
+    "effects": "Adds a weak heal over time for 10 turns",
     "crafter": "Enchanter",
     "level": 4,
     "ingredients": [
@@ -475,7 +572,8 @@ const other = [
     ],
   },
   {
-    "name": "Shield Belt (+3 magic defense)",
+    "name": "Shield Belt",
+    "effects": "+3 magic defense",
     "crafter": "Enchanter",
     "level": 4,
     "ingredients": [
@@ -484,7 +582,8 @@ const other = [
     ],
   },
   {
-    "name": "Apex Crystal (+2 defenses, +1 to all stats, permanent weak HOT)",
+    "name": "Apex Crystal",
+    "effects": "+2 defenses, +1 to all stats, permanent weak HOT",
     "crafter": "Enchanter",
     "level": 9,
     "ingredients": [
@@ -494,7 +593,8 @@ const other = [
     ],
   },
   {
-    "name": "Ring of Constitution (+2 Con)",
+    "name": "Ring of Constitution",
+    "effects": "+2 Con",
     "crafter": "Jeweler",
     "level": 2,
     "ingredients": [
@@ -502,7 +602,8 @@ const other = [
     ],
   },
   {
-    "name": "Ring of Dexterity (+2 Dex)",
+    "name": "Ring of Dexterity",
+    "effects": "+2 Dex",
     "crafter": "Jeweler",
     "level": 2,
     "ingredients": [
@@ -510,45 +611,45 @@ const other = [
     ],
   },
   {
-    "name": "Ring of Strength (+2 Str)",
+    "name": "Ring of Strength",
+    "effects": "+2 Str",
     "crafter": "Jeweler",
-    
     "level": 2,
     "ingredients": [
       { name: "Cut Gem", count: 3 },
     ],
   },
   {
-    "name": "Ring of Intelligence (+2 Int)",
+    "name": "Ring of Intelligence",
+    "effects": "+2 Int",
     "crafter": "Jeweler",
-    
     "level": 2,
     "ingredients": [
       { name: "Cut Gem", count: 3 },
     ],
   },
   {
-    "name": "Ring of Wisdom (+2 Wis)",
+    "name": "Ring of Wisdom",
+    "effects": "+2 Wis",
     "crafter": "Jeweler",
-    
     "level": 2,
     "ingredients": [
       { name: "Cut Gem", count: 3 },
     ],
   },
   {
-    "name": "Ring of Charisma (+2 Cha)",
+    "name": "Ring of Charisma",
+    "effects": "+2 Cha",
     "crafter": "Jeweler",
-    
     "level": 2,
     "ingredients": [
       { name: "Cut Gem", count: 3 },
     ],
   },
   {
-    "name": "Pendant of the Horde (teleports you to the Black Horde)",
-    "crafter": "Jeweler",
-    
+    "name": "Pendant of the Horde",
+    "effects": "teleports you to the Black Horde",
+    "crafter": "Jeweler",    
     "level": 3,
     "ingredients": [
       { name: "Cut Gem", count: 2 },
@@ -556,25 +657,8 @@ const other = [
     ],
   },
   {
-    "name": "Pendant of the Sarkada (teleports you to the city)",
-    "crafter": "Jeweler",
-    "level": 3,
-    "ingredients": [
-      { name: "Cut Gem", count: 2 },
-      { name: "Iron", count: 1 },
-    ],
-  },
-  {
-    "name": "Pendant of the Hold (teleports you to the Silver Hold)",
-    "crafter": "Jeweler",
-    "level": 3,
-    "ingredients": [
-      { name: "Cut Gem", count: 2 },
-      { name: "Iron", count: 1 },
-    ],
-  },
-  {
-    "name": "Pendant of the Coalition (teleports you to the coalition)",
+    "name": "Pendant of the Sarkada",
+    "effects": "teleports you to the city",
     "crafter": "Jeweler",
     "level": 3,
     "ingredients": [
@@ -583,66 +667,93 @@ const other = [
     ],
   },
   {
-    "name": "Pendant of Constitution (+3 Con)",
+    "name": "Pendant of the Hold",
+    "effects": "teleports you to the Silver Hold",
+    "crafter": "Jeweler",
+    "level": 3,
+    "ingredients": [
+      { name: "Cut Gem", count: 2 },
+      { name: "Iron", count: 1 },
+    ],
+  },
+  {
+    "name": "Pendant of the Coalition",
+    "effects": "teleports you to the coalition",
+    "crafter": "Jeweler",
+    "level": 3,
+    "ingredients": [
+      { name: "Cut Gem", count: 2 },
+      { name: "Iron", count: 1 },
+    ],
+  },
+  {
+    "name": "Pendant of Constitution",
+    "effects": "+3 Con",
     "crafter": "Jeweler",
     "level": 6,
     "ingredients": [
       { name: "Shaped Gem", count: 1 },
-      { name: "Steel", count: 1 },
+      { name: "Smelt Steel", count: 1 },
     ],
   },
   {
-    "name": "Pendant of Dexterity (+3 Dex)",
+    "name": "Pendant of Dexterity",
+    "effects": "+3 Dex",
     "crafter": "Jeweler",
     "level": 6,
     "ingredients": [
       { name: "Shaped Gem", count: 1 },
-      { name: "Steel", count: 1 },
+      { name: "Smelt Steel", count: 1 },
     ],
   },
   {
-    "name": "Pendant of Strength (+3 Str)",
+    "name": "Pendant of Strength",
+    "effects": "+3 Str",
     "crafter": "Jeweler",
     "level": 6,
     "ingredients": [
       { name: "Shaped Gem", count: 1 },
-      { name: "Steel", count: 1 },
+      { name: "Smelt Steel", count: 1 },
     ],
   },
   {
-    "name": "Pendant of Intelligence (+3 Int)",
+    "name": "Pendant of Intelligence",
+    "effects": "+3 Int",
     "crafter": "Jeweler",
     "level": 6,
     "ingredients": [
       { name: "Shaped Gem", count: 1 },
-      { name: "Steel", count: 1 },
+      { name: "Smelt Steel", count: 1 },
     ],
   },
   {
-    "name": "Pendant of Wisdom (+3 Wis)",
+    "name": "Pendant of Wisdom",
+    "effects": "+3 Wis",
     "crafter": "Jeweler",
     "level": 6,
     "ingredients": [
       { name: "Shaped Gem", count: 1 },
-      { name: "Steel", count: 1 },
+      { name: "Smelt Steel", count: 1 },
     ],
   },
   {
-    "name": "Pendant of Charisma (+3 Cha)",
+    "name": "Pendant of Charisma",
+    "effects": "+3 Cha",
     "crafter": "Jeweler",
     "level": 6,
     "ingredients": [
       { name: "Shaped Gem", count: 1 },
-      { name: "Steel", count: 1 },
+      { name: "Smelt Steel", count: 1 },
     ],
   },
   {
-    "name": "Ring of Frailty (-2 Con, +3 all other stats)",
+    "name": "Ring of Frailty",
+    "effects": "-2 Con, +3 all other stats",
     "crafter": "Jeweler",
     "level": 7,
     "ingredients": [
       { name: "Shaped Gem", count: 3 },
-      { name: "Steel", count: 2 }
+      { name: "Smelt Steel", count: 2 }
     ],
   },
   {
@@ -655,7 +766,6 @@ const other = [
       { name: "Mythril", count: 1 },
     ],
   },
-
 ];
 
 const reagent = [
@@ -718,7 +828,7 @@ const reagent = [
     "level": 5,
     "ingredients": [
       { name: "Full Hide", count: 2 },
-      { name: "Arcane Thread", count: 1 },
+      { name: "Leather", count: 2 },
     ],
   },
   {
@@ -889,17 +999,17 @@ const reagent = [
 
 const weapons = [
   {
-    "name": "Bound Book",
-    "effects": "+1 Int",
-    "crafter": "Tailor",
-    "level": 4,
+    "name": "Enchanted Tome",
+    "effects": "+2 Int/Wis, +2 accuracy",
+    "crafter": "Enchanter",
+    "level": 2,
     "ingredients": [
-      { name: "Spun Thread", count: 4 },
+      { name: "Arcane Powder", count: 5 },
     ],
   },
   {
     "name": "Iron Dagger",
-    "effects": "+1 Str/Dex",
+    "effects": "+2 Str/Dex, +2 accuracy",
     "crafter": "Blacksmith",
     "level": 3,
     "ingredients": [
@@ -907,8 +1017,17 @@ const weapons = [
     ],
   },
   {
+    "name": "Bound Book",
+    "effects": "+2 Int, +2 accuracy",
+    "crafter": "Tailor",
+    "level": 4,
+    "ingredients": [
+      { name: "Spun Thread", count: 4 },
+    ],
+  },
+  {
     "name": "Steel Sword",
-    "effects": "+2 Str/Dex",
+    "effects": "+4 Str/Dex, +5 accuracy",
     "crafter": "Blacksmith",
     "level": 6,
     "ingredients": [
@@ -917,17 +1036,8 @@ const weapons = [
     ],
   },
   {
-    "name": "Enchanted Tome",
-    "effects": "+1 Int/Wis",
-    "crafter": "Enchanter",
-    "level": 2,
-    "ingredients": [
-      { name: "Arcane Powder", count: 5 },
-    ],
-  },
-  {
     "name": "Book of Runes",
-    "effects": "+2 Int/Wis",
+    "effects": "+4 Int/Wis, +5 accuracy",
     "crafter": "Enchanter",
     "level": 6,
     "ingredients": [
@@ -937,7 +1047,7 @@ const weapons = [
   },
   {
     "name": "Enchanted Violin",
-    "effects": "+2 Chr",
+    "effects": "+4 Chr, +5 accuracy",
     "crafter": "Enchanter",
     "level": 7,
     "ingredients": [

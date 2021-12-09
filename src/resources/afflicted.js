@@ -25,7 +25,7 @@ const corrupted = {
         name: "Mud Fling",
         cost: "15 stamina",
         scaling: "Strength",
-        description: "Weak attack with an accuracy debuff (-3 Int/Chr/Wis)",
+        description: "Weak attack",
       }
     },
     {
@@ -34,7 +34,7 @@ const corrupted = {
       stats: "-1 Con",
       skill: {
         name: "Devour",
-        cost: "20 stamina",
+        cost: "30 stamina, 60 mana",
         scaling: "Strength or Dexterity (higher of the two)",
         description: "Medium damage attack with a small heal based on damage dealt",
       },
@@ -45,8 +45,8 @@ const corrupted = {
       stats: "-1 Con",
       skill: {
         name: "Future Sight",
-        cost: "30 stamina, 40 mana",
-        description: "Gain +2 in all stats and heal 30 hp",
+        cost: "20 stamina, 40 mana",
+        description: "Gain +3 in all stats and heal 40 hp",
       },
     },
     {

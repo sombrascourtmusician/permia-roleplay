@@ -126,6 +126,14 @@ const bard = {
       "flavorText": "The bardic tradition owes itself to ancient priestly castes and temple servants, and little illustrates this better than the rudimentary magical cures they are capable of. While no match for a cleric's abilities, a bard knows special rites, chants and songs that mend wounds."
     },
     {
+      "name": "Quick Step",
+      "cost": "No cost",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Weak physical damage attack.",
+      "flavorText": "A quick step forward and a kick to follow."
+    },
+    {
       "name": "Swift Blade",
       "cost": "No cost",
       "scaling": "Dexterity",
@@ -414,7 +422,7 @@ const warrior = {
       "cost": "20 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Deals Low damage and debuffs Accuracy of target by 15",
+      "description": "Deals Low damage and debuffs Accuracy of target by 25",
       "flavorText": "Every part of a weapon is a tool of warfare, not just a blade or spearpoint, a pommel strike or stave hit can daze and confuse an opponent."
     },
     {
@@ -518,7 +526,7 @@ const rogue = {
     {
       "name": "Cheap Shot ",
       "cost": "50 stamina",
-      "scaling": "Dexterity",
+      "scaling": "Dexterity and Charisma",
       "restrictions": "Single Target",
       "description": "High physical damage attack scaling off of both Dexterity and Charisma which ignores 50% of armor.",
       "flavorText": "Hit 'em where they expect it the least. Distraction can take many forms, a quick taunt, or a feint. The choice is yours."
@@ -544,7 +552,7 @@ const rogue = {
       "cost": "10 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Low physical damage attack that increases your evasion (+15 to evasion).",
+      "description": "Low physical damage attack that increases your evasion (+25 to evasion).",
       "flavorText": "Packed powder with a quick fuse fills the area with smoke - great for a quick escape, or to strike from the shadows."
     },
     {
@@ -816,11 +824,11 @@ const hunter = {
   },
   "skills": [
     {
-      "name": "Headshot",
-      "cost": "60 stamina",
+      "name": "Aimed Shot",
+      "cost": "50 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single Target",
-      "description": "Deals high physical damage that has an increasing chance to crit based on your dexterity",
+      "description": "Aimed shot is a signature attack that can target six different areas. Head: Deals increased damage. Neck: Deals high damage and debuffs casting stats (-6 Chr/Wis/Int). Hand: Deals high damage and debuffs physical stats (-6 Str/Dex). Eye: Deals high damage and debuffs accuracy (-25 accuracy). Armor Straps: Deals medium damage and debuffs defenses (-10 to each defense). Chest: Deals high damage and adds a heavy damage over time (15 damage per turn for 5 turns).",
       "flavorText": "Hit 'em where it hurts the most. A good headshot can end a fight with a single arrow."
     },
     {
@@ -897,7 +905,7 @@ const daggerspell = {
       "cost": "30 stamina",
       "scaling": "",
       "restrictions": "Single target",
-      "description": "Kicks off the target to move back in an attempt to dodge incoming damage. Deals medium damage and increases user dodge change by 15.",
+      "description": "Kicks off the target to move back in an attempt to dodge incoming damage. Deals medium damage and increases user dodge change by 25.",
       "flavorText": "Getting away quick is a daggerspell speciality."
     },
     {
@@ -1205,7 +1213,7 @@ const warlock = {
       "cost": "100 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
-      "description": "Strips up to five random buffs  or hexes on the target and deals heavy damage along with a minor heal for each removed thing. If no buffs are on the target, applies all six hexes.",
+      "description": "Steals up to five random buffs or hexes on the target and deals heavy damage along with a minor heal for each removed thing. If no buffs are on the target, applies all six hexes.",
       "flavorText": ""
     },
     {
@@ -1237,7 +1245,7 @@ const warlock = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
-      "description": "Choose a stat to hex. Reduce the stat by 3 and heal based off the number of hexes on the target.",
+      "description": "Choose a stat to hex. Reduce the stat by 3 and heal based off the number of hexes on the target and deals minor damage.",
       "flavorText": "A warlock saps the enemy strength minute by minute, weakening them moment by moment."
     },
     {

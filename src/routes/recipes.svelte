@@ -3,6 +3,11 @@
   import { recipeSearch } from "$lib/RecipeSearch.js";
 	import recipeTypes from '../resources/recipes.js';
 
+  let sortedRecipes = recipeTypes;
+  sortedRecipes.forEach(recipeType => {
+    recipeType.content = recipeType.content.sort((first, second) => first.name.localeCompare(second.name))
+  });
+
   let bindings = {};
   let searchExpanded = false;
   let searchText = "";
