@@ -89,12 +89,12 @@ const headers = [
     title: 'Quests', 
     dropdowns: [
       { 
-        content: 'Weekly Quests',
-        route: 'quests/weekly',
+        content: 'Starter Quests',
+        route: 'quests/starter',
       },
       { 
-        content: 'One-time Quests',
-        route: 'quests/one-time',
+        content: 'Weekly Deliveries',
+        route: 'quests/weekly-deliveries',
       },
     ] 
   },
