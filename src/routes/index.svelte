@@ -76,7 +76,7 @@
       </div>
       <div class="col-sm-8">
         <div class='px-2'>
-          <a href='/quests/one-time' class="fs-2 text-light">Start your adventure</a>
+          <a href='/quests/starter' class="fs-2 text-light">Start your adventure</a>
           <p class="mt-2 text-white-50">Tutorial quest description if needed. Other stuff. Blah</p>
         </div>
       </div>
