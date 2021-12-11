@@ -398,7 +398,7 @@ const warrior = {
       "cost": "No cost",
       "scaling": "",
       "restrictions": "Self",
-      "description": "Removes Offensive Stance, restores 10 stamina, gain 20 physical and magical defenses, -5 strength.",
+      "description": "Removes Offensive Stance, restores 10 stamina, gain 10 physical and magical defenses, -3 strength.",
       "flavorText": "When surrounded at all sides, a warrior must learn to parry, dodge, block and use their armor to its fullest effect, turning strikes into glancing blows and glancing blows into ineffective ones. The focus on defensive, slower combat is even somewhat regenerative and calming to the nerfs, allowing a warrior to recover their fighting potential in part."
     },
     {
@@ -910,7 +910,7 @@ const daggerspell = {
     },
     {
       "name": "Cauterize",
-      "cost": "40 mana",
+      "cost": "60 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Cauterize the target's wounds. Heals a medium amount but also adds a burn (-1 Con) to the target.",
@@ -939,6 +939,14 @@ const daggerspell = {
       "restrictions": "Single target",
       "description": "Enchants your blade with three elements. Fire makes every attack debuff constitution minorly (-1 Con) stacking up to five times. Ice adds a physical debuff to the target (-1 to STR and DEX) stacking up to three times. Acid debuffs the enemies defenses (-3 to each defense) stacking up to five times",
       "flavorText": "Multiple elements can cover a daggerspell's blade, each with their own effects."
+    },
+    {
+      "name": "Bandage",
+      "cost": "30 stamina",
+      "scaling": "Dexterity",
+      "restrictions": "Single target",
+      "description": "Medium heal that adds Bandaged (-1 con) to the target.",
+      "flavorText": " "
     },
     {
       "name": "Slash ",
@@ -982,15 +990,15 @@ const paladin = {
       "cost": "25 stamina, 20 mana",
       "scaling": "Strength",
       "restrictions": "Single Target",
-      "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength by 1. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
+      "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength and wisdom by 2. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
       "flavorText": "Paladins can combine their might and their holy power together in order to power through any struggle."
     },
     {
       "name": "Lay on Hands",
-      "cost": "80 mana",
+      "cost": "40 mana",
       "scaling": "Wisdom",
       "restrictions": "Single target",
-      "description": "Heals the target for a large amount and buffs all stats by two.",
+      "description": "Heals the target for a large amount and buffs con by +1, all stats by +3.",
       "flavorText": "A paladin can channel all of their holy energy out of their body, forcing it into someone else and giving all they have."
     },
     {
@@ -1004,10 +1012,18 @@ const paladin = {
     {
       "name": "Wrath Hammer",
       "cost": "25 stamina",
-      "scaling": "Strength",
+      "scaling": "Wisdom and Strength",
       "restrictions": "Single target",
       "description": "Deals medium physical damage.",
       "flavorText": "A fierce, quick strike that armor can only do so much against."
+    },
+    {
+      "name": "Smite",
+      "cost": "50 stamina, 80 mana",
+      "scaling": "Wisdom and Strength",
+      "restrictions": "Single target",
+      "description": "Deals heavy damage to a target, benefiting from Holy Light.",
+      "flavorText": " "
     },
     {
       "name": "Holy Shock",
@@ -1022,7 +1038,7 @@ const paladin = {
       "cost": "25 stamina",
       "scaling": "",
       "restrictions": "1-3 targets",
-      "description": "Heals 15hp and adds a weak hot.",
+      "description": "Heals 15hp and adds a medium hot.",
       "flavorText": " "
     },
     {
@@ -1034,12 +1050,28 @@ const paladin = {
       "flavorText": "While forgivable in times of dire need, it is generally frowned upon to utilize ones liturgical tools and holy implements as blunt instruments."
     },
     {
+      "name": "Take Harm",
+      "cost": "40 mana",
+      "scaling": "Strength and Armor",
+      "restrictions": "Single Target",
+      "description": "Heals an ally for 150 flat. The user takes damage proportional to how much they healed, reduced by armor and strength.",
+      "flavorText": " "
+    },
+    {
       "name": "Cure Wounds",
       "cost": "20 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
       "description": "Heals a small amount to the target.",
       "flavorText": "The most sought after service of the devout is healing, wise clerics remember not to allow the power they have been given to be abused on the unworthy. A gift can be taken away."
+    },
+    {
+      "name": "Defend",
+      "cost": "10 stamina",
+      "scaling": "Strength",
+      "restrictions": "Single Target",
+      "description": "Increases the target's defense by 20, but decreases the user's by 10.",
+      "flavorText": " "
     },
     {
       "name": "Bash",
@@ -1168,7 +1200,7 @@ const necromancer = {
       "cost": "40 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Shadow Snare is a medium attack that lowers the enemies dexterity by 2. If enhanced by Ravage, it adds a weak damage over time. If enhanced by Zombie, strength is also debuffed by the same amount. If enhanced by Ghoul, constituon is debuffed by 1 and the user is minorly healed.",
+      "description": "Shadow Snare is a medium attack that lowers the enemies dexterity by 4. If enhanced by Ravage, it adds a weak damage over time. If enhanced by Zombie, strength is also debuffed by the same amount. If enhanced by Ghoul, constituon is debuffed by 4 and the user is minorly healed.",
       "flavorText": "Shadowy claws erupt from the ground and look to drag their target back down with them."
     },
     {
@@ -1176,7 +1208,7 @@ const necromancer = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Self",
-      "description": "Summons a minion and minorly heals the user. Choice of Ravager (4 Intelligence, -10 of each defense and bleed on each attack, but minus defense), Zombie (-3 Int, +2 Con, +15 of each defense), and Ghoul (changes attacks to target physical defense and heals off each hit).",
+      "description": "Summons a minion and minorly heals the user. Choice of Ravager (+6 Intelligence, -10 of each defense and bleed on each attack, but minus defense), Zombie (-3 Int, +2 Con, +15 of each defense), and Ghoul (changes attacks to target physical defense and heals off each hit).",
       "flavorText": "Creatures from beyond the grave rise one last time for a final act of revenge."
     },
     {
