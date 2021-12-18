@@ -1242,7 +1242,7 @@ const warlock = {
   "skills": [
     {
       "name": "Corruption",
-      "cost": "100 mana",
+      "cost": "120 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
       "description": "Steals up to five random buffs or hexes on the target and deals heavy damage along with a minor heal for each removed thing. If no buffs are on the target, applies all six hexes.",
@@ -1277,7 +1277,7 @@ const warlock = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
-      "description": "Choose a stat to hex. Reduce the stat by 3 and heal based off the number of hexes on the target and deals minor damage.",
+      "description": "Choose a stat to hex. Reduce the stat by 6 and heal based off the number of hexes on the target and deals minor damage.",
       "flavorText": "A warlock saps the enemy strength minute by minute, weakening them moment by moment."
     },
     {
