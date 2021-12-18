@@ -367,8 +367,8 @@ const warrior = {
   "stats": {
     "Mana": 100,
     "Stamina": 100,
-    "Physical Resistance": 20,
-    "Magical Resistance": 20,
+    "Physical Resistance": 25,
+    "Magical Resistance": 25,
     "Strength": 17,
     "Dexterity": 13,
     "Constitution": 14,
@@ -398,7 +398,7 @@ const warrior = {
       "cost": "No cost",
       "scaling": "",
       "restrictions": "Self",
-      "description": "Removes Offensive Stance, restores 10 stamina, gain 15 physical and magical defenses, -6 strength.",
+      "description": "Removes Offensive Stance, restores 10 stamina, gain 10 physical and magical defenses, -4 strength.",
       "flavorText": "When surrounded at all sides, a warrior must learn to parry, dodge, block and use their armor to its fullest effect, turning strikes into glancing blows and glancing blows into ineffective ones. The focus on defensive, slower combat is even somewhat regenerative and calming to the nerfs, allowing a warrior to recover their fighting potential in part."
     },
     {

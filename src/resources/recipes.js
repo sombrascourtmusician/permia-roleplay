@@ -48,7 +48,7 @@ const armor = [
   },
   {
     "name": "Master's Robe",
-    "effects": "+6 Con, +1 Int/Wis, +4 defenses",
+    "effects": "+6 Con, +1 Int/Wis, +4 defenses. When at max hp, gain a 30 hp shield and +10 defenses.",
     "crafter": "Tailor",
     "level": 7,
     "ingredients": [
@@ -59,7 +59,7 @@ const armor = [
   },
   {
     "name": "Noble's Attire",
-    "effects": "+6 Con, +1 Chr, +4 defenses",
+    "effects": "+6 Con, +1 Chr, +4 defenses. When at max hp, gain a 30 hp shield and +10 defenses.",
     "crafter": "Tailor",
     "level": 7,
     "ingredients": [
@@ -90,7 +90,7 @@ const armor = [
   },
   {
     "name": "Mythril Armor",
-    "effects": "+7 Con, +6 defenses",
+    "effects": "+7 Con, +6 defenses. When dropping below 50% hp, gain a 20 health HOT for 3 turns.",
     "crafter": "Blacksmith",
     "level": 9,
     "ingredients": [
@@ -101,7 +101,7 @@ const armor = [
   },
   {
     "name": "Enchanted Leather Armor",
-    "effects": "+6 Con, +1 Dex/Str, +4 defenses",
+    "effects": "+6 Con, +1 Dex/Str, +4 defenses. When below 50% hp, gain 3000 dodge for 1 turn.",
     "crafter": "Leatherworker",
     "level": 9,
     "ingredients": [
@@ -188,7 +188,7 @@ const consumable = [
   },
   {
     "name": "Explosive Potion",
-    "effects": "40 damage to up to 3 targets",
+    "effects": "30 damage to up to 3 targets",
     "crafter": "Alchemist",
     "level": 6,
     "ingredients": [
