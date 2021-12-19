@@ -1115,7 +1115,7 @@ const hemomancer = {
       "cost": "10 mana",
       "scaling": "",
       "restrictions": "Self",
-      "description": "Buffs Intelligence by 2 while damaging health by 10 points. Stacks 3 times.",
+      "description": "Buffs Intelligence by 3 while damaging health by 10 points. Stacks 2 times.",
       "flavorText": "Blood is the ultimate source of power for a Hemomancer and that includes their own."
     },
     {
@@ -1133,6 +1133,14 @@ const hemomancer = {
       "restrictions": "Single target",
       "description": "Deals low damage and heals the user for the damage dealt.",
       "flavorText": "An eruption of blood is just as benefecial for the user as it is painful for the victim."
+    },
+    {
+      "name": "Infusion",
+      "cost": "No cost",
+      "scaling": "Intelligence",
+      "restrictions": "Self",
+      "description": "Uses all stacks of Offering to heal for 30 per stack.",
+      "flavorText": " "
     },
     {
       "name": "Carve",
