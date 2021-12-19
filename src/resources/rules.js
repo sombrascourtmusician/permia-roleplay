@@ -20,6 +20,8 @@ const simRules = [
   "Use of thieving actions counts as an action. To use pickpocketing or an item steal, you're required to post into the scene for at least two posts before attempting.",
   "No trading may take place between alts.",
   "Large avatars should be kept to large, open spaces like the desert. In interior spaces, events, and the like, smaller avatars should be used when ever possible. If your avatar is large enough to be disruptive in a scene and someone asks you to change, please comply with the request. If you find it unreasonable, contact an admin.",
+  "If someone is stealthed, your character will not able to determine who the stealth character is until either the stealthed character informs your character who they are, the stealthed character fails a sneak check, or if you pass a perception check. Keep in mind, if you haven’t met the stealthed character’s prior IC, then you may not know who that character is. Refer to Rule 3-1 that’s in regards to Metagaming.",
+  "You are allowed to rez objects within the sim if you do not have a rental. The max land impact that may be rezzed is 20 Land Impact.",
 ]
 
 const combatRules = [
@@ -32,7 +34,7 @@ const combatRules = [
   "If no consequence can be agreed upon by the victor and the loser of the fight, contact an admin to resolve the situation.",
   "Checks such as Overwhelm and Outlast can only be used once per fight. Escape can be used three times.",
   "In capture RP, you may leave once your captor is done with the roleplay. The captor can also not hold you for over an hour unless you consent to it.",
-  "In case of ties, where both players reach 0 health points in the same turn, the winner is determined in the following order: if in faction territory, the defending faction wins. Otherwise, the player that attacked last wins the fight."
+  "In case of ties, where both players reach 0 health points in the same turn, the winner is determined in the following order: if in faction territory, the defending faction wins. Otherwise, the player that attacked last wins the fight.",
 ]
 
 const discordRules = [

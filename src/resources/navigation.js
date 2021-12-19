@@ -1,4 +1,3 @@
-import rules from "../resources/rules.js";
 import lore from "../resources/lore.js";
 import combatClasses from '../resources/combat-classes.js';
 import craftingClasses from '../resources/crafting-classes.js';
@@ -7,7 +6,6 @@ import factions from "../resources/factions.js";
 import npcs from "../resources/npcs.js";
 import locations from "../resources/locations.js";
 import tutorials from "../resources/tutorials.js";
-import recipes from "./recipes.js";
 
 const discordUrl = 'https://discord.gg/Qy665AUxGC'
 const slLocation = 'https://maps.secondlife.com/secondlife/Permia/150/59/3073'
@@ -26,7 +24,6 @@ const headers = [
       { 
         content: 'Rules',
         route: 'rules',
-        dropdowns: rules,
       },
       { 
         content: 'Locations',
