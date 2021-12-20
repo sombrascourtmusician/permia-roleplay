@@ -18,7 +18,19 @@
     {#if node.nodes}
       <ul>
         {#each node.nodes as node}
-          <li>{node}</li>
+          <li>
+            {node.title}
+            <ul>
+              {#each node.resources as resource}
+                <li>
+                  {resource.title}
+                  {#if resource.requirement}
+                    <span>- Requires {resource.requirement}</span>
+                  {/if}
+                </li>
+              {/each}
+            </ul>
+          </li>
         {/each}
       </ul>
     {/if}
