@@ -1,14 +1,9 @@
 const academy = {
   otherNames: "The Academy, Mages' Guild, Sorcerers' Guild, the Magi",
   image: "/school.webp",
-  descriptions: [
-    "The Academy didn't always exist - a youthful wizard, by the name of Zu'ban had a vision: to utilize magic to create wonders, new technology, all with the use of the crystals. The Academy founded itself around this research. While they work for their own power, their strides also benefit all of Sarkada as well. They aim to seek a solution to the afflicted crisis, one that doesn't disrupt Sarkada's new found quality of life, and have begun research into creating more blessed.",
+  lore: [
+    "The Academy of Wonders is both an institute of learning and a research center for all aspects of magic, but with special focus on Permian Crystals and their effects.  Founded by an aspiring Magus of the name Zu'ban shortly after the crystals were first discovered, the Academy is a free realm for wizards of all, where no form of magic is forbidden. After all, there is no bad magic - only bad practitioners. By the success borne of this dubious axiom not only has the Academy brought great wealth and fortune to Sarkada as a byproduct of it's own search for power, those of the Academy also consider themselves the best chance Permia has of overcoming the current plague of corruption. This has led them to consider themselves above reproach and become insufferably justified in their actions, for the ends justify the means.",
   ],
-  giver: {
-    title: "Academy of Wonder XP Giver",
-    location: "The great crystal chandelier in the entryway of the Academy will provide your XP here!",
-    image: "/NPC_thief.webp",
-  },
   perceptions: [
     {
       title: "The Black Horde",
@@ -26,11 +21,6 @@ const academy = {
       body: "It’s useful to have friends in low places. Some avenues of research need unorthodox components, things that good people shouldn’t ever worry about. A body part here, an unspeakable reagent there; the Court is a door to this world."
     },
     {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "Many in the Academy are sympathetic to the afflicted’s plight and desire to solve this crisis. The Academy is pleased by their willingness to quarantine themselves into their own community and keep potential harm to a minimum. We also seek them out on occasion for tests into the nature of the afflicted. Willing subjects are always preferred!"
-    },
-    {
       title: "The Old Boughs",
       link: "old-boughs",
       body: "Their knowledge of magic is of great interest to the Academy, but their backwards ways are an affront to progress."
@@ -46,6 +36,21 @@ const academy = {
       body: "The princess has supporters among the academy, those who still hold she is the rightful ruler of the kingdom, though this support is vanishing rapidly. Her desire to stop the Academy’s research is an affront to progress, and if her people have their way, Sarkada will be back in tents herding goats in the desert."
     },
   ],
+  giver: {
+    title: "Academy of Wonders XP Giver",
+    location: "The glowing crystals dangling in the main entrance are not just for decoration. Click these each Sunday to gain your faction XP.",
+    image: "/NPC_thief.webp",
+  },
+  bank: {
+    title: "Academy of Wonders Bank",
+    location: "Sharing resources and knowledge between scholars helps progress our understanding of our world. To share your crafted items with others, go to the book shelf in the dorms and deposit or pick up something you need.",
+    image: "/NPC_thief.webp",
+  },
+  rest: {
+    title: "Academy of Wonders Rest Point",
+    location: "Neatly tucked inside of the luxurious dorm rooms you will find the rest point for your faction. A simple table to click on.",
+    image: "/NPC_thief.webp",
+  },
 }
 
 const blackHorde = {
@@ -68,11 +73,6 @@ const blackHorde = {
       title: "Court of Flies",
       link: "court-of-flies",
       body: "Unlike most of Sarkada, the Black Horde does not necessarily despise the Court, though it would be a stretch to consider them friends. The unscrupulous court can be used for our gain. whether to hide our people, help them locate targets, or to even purchase food for some more of our exotic hungers."
-    },
-    {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "The Hands of Unity and are weak, cowardly and clinging to traditions meant for ‘normal’ people. The Black Horde doesn’t care about Shasu tribal traditions, we are now their own people. The Black Horde does not care about existing peacefully on our own and making our own new society, the Horde wants to fight back. Our ‘brothers and sisters’ should turn their hands into fists and claws if they want respect."
     },
     {
       title: "The Old Boughs",
@@ -114,11 +114,6 @@ const coalition = {
       body: "The Coalition considers the Court a useful group of people, perhaps not the most affluent customers, but they can move goods and manipulate actions that we do not want our name associated with."
     },
     {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "The downtrodden often seek exotic cures and seek the comfort of Coalition baths and our pleasurable company, but their lacking capital does tend to get in the way of any major trade."
-    },
-    {
       title: "The Old Boughs",
       link: "old-boughs",
       body: "Their trade is welcome, but in all honesty, they’re not that interesting to the Coalition. Self sufficient pacifist isolationists are generally not remarkable trading partners."
@@ -138,6 +133,19 @@ const coalition = {
 
 const courtOfFlies = {
   otherNames: "Courtiers, The Court of the Queen in Yellow",
+  lore: [
+    "The Court of Flies first started off as a group of vagrants who were pushed deep down into the sewers of Sarkada. Without food or fresh water, those poor souls did what they had to do to survive. They taught themselves how to steal, hide in the shadows, keep an ear out for information, and fend for themselves. Only so they can accumulate their wealth to make sure their community does not plunge into darkness.",
+    "When Sarkada was first built, the Sarkadian noble houses noticed an ever-growing problem within their city; vagrants. The poor were residing and sleeping in the streets of their perfect city, begging for food, water, coins... The noble houses believed these vagrants were the destruction of beauty within their city.",
+    "So, what was their solution? They forced these vagrants deep down into the underbelly of the city into the damp and dingy sewers of Sarkada. It was dark, there wasn’t any light to shine onto these poor souls. Food was non-existent in those tunnels, fresh water was scarce, and the people down there grew sick. Leaving the tunnel and venturing out into the heat of the desert would have been considered a death sentence.",
+    "For them to survive, they did what they had to do. They taught themselves how to steal, how to hide in the shadows, how to keep an ear out for information, how to lose the guard’s tracks and get out of a bind. They did business that no one else would want to do. They broke laws and rules for their own gain. Only so they can accumulate their wealth to make sure their community does not plunge into darkness.",
+    "They worked together to call themselves the Court of Flies…",
+  ],
+  goals: [
+    "The main goal of the Court of Flies is to accumulate as much wealth as possible. They want their faction bank to be full to the brim of gold. Through any means necessary, finding a way to profit off of one venture is their main objective. The morality on accomplishing that goal is of no concern to the Court of Flies.",
+    "The secondary goal is to protect and assist those who are in Sarkada.The Court of Flies have a tentative alliance with the Houses of Sarkada and deals are made with the Academy of Wonders. To make sure the factions of Sarkada and the Court of Flies retain the integrity of their two factions from enemies of the city, they must work together instead of getting to each other’s throats.",
+    "Third goal is to maintain and run the speakeasy, a staple of the Court of Flies. This is where drinks can be sold and distributed to the citizens and nobles of Sarkada, gambling games may be hosted, and ???",
+  ],
+  alignment: "The Court of Flies are considered to be a Chaotic-Neutral faction. As they are thieves and brigands, they don’t follow rules or traditions, rather they value their own freedom. Morality of good and evil is none of their concerns. Money is, though.",
   descriptions: [
     "Every city has its downtrodden, its outcasts. Usually, they do not have enough common reason to gather, except for warmth or perhaps to share some morsels of information. Sarkada, however, is different: Not only have they organized, they have a queen of their very own. The Queen in Yellow keeps her court close, but her enemies closer, mutants and outcasts flock to her demesne in droves, all under the gleaming streets of the Grand City. All are welcome in her kingdom, provided they bring a skill. Whether that be more overt, the fraudsters, schemers, and liars; or the covert, in thieves, assassins, and thugs. Any drop of wealth that can be extracted from the world above eventually trickles down into the den of organized crime, helping stave off the pangs of hunger a day more.",
     "Most do not display any allegiance to the Queen. The only sign may be a scrap of yellow fabric sewn to one shoulder, or perhaps the stench of their sewer home. The Queen herself never leaves the culverts she calls home, not for many centuries has one been seen in daylight. It is speculated by so-called ‘scholars’ of the court that there have been many Queens throughout the years, perhaps even dynasties within the sewers. However, the Courtiers would believe that the Queen is ageless or otherwise immortal. Considering the strange happenings within the city, either is equally likely.",
@@ -159,11 +167,6 @@ const courtOfFlies = {
       body: "Wayward traders will buy anything without asking too many questions and the Coalition are no exception. The drunken sailors make for easy targets of pick-pocketings, though the more battle hardened pirates aren’t quite as easy for proper muggings."
     },
     {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "Many have come from the Hands once they grow tired of their ostracism, or vice-versa as Courtiers grow old or bored of their trade."
-    },
-    {
       title: "The Old Boughs",
       link: "old-boughs",
       body: "What use do we have of druids? They seem to not hate us due to our infection, but they still distrust us for our secrecy and actions."
@@ -177,50 +180,6 @@ const courtOfFlies = {
       title: "Silver Hold",
       link: "silver-hold",
       body: "Rebels aren’t always the greatest of allies, but their raids certainly make for great distractions."
-    },
-  ]
-}
-
-const handsOfUnity = {
-  otherNames: "The Hands, the Hand, Unity, the Diseased, The Cursed Tribe",
-  descriptions: [
-    "When the afflicted crisis began, many were cast out by their families, denied the support of their peers and a home to call their own. The poor souls found solace not in any traditional order, but in each other. Saving others from anguish and exile, the Hands were formed to raise the banner of the dispossessed, to cast aside divisions of class and species and to unite in an enclave. Princess Aida granted them shelter in the caves near her fortress, and the Hands aim to repay her kindness.",
-  ],
-  perceptions: [
-    {
-      title: "Academy of Wonders",
-      link: "academy-of-wonders",
-      body: "We are wary of the academy by and large. Many of the Hand blame them for our condition. But many more of us see them as our possible saviors, they wish to solve this crisis as much as we do, after all."
-    },
-    {
-      title: "The Black Horde",
-      link: "black-horde",
-      body: "There’s a particular hatred of the Horde among the Hands. We consider them misled, traitors to the Shadu culture and embodiments of the monstrous label we fight so hard against. We are not vicious demons, no matter how much others may compare us to them."
-    },
-    {
-      title: "Court of Flies",
-      link: "court-of-flies",
-      body: "The so called ‘Court of Flies’ have often helped the Hand, but only for a significant price. While we sympathize with the downtrodden, the Court’s schemes for power, cut-throat politics and complete lack of care for anyone but themselves keeps relations cool."
-    },
-    {
-      title: "Coalition of the Compass",
-      link: "coalition-of-the-compass",
-      body: "The Hand is generally wary of foreigners and many of us feel the delights and wonders of the Coalition’s markets are out of our reach, but the Coalition doesn’t judge us for what we are, nor do they preach their ways to us. Rather, they offer opportunity and adventure, something the more conservative among the Hand worry will mislead our family with their empty promises."
-    },
-    {
-      title: "The Old Boughs",
-      link: "old-boughs",
-      body: "The Druids of the old order are, while wary of our infection, devoted to preventing the further spread of this affliction to others. Moreover, they heal us and seek to alleviate or even cure our suffering and repair the damage to the land. Many of the Hand find solace in their animistic ways."
-    },
-    {
-      title: "Houses of Sarkada",
-      link: "houses-of-sarkada",
-      body: "We of the Hand do not hate the Royal Guards, they simply enforced the law the city of Sarkada had already decreed. Still, as allies of the Silver Hold, we of the Hand know our more militant will certainly clash with the Guard."
-    },
-    {
-      title: "Silver Hold",
-      link: "silver-hold",
-      body: "The Hold opened its doors to us in our darkest hour, it has welcomed us and expected nothing of us and has let us build our home in peace. Our people adore our benefactors, and some among us have even begun considering princess Aida to be an incarnate goddess."
     },
   ]
 }
@@ -251,11 +210,6 @@ const oldBoughs = {
       title: "Coalition of the Compass",
       link: "coalition-of-the-compass",
       body: "The Coalition are simple interlopers and meddlers in the affairs of an ancient and wounded land. We believe their trade in crystals and artifacts from the Academy to be dangerous to the outside world and potentially corrupt more than just Permia itself."
-    },
-    {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "The Hands do the best with what they have. The order wishes to heal them and take care of them the best that they can. The Hands themselves mostly keep to themselves, which means the exposure to the Old Boughs is limited at best."
     },
     {
       title: "Houses of Sarkada",
@@ -298,11 +252,6 @@ const royalSarkadianGuard = {
       body: "A true necessary evil. They take crystals away, and bring back money. Their sailors tend to be troublemakers within the city and are often treated harsher than normal visitors, though better than corrupted."
     },
     {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "While the Hands claim that their issues do not lie with the guards themselves, their actions have -time and time again- shown otherwise. As allies of the Silver Hold, they are enemies of the Kingdom and the Guard."
-    },
-    {
       title: "The Old Boughs",
       link: "old-boughs",
       body: "Treat the Old Boughs the same as the Silver Hold. They are allied with Aida and her ilk and are guilty by association. Their feuding with the Academy of Wonders puts them at odds with the Guard and all of our conveniences."
@@ -340,11 +289,6 @@ const silverHold = {
       title: "Court of Flies",
       link: "court-of-flies",
       body: "The poor, the downtrodden, but not the innocent. While many turn to crime and misery out of need, others do it out of a desire to become the heirs to the evils of Sarkada. They are not our friends, but there are better targets for our agents."
-    },
-    {
-      title: "Hands of Unity",
-      link: "hands-of-unity",
-      body: "Our beloved wards, our citizens in exile, our children and the reminder of who we are and what we fight for. We do not impose firm laws upon them, beyond ensuring that evil does not infiltrate their ranks, but we welcome their help when they offer it."
     },
     {
       title: "The Old Boughs",
@@ -387,10 +331,6 @@ const factions = {
   "court-of-flies": {
     "title": "Court of Flies",
     ...courtOfFlies,
-  },
-  "hands-of-unity": {
-    "title": "Hands of Unity",
-    ...handsOfUnity,
   },
   "old-boughs": {
     "title": "Old Boughs",

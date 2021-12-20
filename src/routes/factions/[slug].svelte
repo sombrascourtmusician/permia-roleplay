@@ -39,24 +39,37 @@
       </div>
     </div>
   </div>
-  {#each faction.descriptions as description}
-    <p>
-      {@html description}
-    </p>
-  {/each}
+  {#if faction.descriptions}
+    {#each faction.descriptions as description}
+      <p>
+        {@html description}
+      </p>
+    {/each}
+  {/if}
 
-  {#if faction.giver}
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="px-5">
-          <img src={faction.giver.image} alt={faction.giver.title} width="100%" />
-        </div>
-      </div>
-      <div class="col-sm-8">
-        <h3 class="fs-5 pb-3">{faction.giver.title}</h3>
-        <p>{faction.giver.location}</p>
-      </div>
-    </div>
+  {#if faction.lore}
+    <h2>Lore</h2>
+    {#each faction.lore as lore}
+      <p>
+        {@html lore}
+      </p>
+    {/each}
+  {/if}
+
+  {#if faction.goals}
+    <h2>Goals</h2>
+    {#each faction.goals as goal}
+      <p>
+        {@html goal}
+      </p>
+    {/each}
+  {/if}
+
+  {#if faction.alignment}
+    <h2>Alignment</h2>
+    <p>
+      {@html faction.alignment}
+    </p>
   {/if}
 
   {#if faction.perceptions}
@@ -69,5 +82,50 @@
       </li>
     {/each}
     </ul>
+  {/if}
+</Card>
+
+<Card body class="mt-3">
+  
+  {#if faction.giver}
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="px-5">
+          <img src={faction.giver.image} alt={faction.giver.title} width="100%" />
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h3 class="fs-5 pb-3">{faction.giver.title}</h3>
+        <p class="pe-5">{faction.giver.location}</p>
+      </div>
+    </div>
+  {/if}
+  <hr/>
+  {#if faction.bank}
+    <div class="row">
+      <div class="col-sm-8">
+        <h3 class="fs-5 pb-3 ps-5">{faction.bank.title}</h3>
+        <p class="ps-5">{faction.bank.location}</p>
+      </div>
+      <div class="col-sm-4">
+        <div class="px-5">
+          <img src={faction.bank.image} alt={faction.bank.title} width="100%" />
+        </div>
+      </div>
+    </div>
+  {/if}
+  <hr/>
+  {#if faction.rest}
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="px-5">
+          <img src={faction.rest.image} alt={faction.rest.title} width="100%" />
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h3 class="fs-5 pb-3">{faction.rest.title}</h3>
+        <p class="pe-5">{faction.rest.location}</p>
+      </div>
+    </div>
   {/if}
 </Card>
