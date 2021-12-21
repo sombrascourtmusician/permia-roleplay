@@ -34,7 +34,7 @@ const corrupted = {
       stats: "-1 Con",
       skill: {
         name: "Devour",
-        cost: "30 stamina, 60 mana",
+        cost: "20 stamina, 40 mana",
         scaling: "Strength or Dexterity (higher of the two)",
         description: "Medium damage attack with a small heal based on damage dealt",
       },

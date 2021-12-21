@@ -188,7 +188,7 @@ const consumable = [
   },
   {
     "name": "Explosive Potion",
-    "effects": "30 damage to up to 3 targets",
+    "effects": "70 damage spread across up to 2 targets",
     "crafter": "Alchemist",
     "level": 6,
     "ingredients": [

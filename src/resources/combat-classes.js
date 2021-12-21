@@ -174,8 +174,8 @@ const druid = {
       "name": "Plague",
       "cost": "40 mana",
       "scaling": "Wisdom",
-      "restrictions": "Single target",
-      "description": "Deals 40 damage and debuffs all attributes by 3, while lightly healing over time.",
+      "restrictions": "1-2 targets",
+      "description": "Deals 30 damage and debuffs all attributes by 3, while lightly damaging over time.",
       "flavorText": "While many consider druids peaceful and embodying nature at its safest and most approachable, a druid is fully capable of channeling the terrors and ravages of pestilent disease to wrack their foes bodies."
     },
     {
@@ -190,16 +190,16 @@ const druid = {
       "name": "Vigor",
       "cost": "40 mana",
       "scaling": "Wisdom",
-      "restrictions": "Single target",
-      "description": "Medium healing, applies a medium Heal Over Time effect to the target.",
+      "restrictions": "1-3 targets",
+      "description": "Medium healing, applies a weak Heal Over Time effect to the targets.",
       "flavorText": "While the healing arts of a druid are potent, they are distinctly different from those of most others. Using the body's natural processes, enhanced and sped up to rapidly regenerate injuries, rather than bringing in a divine miracle from beyond the mundane."
     },
     {
       "name": "Goodberry",
       "cost": "30 mana",
       "scaling": "Wisdom",
-      "restrictions": "Single target",
-      "description": "A medium healing skill that buffs the target with +2 Dexterity and Strength and cures the target of any Damage Over Time effects.",
+      "restrictions": "1-2 targets",
+      "description": "A light healing skill that buffs the target with +2 to all stats and cures the target of any poisons.",
       "flavorText": "The secret of harvesting and blessing these berries is a well kept secret among druidic orders, it is said a single goodberry can feed someone as if it was an entire meal. Not to mention that it is capable of healing their wounds and cleansing them of toxins. Taste great too!"
     },
     {
@@ -298,8 +298,8 @@ const assassin = {
   "stats": {
     "Mana": 100,
     "Stamina": 120,
-    "Physical Resistance": 15,
-    "Magical Resistance": 15,
+    "Physical Resistance": 20,
+    "Magical Resistance": 20,
     "Strength": 14,
     "Dexterity": 17,
     "Constitution": 12,
@@ -309,11 +309,11 @@ const assassin = {
   },
   "skills": [
     {
-      "name": "Assassinate ",
+      "name": "Assassinate",
       "cost": "50 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single Target",
-      "description": "Deals high physical damage, ignores defense and scales with both the user's dexterity and the target's constitution.",
+      "description": "Deals light physical damage, ignoring defense, and applies a death mark for 5 turns. When the death mark expires, the target takes 100 damage. Marks cannot stack.",
       "flavorText": "Knowledge of anatomy, prediction of an opponents movements and a steady hand ensure that few forces can dare to prevent or interrupt an assassin's attacks."
     },
     {
@@ -321,7 +321,7 @@ const assassin = {
       "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Deals High Physical Damage, Debuffs Intelligence, Charisma and Wisdom of target by 3 each.",
+      "description": "Deals High Physical Damage, Debuffs Intelligence, Charisma and Wisdom of target by 5 each.",
       "flavorText": "A cord of wire can kill as quickly as a knife, and even if resisted, the fog it leaves behind in the mind is an anathema to the careful mental discipline required by the mystical arts."
     },
     {
@@ -329,24 +329,40 @@ const assassin = {
       "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Deals medium physical damage to target and buffs the assassin with +3 Dexterity.",
+      "description": "Deals medium physical damage to target and buffs the assassin with +5 Dexterity.",
       "flavorText": "Fast movements are and a silent blade are both necessary to end a foe quickly and quietly, and few are faster than an assassin."
     },
     {
       "name": "Envenom ",
-      "cost": "10 stamina",
+      "cost": "20 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals medium physical damage and inflicts medium Damage Over Time poison on the opponent.",
       "flavorText": "Assassins often learn to mix their own poisons, carefully measuring their mixtures to ensure their victims do not survive and they don't poison themselves."
     },
     {
-      "name": "Shiv",
-      "cost": "15 stamina",
+      "name": "Bandage",
+      "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Deals Medium physical damage, has a high base minimum damage.",
+      "description": "Medium heal that adds Bandaged (-1 con) to the target.",
+      "flavorText": " "
+    },
+    {
+      "name": "Shiv",
+      "cost": "10 stamina",
+      "scaling": "Dexterity",
+      "restrictions": "Single target",
+      "description": "Deals light physical damage, has a high base minimum damage.",
       "flavorText": "Careful blows pass through defenses and armor, harming even the toughest of targets."
+    },
+    {
+      "name": "Detonate",
+      "cost": "20 stamina",
+      "scaling": "",
+      "restrictions": "Single target",
+      "description": "Detonate triggers the death mark early for extra damage, and refunds stamina and health based on how close it was to detonating (lower = more).",
+      "flavorText": " "
     },
     {
       "name": "Slash ",
@@ -411,7 +427,7 @@ const warrior = {
     },
     {
       "name": "Cleave",
-      "cost": "25 stamina",
+      "cost": "30 stamina",
       "scaling": "Strength",
       "restrictions": "1-3 targets",
       "description": "Deals low physical damage three times.",
@@ -525,7 +541,7 @@ const rogue = {
   "skills": [
     {
       "name": "Cheap Shot ",
-      "cost": "50 stamina",
+      "cost": "60 stamina",
       "scaling": "Dexterity and Charisma",
       "restrictions": "Single Target",
       "description": "High physical damage attack scaling off of both Dexterity and Charisma which ignores 50% of armor.",
@@ -602,7 +618,7 @@ const barbarian = {
     },
     {
       "name": "Cleave",
-      "cost": "25 stamina",
+      "cost": "30 stamina",
       "scaling": "Strength",
       "restrictions": "1-3 targets",
       "description": "Deals low physical damage three times.",
@@ -651,8 +667,8 @@ const dancer = {
   "stats": {
     "Mana": 100,
     "Stamina": 100,
-    "Physical Resistance": 15,
-    "Magical Resistance": 15,
+    "Physical Resistance": 20,
+    "Magical Resistance": 20,
     "Strength": 8,
     "Dexterity": 13,
     "Constitution": 12,
@@ -680,9 +696,9 @@ const dancer = {
     {
       "name": "Wind Waltz",
       "cost": "20 stamina",
-      "scaling": "",
+      "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Buffs the target with Extend (+2 to Chr, Dex, and Con) with an additional 1 of each if Poise is currently applied. It also heals for 20 HP if Flash is applied.",
+      "description": "Buffs the target with Extend (+3 to all stats) with an additional 1 of each if Poise is currently applied. It also heals scaling off of charisma and an additional 20 HP if Flash is applied.",
       "flavorText": "A quick movement forward, a jut to the side, melodic movements hard to keep up with. In the right circumstances, it can inspire and motivate beyond all else."
     },
     {
@@ -759,7 +775,7 @@ const battlemage = {
       "cost": "25 stamina, 50 mana",
       "scaling": "Strength and Intelligence",
       "restrictions": "Single target",
-      "description": "Deals high damage. The Strength portion always has heavy scaling, but if Ultimatum is currently affecting you, the Intelligence portion also scales heavily. Heals based off what level of Ultimatum is used. Consumes Ultimatum.",
+      "description": "Deals high damage. The Strength portion always has heavy scaling, but if Ultimatum is currently affecting you, the Intelligence portion also scales heavily and you gain +7 to strength and wisdom. Heals based off what level of Ultimatum is used. Consumes Ultimatum.",
       "flavorText": "Mages have been known to overwhelm themselves with a nova. Only by training your body and mind both can one handle it."
     },
     {
@@ -833,7 +849,7 @@ const hunter = {
     },
     {
       "name": "Corrosive Shot",
-      "cost": "30 stamina",
+      "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals medium physical damage that heavily reduces enemies defenses",
@@ -897,7 +913,7 @@ const daggerspell = {
       "cost": "40 stamina, 90 mana",
       "scaling": "Dexterity and Intelligence",
       "restrictions": "Single target",
-      "description": "Can only be used when Imbue Blade has already been used. When used, choose one Imbue to release. If Fire is released, massive damage is inflicted on the target along with a minor con debuff (-2 Con). If Acid is released, medium damage is done with a heavy debuff to enemy defenses (-15 to each defense). Finally, if ice is released, only small damage is done but a heavy debuff is inflicted to every stat (-5 to every stat).",
+      "description": "Can only be used when Imbue Blade has already been used. When used, choose one Imbue to release. If Fire is released, massive damage is inflicted on the target along with a minor con debuff (-2 Con). If Acid is released, medium damage is done with a heavy debuff to enemy defenses (-15 to each defense). Finally, if ice is released, only small damage is done but a heavy debuff is inflicted to every stat (-7 to every stat).",
       "flavorText": "Releasing pent up magical energy causes an overwhelming amount of energy to flow."
     },
     {
@@ -990,7 +1006,7 @@ const paladin = {
       "cost": "25 stamina, 20 mana",
       "scaling": "Strength",
       "restrictions": "Single Target",
-      "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength and wisdom by 2. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
+      "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength and wisdom by 1. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
       "flavorText": "Paladins can combine their might and their holy power together in order to power through any struggle."
     },
     {
@@ -1026,14 +1042,6 @@ const paladin = {
       "flavorText": " "
     },
     {
-      "name": "Holy Shock",
-      "cost": "40 mana",
-      "scaling": "Wisdom",
-      "restrictions": "Single target",
-      "description": "Deals medium magical damage.",
-      "flavorText": "A quick flash of light is the only warning foes get before the paladin's holy magic smites them."
-    },
-    {
       "name": "Vital Shout",
       "cost": "25 stamina",
       "scaling": "",
@@ -1056,14 +1064,6 @@ const paladin = {
       "restrictions": "Single Target",
       "description": "Heals an ally for 150 flat. The user takes damage proportional to how much they healed, reduced by armor and strength.",
       "flavorText": " "
-    },
-    {
-      "name": "Cure Wounds",
-      "cost": "20 mana",
-      "scaling": "Wisdom",
-      "restrictions": "Single Target",
-      "description": "Heals a small amount to the target.",
-      "flavorText": "The most sought after service of the devout is healing, wise clerics remember not to allow the power they have been given to be abused on the unworthy. A gift can be taken away."
     },
     {
       "name": "Defend",
@@ -1104,7 +1104,7 @@ const hemomancer = {
   "skills": [
     {
       "name": "Red Path",
-      "cost": "",
+      "cost": "10 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
       "description": "Uses all stacks of Offering to heal for 20 per stack. Additionally, deal twenty base damage per stack that increases it's damage based off of Intelligence.",
@@ -1136,7 +1136,7 @@ const hemomancer = {
     },
     {
       "name": "Infusion",
-      "cost": "No cost",
+      "cost": "10 mana",
       "scaling": "Intelligence",
       "restrictions": "Self",
       "description": "Uses all stacks of Offering to heal for 30 per stack.",
@@ -1192,7 +1192,7 @@ const necromancer = {
       "cost": "50 mana",
       "scaling": "Intelligence",
       "restrictions": "1-2 Targets",
-      "description": "Sends out a wave of dark magic that can target two people that damages the target with medium damage. If enhanced by Ravager, a medium bleed is added to each target. If enhanced by Zombie, debuff the enemies intelligence and wisdom by 3. If enhanced by Ghoul, heal a flat medium amount as well as the heal on hit.",
+      "description": "Sends out a wave of dark magic that can target two people that damages the target with medium damage. If enhanced by Ravager, a medium bleed is added to each target. If enhanced by Zombie, debuff the enemies defense by -10. If enhanced by Ghoul, heal a flat medium amount as well as the heal on hit.",
       "flavorText": "A cry out can rupture ears when boosted by dark power."
     },
     {
@@ -1216,7 +1216,7 @@ const necromancer = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Self",
-      "description": "Summons a minion and minorly heals the user. Choice of Ravager (+6 Intelligence, -10 of each defense and bleed on each attack, but minus defense), Zombie (-3 Int, +2 Con, +15 of each defense), and Ghoul (changes attacks to target physical defense and heals off each hit).",
+      "description": "Summons a minion and minorly heals the user. Choice of Ravager (+6 Intelligence, -5 of each defense and bleed on each attack), Zombie (-3 Int, +2 Con, +15 of each defense), and Ghoul (changes attacks to target physical defense and heals off each hit).",
       "flavorText": "Creatures from beyond the grave rise one last time for a final act of revenge."
     },
     {
