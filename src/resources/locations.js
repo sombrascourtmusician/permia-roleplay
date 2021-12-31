@@ -98,7 +98,7 @@ export const gatheringNodes = [
     ]
   }, 
   {
-    title: "Jungle",
+    title: "Jungle of the Lost",
     description: "These are all located directly to the left of the bridge that you arrive on. Simply take a left when you arrive and walk on over",
     nodes: [
       {
@@ -128,8 +128,8 @@ export const gatheringNodes = [
   },
 ];
 
-const jungle = { 
-  'title': 'Jungle', 
+const city = { 
+  'title': 'Royal City', 
   subLocations: [
     { 
       'title': 'Sublocation 1', 
@@ -154,26 +154,89 @@ const jungle = {
   ] 
 };
 
-const bank = { 
-  'title': 'City - Bank', 
+const jungle = { 
+  'title': 'Jungle of the Lost', 
   subLocations: [
     { 
-      'title': 'BONK!', 
+      'title': 'Sublocation 1', 
       'content': 'Blah Blah Blah', 
-      'image': '/Bank.webp' 
-    },
+      'image': '/permia-carousel1.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 2', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel2.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 3', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel3.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 4', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel4.webp' 
+    }, 
+  ] 
+};
+
+const harbor = { 
+  'title': 'Lantuga Harbor', 
+  subLocations: [
+    { 
+      'title': 'Sublocation 1', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel1.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 2', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel2.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 3', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel3.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 4', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel4.webp' 
+    }, 
+  ] 
+};
+
+const mountains = { 
+  'title': 'Silver Mountains', 
+  subLocations: [
+    { 
+      'title': 'Sublocation 1', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel1.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 2', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel2.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 3', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel3.webp' 
+    }, 
+    { 
+      'title': 'Sublocation 4', 
+      'content': 'Blah Blah Blah', 
+      'image': '/permia-carousel4.webp' 
+    }, 
   ] 
 };
 
 const locations = {
+  'royal-city': city,
   'jungle': jungle,
-  'city-palace': { 'title': 'City - Palace', subLocations: [] },
-  'city-school': { 'title': 'City - School', subLocations: [] },
-  'city-dorm': { 'title': 'City - Dorm', subLocations: [] },
-  'city-bank': bank,
-  'city-sewer': { 'title': 'City - Sewer', subLocations: [] },
-  'desert': { 'title': 'Desert', subLocations: [] },
-  'mountains': { 'title': 'Mountains', subLocations: [] },
+  'harbor': harbor,
+  'mountains': mountains,
 }
 
 export default locations;
