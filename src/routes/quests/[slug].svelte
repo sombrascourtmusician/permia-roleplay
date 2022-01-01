@@ -36,6 +36,7 @@
         <div class="col-sm-6">
           <h2>{step.title}</h2>
           <p>{step.content}</p>
+          <p class="fst-italic">"{step.dialogue}"</p>
         </div>
         <div class="col-sm-6 {i % 2 === 0 ? 'order-first' : ''}">
           <img src={step.image} width="100%" alt={step.title} />

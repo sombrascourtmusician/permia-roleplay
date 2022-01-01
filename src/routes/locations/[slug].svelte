@@ -58,7 +58,9 @@
       <div class="row">
         <div class="col-sm-6">
           <h2>{subLocation.title}</h2>
-          <p>{subLocation.content}</p>
+          {#each subLocation.content as content}
+            <p>{content}</p>
+          {/each}
         </div>
         <div class="col-sm-6 {i % 2 === 0 ? 'order-first' : ''}">
           <img src={subLocation.image} width="100%" alt={subLocation.title} />
