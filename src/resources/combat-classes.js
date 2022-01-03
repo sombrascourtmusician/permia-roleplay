@@ -37,12 +37,12 @@ const cleric = {
       "cost": "60 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "High Magical Damage, Damages intelligence by 3 points.",
+      "description": "High Magical Damage, Damages intelligence by 3 points. Heals the attacker for 15.",
       "flavorText": "It is said that which angers the divine most are those who refuse justice and who seek power over other men, holy utterance lends credence to that story as its destructive force holds special enmity for arcanists."
     },
     {
       "name": "Radiance",
-      "cost": "40 mana",
+      "cost": "20 mana",
       "scaling": "",
       "restrictions": "1-3 targets",
       "description": "Gives 5 defense and gives +2 to all stats except con.",
@@ -88,9 +88,9 @@ const bard = {
     {
       "name": "Bladesong",
       "cost": "100 mana, 50 stamina",
-      "scaling": "Charisma and Dexterity",
+      "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Deals hybrid damage scaling with both Dexterity and Charisma",
+      "description": "Deals hybrid damage",
       "flavorText": "A bard's skills weaving magic into the mundane are perfected in this technique, a hybrid of magic, martial might, dance and song infused into a deadly blow."
     },
     {
@@ -112,7 +112,7 @@ const bard = {
     {
       "name": "Lethal Tempo",
       "cost": "25 stamina",
-      "scaling": "Dexterity",
+      "scaling": "Charisma",
       "restrictions": "Single target",
       "description": "Dealing medium physical damage and buffing the bard's Charisma by 3.",
       "flavorText": "Music and the art of the duel have a great deal in common, they both require proper pacing, timing and skill. The flow of combat, much like the flow of music determines whether one blocks and strikes and when and how fast, whether prestissimo or larghissimo, keeping a tempo is a technique a bard must know."
@@ -134,11 +134,11 @@ const bard = {
       "flavorText": "A quick step forward and a kick to follow."
     },
     {
-      "name": "Swift Blade",
-      "cost": "No cost",
+      "name": "Fiery Heart",
+      "cost": "50 stamina",
       "scaling": "Dexterity",
-      "restrictions": "Single target",
-      "description": "Weak physical based attack.",
+      "restrictions": "1-3 targets",
+      "description": "Restores 20 stamina and 30 mana per target. If all three charges are used on one target, 40 and 60 total are restored instead with a small heal added. Fiery Heart is added to the target, which adds five damage onto their attacks.",
       "flavorText": "The sound of hoof beats cross the glade, good folk, lock up your son and daughter! Beware the deadly flashing blade, unless you want to end up shorter!"
     },
   ]
@@ -241,10 +241,10 @@ const elementalist = {
     },
     {
       "name": "Overload ",
-      "cost": "60 or 120 mana",
+      "cost": "50 or 100 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Deals high magical damage, may be overcasted for increased damage. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target.",
+      "description": "Deals high magical damage, may be overcasted for increased damage. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target. If cast on a rock strike'd target, consumes the debuff and ???",
       "flavorText": "An elementalist does not so much tame the forces they toy with as ride the highs and lows and little embodies this as much as the absolute devastating high of this spell, pulling the elemental attunement of their target and enhancing it to a devastating level. Some, perhaps foolish Elementalists, are willing to even push this spell past its limits."
     },
     {
@@ -273,7 +273,7 @@ const elementalist = {
     },
     {
       "name": "Dark Arts",
-      "cost": "40 or 80 mana",
+      "cost": "30 or 60 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Deals medium damage with a weak heal applied to caster. If overcasted, deals high damage with a medium heal applied to the caster.",
@@ -285,6 +285,14 @@ const elementalist = {
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Deals Low magical damage to a target.",
+      "flavorText": "Manipulating raw magical force as a blunt instrument of destruction is not unique to the Elementalist, but they still utilize the simpler magical arts, charms and cantrips are fundamental to their art."
+    },
+    {
+      "name": "Rock Thrust",
+      "cost": "20 mana",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Deals Low magical damage to a target and applies Rock Strike. On a regular cast, this is a -5 debuff to defenses, on overcast it's -10.",
       "flavorText": "Manipulating raw magical force as a blunt instrument of destruction is not unique to the Elementalist, but they still utilize the simpler magical arts, charms and cantrips are fundamental to their art."
     },
   ]
@@ -309,8 +317,8 @@ const assassin = {
   },
   "skills": [
     {
-      "name": "Assassinate",
-      "cost": "50 stamina",
+      "name": "Death Mark",
+      "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single Target",
       "description": "Deals light physical damage, ignoring defense, and applies a death mark for 5 turns. When the death mark expires, the target takes 100 damage. Marks cannot stack.",
@@ -342,7 +350,7 @@ const assassin = {
     },
     {
       "name": "Bandage",
-      "cost": "30 stamina",
+      "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Medium heal that adds Bandaged (-1 con) to the target.",
@@ -357,8 +365,8 @@ const assassin = {
       "flavorText": "Careful blows pass through defenses and armor, harming even the toughest of targets."
     },
     {
-      "name": "Detonate",
-      "cost": "20 stamina",
+      "name": "Assassinate",
+      "cost": "30 stamina",
       "scaling": "",
       "restrictions": "Single target",
       "description": "Detonate triggers the death mark early for extra damage, and refunds stamina and health based on how close it was to detonating (lower = more).",
@@ -400,22 +408,6 @@ const warrior = {
       "restrictions": "Single Target",
       "description": "Deals heavy physical damage. Applies a medium and a weak Damage over Time effect to target.",
       "flavorText": "The slashing, curved swords that the warrior traditions derive from are notorious at their long last disemboweling wounds. Even if one survives an initial blow, the loss of blood is sure to spell their foes doom."
-    },
-    {
-      "name": "Offensive Stance",
-      "cost": "No cost",
-      "scaling": "",
-      "restrictions": "Self",
-      "description": "Removes Defensive Stance. Heals 15 HP, gains +6 Strength, applies -10 to magical and physical defense.",
-      "flavorText": "The dance of battle can swiftly shift to one in which all caution must be thrown off, speed and agility and raw strength unite in deadly, furious blows. The battle-frenzy is even enough to shrug off minor wounds."
-    },
-    {
-      "name": "Defensive Stance",
-      "cost": "No cost",
-      "scaling": "",
-      "restrictions": "Self",
-      "description": "Removes Offensive Stance, restores 10 stamina, gain 10 physical and magical defenses, -4 strength.",
-      "flavorText": "When surrounded at all sides, a warrior must learn to parry, dodge, block and use their armor to its fullest effect, turning strikes into glancing blows and glancing blows into ineffective ones. The focus on defensive, slower combat is even somewhat regenerative and calming to the nerfs, allowing a warrior to recover their fighting potential in part."
     },
     {
       "name": "Execute",
@@ -541,7 +533,7 @@ const rogue = {
   "skills": [
     {
       "name": "Cheap Shot ",
-      "cost": "60 stamina",
+      "cost": "40 stamina",
       "scaling": "Dexterity and Charisma",
       "restrictions": "Single Target",
       "description": "High physical damage attack scaling off of both Dexterity and Charisma which ignores 50% of armor.",
@@ -552,7 +544,7 @@ const rogue = {
       "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "High physical damage attack that debuffs strength, dexterity, and constitution by 4.",
+      "description": "High physical damage attack that debuffs all stats by 4.",
       "flavorText": "BONK!"
     },
     {
@@ -565,10 +557,10 @@ const rogue = {
     },
     {
       "name": "Smoke Bomb ",
-      "cost": "10 stamina",
+      "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Low physical damage attack that increases your evasion (+25 to evasion).",
+      "description": "Low physical damage attack that increases the evasion of you or your ally (100% immunity for 2 hits).",
       "flavorText": "Packed powder with a quick fuse fills the area with smoke - great for a quick escape, or to strike from the shadows."
     },
     {
@@ -576,7 +568,7 @@ const rogue = {
       "cost": "10 stamina",
       "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Low physical damage attack that debuffs (-1 to all stats) the target.",
+      "description": "Low physical damage attack that debuffs (-5 defense and -1 to all stats) the target.",
       "flavorText": "A blown kiss or a wink can go further than anyone really wants to admit."
     },
     {
@@ -618,7 +610,7 @@ const barbarian = {
     },
     {
       "name": "Cleave",
-      "cost": "30 stamina",
+      "cost": "20 stamina",
       "scaling": "Strength",
       "restrictions": "1-3 targets",
       "description": "Deals low physical damage three times.",
@@ -634,10 +626,10 @@ const barbarian = {
     },
     {
       "name": "Shatter",
-      "cost": "20 stamina",
+      "cost": "10 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Medium physical damage attack that lowers the targets defenses (-10 physical defense).",
+      "description": "Weak physical damage attack that lowers the targets defenses (-10 defenses).",
       "flavorText": "Intentionally tagetting enemies armor can reduce it to scraps of iron and nothing more. Beat it too much and it's useless."
     },
     {
@@ -655,6 +647,22 @@ const barbarian = {
       "restrictions": "Single target",
       "description": "Low physical damage attack.",
       "flavorText": "In the end, warfare can be as simple as it is complicated and a rapid strike will be the end to many a fight. No matter the weapon used or the skill of a warrior."
+    },
+    {
+      "name": "Reckless Blow",
+      "cost": "Health",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Deals medium damage and costs 30 health.",
+      "flavorText": " "
+    },
+    {
+      "name": "Push Through",
+      "cost": "Health",
+      "scaling": "Strength",
+      "restrictions": "Self",
+      "description": "Gain 20 stamina at the cost of 40 health, restoring an extra 20 stamina per turn for 2 turns.",
+      "flavorText": " "
     },
   ]
 }
@@ -687,10 +695,10 @@ const dancer = {
     },
     {
       "name": "Light Cure",
-      "cost": "30 stamana",
+      "cost": "20 stamana",
       "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Heals an average amount of health to a target.",
+      "description": "Heals an average amount of health to a target. Applies Poise to self. If under the effects of Flash, heal more.",
       "flavorText": "The bardic tradition owes itself to ancient priestly castes and temple servants, and little illustrates this better than the rudimentary magical cures they are capable of. While no match for a cleric's abilities, a bard knows special rites, chants and songs that mend wounds."
     },
     {
@@ -698,7 +706,7 @@ const dancer = {
       "cost": "20 stamina",
       "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Buffs the target with Extend (+3 to all stats) with an additional 1 of each if Poise is currently applied. It also heals scaling off of charisma and an additional 20 HP if Flash is applied.",
+      "description": "Buffs the target with Extend (+3 to all stats) with an additional 1 of each if Poise is currently applied. It also heals scaling off of charisma and an additional 20 HP if Flash is applied. Applies Shuffle.",
       "flavorText": "A quick movement forward, a jut to the side, melodic movements hard to keep up with. In the right circumstances, it can inspire and motivate beyond all else."
     },
     {
@@ -706,7 +714,7 @@ const dancer = {
       "cost": "10 stamina",
       "scaling": "Charisma",
       "restrictions": "Single Target",
-      "description": "Deals physical damage attack to the target. With Poise, a small debuff is added (-1 Con, Dex, Chr). With Flash, a quarter of the damage is healed. With Shuffle, fifteen extra damage is added.",
+      "description": "Deals physical damage attack to the target. With Poise, a small debuff is added (-1 Con, Dex, Chr). With Flash, half of the damage is healed. With Shuffle, fifteen extra damage is added. Applies Flash.",
       "flavorText": "Lift your leg to the sky. Or to someone's jaw. Whichever is closer, really."
     },
     {
@@ -918,7 +926,7 @@ const daggerspell = {
     },
     {
       "name": "Disengage",
-      "cost": "30 stamina",
+      "cost": "20 stamina, 40 mana",
       "scaling": "",
       "restrictions": "Single target",
       "description": "Kicks off the target to move back in an attempt to dodge incoming damage. Deals medium damage and increases user dodge change by 25.",
@@ -926,7 +934,7 @@ const daggerspell = {
     },
     {
       "name": "Cauterize",
-      "cost": "60 mana",
+      "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Cauterize the target's wounds. Heals a medium amount but also adds a burn (-1 Con) to the target.",
@@ -953,12 +961,12 @@ const daggerspell = {
       "cost": "10 mana",
       "scaling": "",
       "restrictions": "Single target",
-      "description": "Enchants your blade with three elements. Fire makes every attack debuff constitution minorly (-1 Con) stacking up to five times. Ice adds a physical debuff to the target (-1 to STR and DEX) stacking up to three times. Acid debuffs the enemies defenses (-3 to each defense) stacking up to five times",
+      "description": "Deals minor damage and enchants your blade with three elements. Fire adds a DOT stacking up to three times. Ice adds a physical debuff to the target (-1 to all stats) stacking up to three times. Acid debuffs the enemies defenses (-5 to each defense) stacking up to three times. Only one stack of each debuff can be added to an enemy with this attack",
       "flavorText": "Multiple elements can cover a daggerspell's blade, each with their own effects."
     },
     {
       "name": "Bandage",
-      "cost": "30 stamina",
+      "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Medium heal that adds Bandaged (-1 con) to the target.",

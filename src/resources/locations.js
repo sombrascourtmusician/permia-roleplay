@@ -132,23 +132,54 @@ const city = {
   'title': 'Royal City', 
   subLocations: [
     { 
-      'title': 'Sublocation 1', 
-      'content': [], 
+      'title': 'The City Itself', 
+      'content': [
+        "A beacon of prosperity in the harsh desert of Al-Sarkaria, Sarkada exists in opulence itself. Water features in the middle of the desert are the pinnacle of excess, made all the more eye-catching with the bright, colorful buildings. Home to the Academy of Wonders, Sarkada has seen itself become a powerhouse in magic and technology both. Come for the amenities, stay because you’ve been arrested."
+      ], 
       'image': '/permia-carousel1.webp' 
     }, 
     { 
-      'title': 'Sublocation 2', 
-      'content': [], 
+      'title': 'Bank', 
+      'content': [
+        "After one visits the Bank of Sarkada, one may see the rest of the city as decrepit and poor. The height of wealth, the bank deals in thousands upon thousands of gold every day, depositing and withdrawing, trading and facilitating the city’s many taxes. While the building itself may be small, the riches inside could not be more vast, all packaged together with a friendly clerk and kind people - that may be the biggest surprise of it all.",
+        "((OOC Note: Inside the bank you can store your gold or buy titles!))"
+      ], 
       'image': '/permia-carousel2.webp' 
     }, 
     { 
-      'title': 'Sublocation 3', 
-      'content': [], 
-      'image': '/permia-carousel3.webp' 
+      'title': 'Market', 
+      'content': [
+        "Never a dull moment in the market of Sarkada. You’ll have to travel hundreds and hundreds of miles to find anywhere as busy, and even further to find anywhere near the same breadth of goods. The smell of hookah and fresh baked goods fills the air, as does the sound of chatter and bartering on every side. If you’re looking for a good time, the market of Sarkada can provide that and leave you with a souvenir to take home with you."
+      ], 
+      'image': 'https://cdn.discordapp.com/attachments/927358970715336785/927416063757516880/City_Market.jpg' 
     }, 
     { 
-      'title': 'Sublocation 4', 
-      'content': [], 
+      'title': 'Palace', 
+      'content': [
+        "The seat of power itself, the palace of Sarkada looms above the rest of the city in it’s splendor and grandeur both. The throne room boasts thousands of gems on it’s own, with a throne that seems to radiate power from within. The Parthians rule from here, and every word they speak becomes the iron will of Sarkadian law. The guards share the palace as well, with a barracks and their prison on the other side from the noble’s quarters and throne room. Perhaps if you’re lucky, you’ll catch a glimpse of the King himself!"
+      ], 
+      'image': '/permia-carousel4.webp' 
+    }, 
+    { 
+      'title': 'School', 
+      'content': [
+        "The Academy of Wonders plays host to all the great minds of Sarkada. Filled with amazing inventions and cutting edge magic, the Academy is the go-to destination for studious scholars of all types. With inventions such as refrigeration, modern golems, and more, there’s always something new to discovery at the Academy."
+      ], 
+      'image': '/permia-carousel4.webp' 
+    }, 
+    { 
+      'title': 'Dorms', 
+      'content': [
+        "Even the brightest minds have to sleep sometimes, and the Dorms are perfect for that. With ample area to play and relax, as well as cook, the dorms are an all inclusive place to rest of any student climbing the ranks of the Academy. Featuring games and cooled air, the dorms are welcoming you in today!"
+      ], 
+      'image': '/permia-carousel4.webp' 
+    }, 
+    { 
+      'title': 'Rentals', 
+      'content': [
+        "The residential sector of Sarkada is home to many of its citizens. While not all of them can afford such lavish and well positioned houses, the ones that can live life in the city and live it well. Each of them is home to a family or individual all on it’s own, with their own security systems and amenities.",
+        "((OOC Note: These are rentals! Please make sure you have permission to enter or else you’ll be breaking a rule!))"
+      ], 
       'image': '/permia-carousel4.webp' 
     }, 
   ] 
@@ -268,21 +299,21 @@ const mountains = {
       'content': [
         'Near the entrance of the Old Boughs Grove sits a ring of living thrones. This circle is where the Elder\'s of the Old Boughs meet to hold moots, discuss the problems of the land, and host delegates  of other factions. Though this is the meeting place for the Elder Council of the Old Boughs, all are welcome to seek an audience.', 
       ],
-      'image': '/permia-carousel4.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/926625995098841098/Druids3.png' 
     }, 
     { 
       'title': 'Infirmary', 
       'content': [
         'The Old Boughs efforts to heal the land extends out to its people as well. A hollow underneath an old tree serves as the clinic for this group of natural healers. Focused on mending bodies and minds of those hurt in this war.', 
       ],
-      'image': '/permia-carousel4.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/926621516450373752/Infirmary.png' 
     }, 
     { 
       'title': 'Firefly Cave', 
       'content': [
         'The firefly cave is a place of peace. A place perfect for silent meditation, contemplation and relaxation. The natural bioluminescence of its residents only lend to its beauty. The cave is also home to one kind old forest troll, entrusted with inducting new members to the role of Sapling within the Old Boughs. Sit with him awhile and speak of your desires to become at one with nature to be welcome into the grove as a Sapling of the Old Boughs.', 
       ],
-      'image': '/permia-carousel4.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/926625995560222720/Druids4.png' 
     }, 
   ] 
 };
@@ -295,14 +326,14 @@ const sewers = {
       'content': [
         'In the city of Sarkada, alcohol has been declared illegal to be possessed or to be used by the Royal Court of Sarkada. Now, how will the people in Sarkada be able to drink? The Crow’s Nest is a speakeasy, conceived by Ellie Cox, that’s secluded within the sewers - selling both drinks, food, and allowing you to rent accommodations.', 
       ],
-      'image': '/permia-carousel1.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/927368178517049435/Sewers_3.jpg' 
     }, 
     { 
       'title': 'Main', 
       'content': [
         'The Main Hall of the Court of Flies is where our black market is located. You can buy anything here ranging from food, supplies, weapons, armor, drugs, and of course alcohol. People sell their items here to avoid paying taxes to Sarkada or to offload their contraband. Anyone and everyone can sell their merchandise here.', 
       ],
-      'image': '/permia-carousel2.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/927368178064060466/Sewers_1.jpg' 
     }, 
     { 
       'title': 'Caves', 
@@ -310,14 +341,14 @@ const sewers = {
         'A good place to rest up and bathe would be in the back of the Main Hall to where the springs are at. Once you’re done, you can use the clean towels to dry yourself off.', 
         'Further within the cave are for Court of Flies members only. There is a storage area to offload some of your gear you wish to keep or let other members of the Court of Flies use along with a meeting table for the members to gather and discuss.',
       ],
-      'image': '/permia-carousel3.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/927368178751905852/Sewers_4.jpg' 
     }, 
     { 
       'title': 'Treasury', 
       'content': [
         'Going deeper in the caves is our treasury! Gold, jewels, a throne we liberated from the nobles of Sarkada – this is where we keep all of our good stuff. There is a safe with gold in it to give you that one free EXP point, and a chest to access the faction’s bank to borrow some items, gold, or to make a contribution to the Court.', 
       ], 
-      'image': '/permia-carousel4.webp' 
+      'image': 'https://cdn.discordapp.com/attachments/869144269598908426/927368179007770634/Sewers_5.jpg' 
     }, 
     { 
       'title': 'Sewers', 
