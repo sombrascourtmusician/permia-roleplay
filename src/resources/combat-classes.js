@@ -45,7 +45,7 @@ const cleric = {
       "cost": "20 mana",
       "scaling": "",
       "restrictions": "1-3 targets",
-      "description": "Gives 5 defense and gives +2 to all stats except con.",
+      "description": "Gives 5 defense and gives +2 to all stats except con. If used on one person, they are also healed.",
       "flavorText": "Simply being in the presence of a cleric can invigorate their allies."
     },
     {
@@ -62,8 +62,32 @@ const cleric = {
       "scaling": "Wisdom",
       "restrictions": "Single Target",
       "description": "Low Magical Damage attack.",
+      "flavorText": ""
+    },
+    {
+      "name": "Lesser Restoration",
+      "cost": "40 mana",
+      "scaling": "Wisdom",
+      "restrictions": "Single Target",
+      "description": "Heals a medium amount and removes up to 3 debuffs. Also adds 10 mana and stamina to the target.",
       "flavorText": "While forgivable in times of dire need, it is generally frowned upon to utilize ones liturgical tools and holy implements as blunt instruments."
-    }
+    },
+    {
+      "name": "Pray",
+      "cost": "50 mana",
+      "scaling": "Wisdom",
+      "restrictions": "Single Target",
+      "description": "Restores 20 stamina and 30 mana every turn for the target for 2 turns.",
+      "flavorText": ""
+    },
+    {
+      "name": "Light Cure Wounds",
+      "cost": "20 mana",
+      "scaling": "Wisdom",
+      "restrictions": "Single Target",
+      "description": "Heals a medium amount to the target.",
+      "flavorText": "The most sought after service of the devout is healing, wise clerics remember not to allow the power they have been given to be abused on the unworthy. A gift can be taken away."
+    },
   ]
 }
 
@@ -367,7 +391,7 @@ const assassin = {
     {
       "name": "Assassinate",
       "cost": "30 stamina",
-      "scaling": "",
+      "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Detonate triggers the death mark early for extra damage, and refunds stamina and health based on how close it was to detonating (lower = more).",
       "flavorText": " "
@@ -440,6 +464,46 @@ const warrior = {
       "restrictions": "Single target",
       "description": "Low physical damage attack.",
       "flavorText": "In the end, warfare can be as simple as it is complicated and a rapid strike will be the end to many a fight. No matter the weapon used or the skill of a warrior."
+    },
+    {
+      "name": "Exsanguinate",
+      "cost": "10 stamina",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Deals damage based on any remaining dot turns and increases their duration by 3.",
+      "flavorText": "A warrior excels are drawing out all the more suffering from their target."
+    },
+    {
+      "name": "Drop Guard",
+      "cost": "No cost",
+      "scaling": "Strength",
+      "restrictions": "Self",
+      "description": "Drops both stances. Regen 20 stamina a turn for 2 turns and 10 health a turn for 3 turns.",
+      "flavorText": "Sometimes, stepping back and starting over is the best way forward."
+    },
+    {
+      "name": "Thrust",
+      "cost": "10 stamina",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Deals medium damage and applies offensive stance (-10 defense, +6 strength).",
+      "flavorText": "Thrust forward, exposing yourself but being swift as can be."
+    },
+    {
+      "name": "Riposte",
+      "cost": "20 stamina",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Deals weak physical damage that upgrades to medium damage that also bleeds the target and restores stamina, if you were hit the turn before.",
+      "flavorText": "Take the hit and return it two fold."
+    },
+    {
+      "name": "Parry",
+      "cost": "10 stamina",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Deals weak physical damage that gives the user Defensive Stance (+10 defense, -4 strength, 10 hp heal for 3 turns).",
+      "flavorText": "Prepare yourself to knock their blades aside."
     },
   ]
 }
@@ -703,7 +767,7 @@ const dancer = {
     },
     {
       "name": "Wind Waltz",
-      "cost": "20 stamina",
+      "cost": "10 stamina",
       "scaling": "Charisma",
       "restrictions": "Single target",
       "description": "Buffs the target with Extend (+3 to all stats) with an additional 1 of each if Poise is currently applied. It also heals scaling off of charisma and an additional 20 HP if Flash is applied. Applies Shuffle.",
@@ -734,6 +798,14 @@ const dancer = {
       "flavorText": "A quick scoot to the side ensures better positioning for freeflowing movements."
     },
     {
+      "name": "Encourage",
+      "cost": "20 stamina",
+      "scaling": "",
+      "restrictions": "Self",
+      "description": "Encourage is a small heal that restores stamina/mana to the target, more with shuffle and a higher heal with flash. Cannot be self targeted. If under the effects of Flash/Shuffle, heal more. Poise gives more stamina/mana.",
+      "flavorText": "A dancer, like their bard compatriots, can lift anyone's spirits, even in the darkest of times."
+    },
+    {
       "name": "Flash",
       "cost": "10 stamina",
       "scaling": "",
@@ -748,6 +820,14 @@ const dancer = {
       "restrictions": "Single target",
       "description": "Weak physical damage attack.",
       "flavorText": "A quick step forward and a kick to follow."
+    },
+    {
+      "name": "Pirouette",
+      "cost": "10 stamina",
+      "scaling": "Charisma",
+      "restrictions": "1-3 targets",
+      "description": "Deals weak physical damage. With poise, 10 armor piercing damage is added to each target. With flash, a third of the damage is healed. With shuffle, 10 armor piercing damage is added.",
+      "flavorText": "A beautiful display of everything a dancer has learned, with percent balance."
     },
   ]
 }
