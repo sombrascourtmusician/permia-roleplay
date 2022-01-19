@@ -58,6 +58,12 @@ const blackHorde = {
   descriptions: [
     "When the afflicted crisis began, some hardened their hearts when they were cast out, throwing off the curse of exile. These Corrupted saw their new forms and powers not as curses and ailments, but as something worth embracing. Those who cast them out would be seen as enemies, as traitors, great betrayals that must be avenged.  No matter the unity in their goal, they lacked a leader, until the fateful day when a traveler from a far away land brought them under a single black banner. Now united, the Horde strike out against those they see as traitors and work to control the same mining that made them in the first place. They strike out from dark and wet corners of the jungle, raid supplies, ambush caravans, taking every scrap they can. To most, they are a pest, a menace, but to them, they’re the claws of freedom, radical defenders of the natural world and their own people.",
   ], 
+  xp: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
   perceptions: [
     {
       title: "Academy of Wonders",
