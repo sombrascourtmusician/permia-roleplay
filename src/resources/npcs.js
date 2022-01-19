@@ -8,7 +8,7 @@ const general = [
   {
     title: "Food and Drink Seller",
     location: "",
-    image: "",
+    image: "/npcs/general-food-seller.jpg",
     description: "Thirsty? Hungry? Looking for small, short term buffs? This one can sort you out in the Sarkadian city market!"
   },
   {
@@ -26,13 +26,13 @@ const general = [
   {
     title: "Docks NPC",
     location: "",
-    image: "",
+    image: "/npcs/docks-worker.webp",
     description: "The Docks NPC is here to help you get started in the world and give you your first quest. You can find them by going to the docks, or going through the “New Players start here” portal!"
   },
   {
     title: "Silver Hold NPC",
     location: "",
-    image: "",
+    image: "/npcs/general-hold.jpg",
     description: "The Silver Hold NPC lives in the mountains, right outside of the main keep. They’ll be part of the first quest and around to help you get set up inside of the Silver Hold."
   },
   {
@@ -50,7 +50,7 @@ const general = [
   {
     title: "House of Sarkada NPC (Xerses)",
     location: "",
-    image: "",
+    image: "/npcs/general-sarkada.jpg",
     description: "Wanna join the House of Sarkada? Or finish your first quest? See Aziza to get in all of it! They’ll be at the front of the palace waiting for you."
   },
   {
@@ -68,7 +68,7 @@ const general = [
   {
     title: "Enchanter/Tailor/Chef NPCs",
     location: "",
-    image: "",
+    image: "/npcs/tailor.jpg",
     description: "The two of these are both inside of the Coalition building inside of the market. The Chef is in the kitchen in the same building. Come get your classes here!"
   },
 
@@ -78,61 +78,61 @@ const classGivers = [
   {
     title: "Assassin/Poisoner/Rogue",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637150433312788/Thief_Sarkada_001.png",
+    image: "/npcs/giver-thief.webp",
     description: "Look for this skeezy man in a back alley of Sarkada. These types of folk never want to be noticed, but if you want these classes, find this one! (Requires 13 Dexterity)"
   },
   {
     title: "Warrior/Barbarian",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637151058280468/Warrior_coalition_building_001.png",
+    image: "/npcs/giver-warrior.jpg",
     description: "Find a little cat hyping you up by the coalition’s building! Impress them and you can be a warrior and barbarian! (Requires 13 Strength)"
   },
   {
     title: "Cleric/Paladin",
     location: "",
-    image: "",
+    image: "/npcs/cleric.jpg",
     description: "Find this holy man in the midst of the deserts on a pilgrimage for his faith. Sit and pray with him to speak to your god and maybe earn their favor! (Requires 13 Wisdom)"
   }, 
   {
     title: "Bard",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637151255425074/Bard_Silverhold_Bar_001.png",
+    image: "/npcs/giver-bard.png",
     description: "The Silver Hold’s Lost Lamb tavern can give you the bard class. Get up on the stage and show your best! (13 Charisma required)"
   },
   {
     title: "Elementalist/Battlemage",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637151528034304/Battlemage_old_boughs_camp_001.png",
+    image: "/npcs/giver-battlemage.png",
     description: "The Old Boughs bonfire holds many secrets of the world. If you think you’re ready, come and gaze into it and find what you can. (13 Intelligence required)"
   },
   {
     title: "Dancer",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637149351182366/Dancer_Spa_001.png",
+    image: "/npcs/giver-dancer.png",
     description: "The Bath House has many pleasures, including dancers for their bathers. The dancers here have many skills, and if you show your worth, you can join them too! (13 Charisma required)"
   },
   {
     title: "Hunter",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637149925826570/Sampler_Archer_Sarkada2_001.png",
+    image: "/npcs/giver-hunter.png",
     description: "Sarkada’s training range is fit for royalty, and that includes their archery ranges. Find a bow here and you can join their elite ranks of archers! (13 Dexterity required)"
   },
   {
     title: "Druid",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637149615456266/Druid_old_bough_Cave_001.png",
+    image: "/npcs/giver-druid.png",
     description: "Find the druid in the woods in the mountains. Search for the cave of fireflies and find a little friend waiting for you! (13 Wisdom required)"
   },
   {
     title: "Daggerspell",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637149061787679/daggerspell_jungle_001.png",
+    image: "/npcs/giver-daggerspell.png",
     description: "You can find the Daggerspell at the Black Horde NPC giver! This will be right at the front of the jungle. (13 Dexterity required)"
   },
   {
     title: "Hemomancer/Necromancer/Warlock",
     location: "",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/926637150823407687/Warlock_Pier_001.png",
+    image: "/npcs/giver-warlock.png",
     description: "Find the Hemomancer giver inside of the dock's secret shack! Underneath the starting point will lead you astray. (13 Intelligence required)"
   },
 ];
@@ -170,9 +170,9 @@ const etcGivers = [
   },
   {
     title: "Affliction Giver",
-    location: "",
+    location: "The big crystal off the circular platform at the bottom of the crystal mine in the desert",
     image: "",
-    description: "This will give you the different afflicted statuses, both corrupted and blessed! It will be the big crystal off the circular platform at the bottom of the crystal mine in the desert!"
+    description: "This will give you the different afflicted statuses, both corrupted and blessed!"
   },
 ];
 

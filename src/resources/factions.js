@@ -1,6 +1,6 @@
 const academy = {
   otherNames: "The Academy, Mages' Guild, Sorcerers' Guild, the Magi",
-  image: "/school.webp",
+  image: "/locations/city-school.jpg",
   lore: [
     "The Academy of Wonders is both an institute of learning and a research center for all aspects of magic, but with special focus on Permian Crystals and their effects.  Founded by an aspiring Magus of the name Zu'ban shortly after the crystals were first discovered, the Academy is a free realm for wizards of all, where no form of magic is forbidden. After all, there is no bad magic - only bad practitioners. By the success borne of this dubious axiom not only has the Academy brought great wealth and fortune to Sarkada as a byproduct of it's own search for power, those of the Academy also consider themselves the best chance Permia has of overcoming the current plague of corruption. This has led them to consider themselves above reproach and become insufferably justified in their actions, for the ends justify the means.",
   ],
@@ -44,26 +44,21 @@ const academy = {
   bank: {
     title: "Academy of Wonders Bank",
     location: "Sharing resources and knowledge between scholars helps progress our understanding of our world. To share your crafted items with others, go to the book shelf in the dorms and deposit or pick up something you need.",
-    image: "/NPC_thief.webp",
+    image: "/locations/faction-academy-bank.webp",
   },
-  rest: {
-    title: "Academy of Wonders Rest Point",
-    location: "Neatly tucked inside of the luxurious dorm rooms you will find the rest point for your faction. A simple table to click on.",
-    image: "/NPC_thief.webp",
+  reset: {
+    title: "Academy of Wonders Reset Point",
+    location: "Neatly tucked inside of the luxurious dorm rooms you will find the reset point for your faction. A simple table to click on.",
+    image: "/locations/faction-academy-reset.webp",
   },
 }
 
 const blackHorde = {
   otherNames: "The Horde, Furies, Monsters, Devourers",
-  descriptions: [
+  image: "",
+  lore: [
     "When the afflicted crisis began, some hardened their hearts when they were cast out, throwing off the curse of exile. These Corrupted saw their new forms and powers not as curses and ailments, but as something worth embracing. Those who cast them out would be seen as enemies, as traitors, great betrayals that must be avenged.  No matter the unity in their goal, they lacked a leader, until the fateful day when a traveler from a far away land brought them under a single black banner. Now united, the Horde strike out against those they see as traitors and work to control the same mining that made them in the first place. They strike out from dark and wet corners of the jungle, raid supplies, ambush caravans, taking every scrap they can. To most, they are a pest, a menace, but to them, they’re the claws of freedom, radical defenders of the natural world and their own people.",
   ], 
-  xp: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
-  },
-  reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
-  },
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -95,12 +90,18 @@ const blackHorde = {
       link: "silver-hold",
       body: "The Hold are not the Horde’s enemies. Though the sentiment is not likely returned. The Hold giving aid only to the well behaved and ‘safer’ afflicted is a particularly sour point."
     },
-  ]
+  ],
+  giver: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
 }
 
 const coalition = {
   otherNames: "Coalition, Traders, Adventurers",
-  descriptions: [
+  lore: [
     "The adventurist trade organization came chasing wealth and opportunity and found just that. In a realm at its boiling point, they aimed to profit both from the conflict and the rare and exotic magical creations of Permia. Moreover, it would create a market of its own, a settlement to expand its own diverse culture and to pay for the grand expedition in this foreign realm. While some hold that they're underhanded, amoral, they hold that they are at the forefront of progress, with the wind of adventure at their back. Any and all can have a future with the coalition, no matter their origin.",
   ], 
   perceptions: [
@@ -134,7 +135,13 @@ const coalition = {
       link: "silver-hold",
       body: "While the Coalition sells the Hold weaponry and service, we are somewhat wary of the idea of them winning, as their goals would dry up a good deal of the profitability of the region. Still, as long as neither side gains a notable advantage, they will remain an incredibly valuable business partner."
     },
-  ]
+  ],
+  giver: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
 }
 
 const courtOfFlies = {
@@ -187,7 +194,13 @@ const courtOfFlies = {
       link: "silver-hold",
       body: "Rebels aren’t always the greatest of allies, but their raids certainly make for great distractions."
     },
-  ]
+  ],
+  giver: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
 }
 
 const oldBoughs = {
@@ -227,7 +240,13 @@ const oldBoughs = {
       link: "silver-hold",
       body: "The Princess has the full support of the Boughs. They feel for the Corrupted and the Blessed alike, and their attempts to bring balance and peace back to the land are greatly appreciated."
     },
-  ]
+  ],
+  giver: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
 }
 
 const royalSarkadianGuard = {
@@ -267,7 +286,13 @@ const royalSarkadianGuard = {
       link: "silver-hold",
       body: "The Silver Hold are those under the Princess-In-Exile’s enthrallment. They are slaves to her will, and act as saboteurs, raiders, and enemies of the city. They are the truest enemy of the King and his Immortals."
     },
-  ]
+  ],
+  giver: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
 }
 
 const silverHold = {
@@ -306,7 +331,13 @@ const silverHold = {
       link: "houses-of-sarkada",
       body: "Our mortal enemies, foes who cannot be reasoned with. Whilst not all of their number may be evil, perhaps few in fact, they are our foes and the enemies of Aida and her rebellion. For us to win, they must fall."
     },
-  ]
+  ],
+  giver: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+  },
+  reset: {
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  },
 }
 
 const playerFactionApplicationUrl = "https://docs.google.com/forms/d/1BF4RM9rBSo1AYkbgSxzF2j6E8p6Ej9BzqxvBJZcNMzU/edit"

@@ -115,16 +115,16 @@
     </div>
   {/if}
   <hr/>
-  {#if faction.rest}
+  {#if faction.reset}
     <div class="row">
       <div class="col-sm-4">
         <div class="px-5">
-          <img src={faction.rest.image} alt={faction.rest.title} width="100%" />
+          <img src={faction.reset.image} alt={faction.reset.title} width="100%" />
         </div>
       </div>
       <div class="col-sm-8">
-        <h3 class="fs-5 pb-3">{faction.rest.title}</h3>
-        <p class="pe-5">{faction.rest.location}</p>
+        <h3 class="fs-5 pb-3">{faction.reset.title}</h3>
+        <p class="pe-5">{faction.reset.location}</p>
       </div>
     </div>
   {/if}
