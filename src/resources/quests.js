@@ -7,16 +7,19 @@ const weeklyDeliveries = [
         title: "",
         content: "Once a week (Resetting on Sunday) the Coalition of the Compass NPC will have a quest for you. The NPC resides in front of the Coalition’s building, which is the big building in the middle of the desert area. Once there, simply talk to the NPC with a quest marker above their head and select “Deliveries?”.",
         image: "/permia-carousel1.webp",
+        dialogue: "",
       },
       {
         title: "",
         content: "You will be given a package to deliver, with a choice of three places to deliver it. The city of Sarkada’s drop-box is just inside of the stable. The Silver Hold’s drop-point is directly inside the town’s walls. Lastly, the Black Horde’s box is just in front of their barracks in the jungle.",
         image: "/permia-carousel1.webp",
+        dialogue: "",
       },
       {
         title: "",
         content: "Whoever has the most deliveries on the 14th of each month will earn a buff (+2 to each stat) for the next month. If Sarkada wins, the Academy of Wonders will also earn the buff. If the Silver Hold wins, the Old Boughs will earn the buff as well.",
         image: "/permia-carousel1.webp",
+        dialogue: "",
       },
     ]
   }
