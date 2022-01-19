@@ -304,7 +304,7 @@ const oldBoughs = {
   joiner: {
     title: "Old Boughs Faction Joiner",
     location: "There is a kind old Troll trusted by the Elders of the Old Boughs, hermitting himself away in the fire fly cave.",
-    image: ""
+    image: "/npcs/faction-old-boughs.png"
   }
 }
 

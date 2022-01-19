@@ -37,7 +37,7 @@ const general = [
   },
   {
     title: "Old Boughs NPC",
-    image: "",
+    image: "/npcs/faction-old-boughs.png",
     description: "The Old Boughs NPC is a kindly druid who wants you to live well and happy. Here, you can get the druid class as well as join the Old Boughs. He’s hiding in a cave in the Old Boughs territory!"
   },
   {
@@ -106,7 +106,7 @@ const classGivers = [
   },
   {
     title: "Daggerspell",
-    image: "",
+    image: "/npcs/giver-daggerspell.png",
     description: "You can find the Daggerspell at the Black Horde NPC giver! This will be right at the front of the jungle. (13 Dexterity required)"
   },
   {
