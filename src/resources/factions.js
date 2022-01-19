@@ -39,7 +39,7 @@ const academy = {
   giver: {
     title: "Academy of Wonders XP Giver",
     location: "The glowing crystals dangling in the main entrance are not just for decoration. Click these each Sunday to gain your faction XP.",
-    image: "/NPC_thief.webp",
+    image: "",
   },
   bank: {
     title: "Academy of Wonders Bank",

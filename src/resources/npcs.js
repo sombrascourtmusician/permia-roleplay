@@ -68,7 +68,7 @@ const general = [
   {
     title: "Enchanter/Tailor/Chef NPCs",
     location: "",
-    image: "/npcs/tailor.jpg",
+    image: "/npcs/general-tailor.jpg",
     description: "The two of these are both inside of the Coalition building inside of the market. The Chef is in the kitchen in the same building. Come get your classes here!"
   },
 
