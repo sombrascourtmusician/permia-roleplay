@@ -289,7 +289,7 @@ const oldBoughs = {
   giver: {
     title: "Old Boughs XP Giver",
     location: "Standing Stones near the Bonfire, in the shape of l o l. Click these once a week to get 1 exp towards your next level. Resets every Sunday!",
-    image: "",
+    image: "/locations/faction-old-boughs-giver.jpg",
   },
   bank: {
     title: "Old Boughs Bank",
@@ -299,7 +299,7 @@ const oldBoughs = {
   reset: {
     title: "Old Boughs Reset Point",
     location: "For those that wish to lay their head down and rest, to regain the strength from a long and hard day, another glowing monolith awaits just outside of the firefly cave. Bask in its warmth and rest your weary head in the beds of flowers beneath it.",
-    image: "",
+    image: "/locations/faction-old-boughs-reset.jpg",
   },
   joiner: {
     title: "Old Boughs Faction Joiner",
