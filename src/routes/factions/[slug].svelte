@@ -42,25 +42,7 @@
   {#if faction.descriptions}
     {#each faction.descriptions as description}
       <p>
-        {@html description}
-      </p>
-    {/each}
-  {/if}
-
-  {#if faction.lore}
-    <h2>Lore</h2>
-    {#each faction.lore as lore}
-      <p>
-        {@html lore}
-      </p>
-    {/each}
-  {/if}
-
-  {#if faction.goals}
-    <h2>Goals</h2>
-    {#each faction.goals as goal}
-      <p>
-        {@html goal}
+        {description}
       </p>
     {/each}
   {/if}
@@ -68,7 +50,7 @@
   {#if faction.alignment}
     <h2>Alignment</h2>
     <p>
-      {@html faction.alignment}
+      {faction.alignment}
     </p>
   {/if}
 
@@ -125,6 +107,19 @@
       <div class="col-sm-8">
         <h3 class="fs-5 pb-3">{faction.reset.title}</h3>
         <p class="pe-5">{faction.reset.location}</p>
+      </div>
+    </div>
+  {/if}
+  {#if faction.joiner}
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="px-5">
+          <img src={faction.joiner.image} alt={faction.joiner.title} width="100%" />
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h3 class="fs-5 pb-3">{faction.joiner.title}</h3>
+        <p class="pe-5">{faction.joiner.location}</p>
       </div>
     </div>
   {/if}

@@ -1,9 +1,11 @@
 const academy = {
   otherNames: "The Academy, Mages' Guild, Sorcerers' Guild, the Magi",
-  image: "/locations/city-school.jpg",
-  lore: [
-    "The Academy of Wonders is both an institute of learning and a research center for all aspects of magic, but with special focus on Permian Crystals and their effects.  Founded by an aspiring Magus of the name Zu'ban shortly after the crystals were first discovered, the Academy is a free realm for wizards of all, where no form of magic is forbidden. After all, there is no bad magic - only bad practitioners. By the success borne of this dubious axiom not only has the Academy brought great wealth and fortune to Sarkada as a byproduct of it's own search for power, those of the Academy also consider themselves the best chance Permia has of overcoming the current plague of corruption. This has led them to consider themselves above reproach and become insufferably justified in their actions, for the ends justify the means.",
-  ],
+  image: "",
+  brief: "The premier educational and research facility in Permia. They seek to understand the magic in the world around them and cultivate it to invent new and better ways of life for the city of Sarkada. However, their goals cover a darkness within.",
+  descriptions: [
+    "The Academy of Wonders is both an institute of learning and a research center for all aspects of magic, but with special focus on Permian Crystals and their effects.  Founded by an aspiring Magus of the name Zu'ban shortly after the crystals were first discovered, the Academy is a free realm for wizards of all, where no form of magic is forbidden. After all, there is no bad magic - only bad practitioners. By the success borne of this dubious axiom not only has the Academy brought great wealth and fortune to Sarkada as a byproduct of it's own search for power, those of the Academy also consider themselves the best chance Permia has of overcoming the current plague of corruption. This has led them to consider themselves above reproach and become insufferably justified in their actions, for the ends justify the means. Hidden in secret laboratories, they conduct cruel experiments on the Afflicted in search of ways to cure them or destroy them.",
+  ], 
+  alignment: "A largely lawful-evil faction, though some good (albeit misguided) souls might still find themselves pulled into the institution.",
   perceptions: [
     {
       title: "The Black Horde",
@@ -51,14 +53,21 @@ const academy = {
     location: "Neatly tucked inside of the luxurious dorm rooms you will find the reset point for your faction. A simple table to click on.",
     image: "/locations/faction-academy-reset.webp",
   },
+  joiner: {
+    title: "Academy of Wonders Faction Joiner",
+    location: "A well dressed man outside of the building is eager to let you sign up for courses or bring your knowledge to the school.",
+    image: ""
+  }
 }
 
 const blackHorde = {
   otherNames: "The Horde, Furies, Monsters, Devourers",
   image: "",
-  lore: [
-    "When the afflicted crisis began, some hardened their hearts when they were cast out, throwing off the curse of exile. These Corrupted saw their new forms and powers not as curses and ailments, but as something worth embracing. Those who cast them out would be seen as enemies, as traitors, great betrayals that must be avenged.  No matter the unity in their goal, they lacked a leader, until the fateful day when a traveler from a far away land brought them under a single black banner. Now united, the Horde strike out against those they see as traitors and work to control the same mining that made them in the first place. They strike out from dark and wet corners of the jungle, raid supplies, ambush caravans, taking every scrap they can. To most, they are a pest, a menace, but to them, they’re the claws of freedom, radical defenders of the natural world and their own people.",
+  brief: "Vicious rebels who chose violence and force as their way. Bringing chaos and fear to the land that shunned them. Be they misunderstood creatures or vile beasts, they keep to their tribe of afflicted, attacking or enslaving those who are misfortune enough to cross them.",
+  descriptions: [
+    "The Black Horde is a collection of afflicted deviants, warriors, and outcasts. Formed originally of the outcasts from Sarkada, they were rejected and feared for their corruption. They are a close community but wary of the world outside the Jungle and its visitors. While many refer to them as monsters, and uncultured beasts, they see themselves as the mighty claws of revolution and evolution. They will stop at nothing to avenge those that have been wronged. Their sole mission is to crush those who cast them out, the Houses of Sarkada. They will bring violence and force slavery upon those foolish to stand against them and believe that affliction is the higher form of being, to be of their kin, you must be afflicted or you will be enslaved.",
   ], 
+  alignment: "With their violent and destructive ways, the Black Horde is best described as chaotic evil. While not all within will enact such barbaric practices, their culture is one of cruelty and domination.",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -92,18 +101,35 @@ const blackHorde = {
     },
   ],
   giver: {
+    title: "Black Horde XP Giver",
+    location: "A grim totem placed before the ruined barracks is the place you will gain your weekly faction XP. It’s not sticky anymore, promise.",
     image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
   },
-  reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  bank: {
+    title: "Black Horde Bank",
+    location: "A chest in the kitchen is perfect for storing the items you wish to share with your tribe or see if there is anything useful to you. Sure this respectfully, don’t take advantage of your tribe or you might find yourself without one.",
+    image: "/locations/faction-academy-bank.webp",
   },
+  reset: {
+    title: "Black Horde Reset Point",
+    location: "Within the barracks you will find a lonely bed with a chest, take time to breath and rest yourself here when you are in need.",
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg",
+  },
+  joiner: {
+    title: "Black Horde Faction Joiner",
+    location: "A great beast waits by the stairs to the ruins to throw out enemies and accept those who wish to lend their claw.",
+    image: ""
+  }
 }
 
 const coalition = {
   otherNames: "Coalition, Traders, Adventurers",
-  lore: [
-    "The adventurist trade organization came chasing wealth and opportunity and found just that. In a realm at its boiling point, they aimed to profit both from the conflict and the rare and exotic magical creations of Permia. Moreover, it would create a market of its own, a settlement to expand its own diverse culture and to pay for the grand expedition in this foreign realm. While some hold that they're underhanded, amoral, they hold that they are at the forefront of progress, with the wind of adventure at their back. Any and all can have a future with the coalition, no matter their origin.",
+  image: "",
+  brief: "Entrepreneurs out to make money in a strange new land. They hail from all over the world and unite along this traderout to seek adventure, money, and power. Merchant or mercenary, you can belong here.",
+  descriptions: [
+    "The adventurist trade organization came chasing wealth and opportunity and found just that. In a realm at its boiling point, they aimed to profit both from the conflict and the rare and exotic magical creations of Permia. Moreover, it would create a market of its own, a settlement to expand its own diverse culture and to pay for the grand expedition in this foreign realm. While some hold that they're underhanded, amoral, they hold that they are at the forefront of progress, with the wind of adventure at their back. Any and all can have a future with the coalition, no matter their origin. Those seeking to join The Coalition may do so to sell their sword to the war raging in the land, being a mercenary for hire, others might join the crafting guild to sell their goods, and some might just be looking for a simple job at the bathhouse.",
   ], 
+  alignment: "We care only for gold! This faction is true neutral. With a mighty navy to protect our investments, we fear no one and have the luxury of neutrality.",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -137,32 +163,35 @@ const coalition = {
     },
   ],
   giver: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+    title: "Coalition XP Giver",
+    location: "?????????",
+    image: "",
+  },
+  bank: {
+    title: "Coalition Bank",
+    location: "In the back room, hidden away from prying eyes, there is a secret vault behind a decorative flag. Click this to drop off your loot you want to share with your comrades.",
+    image: "/locations/faction-academy-bank.webp",
   },
   reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+    title: "Coalition Reset Point",
+    location: "In one of the warmly lit rooms off to the side of the main hall is a room full of comfortable beds and a glowing lamp. Click the lamp to rest yourself.",
+    image: "/locations/faction-academy-reset.webp",
   },
+  joiner: {
+    title: "Coalition Faction Joiner",
+    location: "One of the cat people of the coalition waits by the front doors of Lantuga to offer contracts.",
+    image: ""
+  }
 }
 
 const courtOfFlies = {
   otherNames: "Courtiers, The Court of the Queen in Yellow",
-  lore: [
-    "The Court of Flies first started off as a group of vagrants who were pushed deep down into the sewers of Sarkada. Without food or fresh water, those poor souls did what they had to do to survive. They taught themselves how to steal, hide in the shadows, keep an ear out for information, and fend for themselves. Only so they can accumulate their wealth to make sure their community does not plunge into darkness.",
-    "When Sarkada was first built, the Sarkadian noble houses noticed an ever-growing problem within their city; vagrants. The poor were residing and sleeping in the streets of their perfect city, begging for food, water, coins... The noble houses believed these vagrants were the destruction of beauty within their city.",
-    "So, what was their solution? They forced these vagrants deep down into the underbelly of the city into the damp and dingy sewers of Sarkada. It was dark, there wasn’t any light to shine onto these poor souls. Food was non-existent in those tunnels, fresh water was scarce, and the people down there grew sick. Leaving the tunnel and venturing out into the heat of the desert would have been considered a death sentence.",
-    "For them to survive, they did what they had to do. They taught themselves how to steal, how to hide in the shadows, how to keep an ear out for information, how to lose the guard’s tracks and get out of a bind. They did business that no one else would want to do. They broke laws and rules for their own gain. Only so they can accumulate their wealth to make sure their community does not plunge into darkness.",
-    "They worked together to call themselves the Court of Flies…",
-  ],
-  goals: [
-    "The main goal of the Court of Flies is to accumulate as much wealth as possible. They want their faction bank to be full to the brim of gold. Through any means necessary, finding a way to profit off of one venture is their main objective. The morality on accomplishing that goal is of no concern to the Court of Flies.",
-    "The secondary goal is to protect and assist those who are in Sarkada.The Court of Flies have a tentative alliance with the Houses of Sarkada and deals are made with the Academy of Wonders. To make sure the factions of Sarkada and the Court of Flies retain the integrity of their two factions from enemies of the city, they must work together instead of getting to each other’s throats.",
-    "Third goal is to maintain and run the speakeasy, a staple of the Court of Flies. This is where drinks can be sold and distributed to the citizens and nobles of Sarkada, gambling games may be hosted, and ???",
-  ],
-  alignment: "The Court of Flies are considered to be a Chaotic-Neutral faction. As they are thieves and brigands, they don’t follow rules or traditions, rather they value their own freedom. Morality of good and evil is none of their concerns. Money is, though.",
+  image: "",
+  brief: "Sneaks, cheats, gamblers, and grifters, they are the underbelly of the city and are here to take your coin, your secrets, and your resources. It’s all fair game among them and they will bleed you dry and still pick your pocket. Need a loan?",
   descriptions: [
-    "Every city has its downtrodden, its outcasts. Usually, they do not have enough common reason to gather, except for warmth or perhaps to share some morsels of information. Sarkada, however, is different: Not only have they organized, they have a queen of their very own. The Queen in Yellow keeps her court close, but her enemies closer, mutants and outcasts flock to her demesne in droves, all under the gleaming streets of the Grand City. All are welcome in her kingdom, provided they bring a skill. Whether that be more overt, the fraudsters, schemers, and liars; or the covert, in thieves, assassins, and thugs. Any drop of wealth that can be extracted from the world above eventually trickles down into the den of organized crime, helping stave off the pangs of hunger a day more.",
-    "Most do not display any allegiance to the Queen. The only sign may be a scrap of yellow fabric sewn to one shoulder, or perhaps the stench of their sewer home. The Queen herself never leaves the culverts she calls home, not for many centuries has one been seen in daylight. It is speculated by so-called ‘scholars’ of the court that there have been many Queens throughout the years, perhaps even dynasties within the sewers. However, the Courtiers would believe that the Queen is ageless or otherwise immortal. Considering the strange happenings within the city, either is equally likely.",
-  ],
+    "The Court of Flies first started off as a group of vagrants who were pushed deep down into the sewers of Sarkada. Without food or fresh water, those poor souls did what they had to do to survive. They taught themselves how to steal, hide in the shadows, keep an ear out for information, and fend for themselves. Only so they can accumulate their wealth to make sure their community does not plunge into darkness.",
+  ], 
+  alignment: "The Court of Flies are considered to be a Chaotic-Neutral faction. As they are thieves and brigands, they don’t follow rules or traditions, rather they value their own freedom. Morality of good and evil is none of their concerns. Money is, though.",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -196,19 +225,35 @@ const courtOfFlies = {
     },
   ],
   giver: {
+    title: "Court of Flies XP Giver",
+    location: "You can get a that sweet-sweet free experience point to help level your character up! Located in the treasury room, there is a safe with gold bars in it. Click it and you shall get your free Faction EXP Point!",
     image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
   },
-  reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  bank: {
+    title: "Court of Flies Bank",
+    location: "In the treasury room, there is a chest that you can click on to gain access to the bank. With the bank you can make your contribution of gold for the group and store items and gear to help your fellow members of the Court of Flies.",
+    image: "/locations/faction-academy-bank.webp",
   },
+  reset: {
+    title: "Court of Flies Reset Point",
+    location: "Tired? Low stamina? Need to regenerate your mana? Perhaps you need to lick your wounds? There is a closet you may click on in one of the bedrooms inside the main hall of the court. It’ll reset your HP/Stamina/Mana.",
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg",
+  },
+  joiner: {
+    title: "Court of Flies Faction Joiner",
+    location: "A man stands by one of the pillars within, armed and sly, he might just let you join the court.",
+    image: ""
+  }
 }
 
 const oldBoughs = {
   otherNames: "Druids, The Children of the Leaf",
+  image: "",
+  brief: "Peaceful people of the mountains who seek to be one with nature. Their way of life has been threatened by the war and the use of the crystals so they have joined the Silver Hold in protecting the land while encouraging others to learn and commune with it.",
   descriptions: [
-    "An ancient order of nature-studying druids, the Old Boughs have inhabited the mountains surrounding Sarkada for centuries. In the mountains themselves, time seems to have stood still: The druidic order has kept to themselves, communing with nature and their gods whilst ignoring the struggles of the valley. Magics derived from the lands themselves protect and conceal their actions, as peaceful as they are, with the druids perfectly content to isolate themselves and continue with their traditions.",
-    "However, that all changed when Princess Aida came seeking aid. Initially, they were leery of her claims, her pleas for assistance. Their deliberate nature took time to process what was going on with the afflicted, they had been mostly spared from its effects. However, once they saw what the Sarkadians were doing to their own people—even those who bore the taint of infection—was too much for these wise old men. They pledged their allegiance to Aida and the Silver Hold in their struggle against Sarkadian oppression.",
-  ],
+    "The Old Boughs are an ancient order of Druids, committed to protecting the natural landscape of Permia and aiding those in need. Staunchly opposed to the abuse of the crystal's powers taking place in the City, especially by the Academy of Wonders, they have taken in the Silver Hold on their mountain top hope and pledge to aid them in the current civil war. The faction skirts the lines between neutral good and true neutral in its acts and intentions.",
+  ], 
+  alignment: "??????????",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -242,19 +287,37 @@ const oldBoughs = {
     },
   ],
   giver: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+    title: "Old Boughs XP Giver",
+    location: "Standing Stones near the Bonfire, in the shape of l o l. Click these once a week to get 1 exp towards your next level. Resets every Sunday!",
+    image: "",
+  },
+  bank: {
+    title: "Old Boughs Bank",
+    location: "Sharing is caring and the Old Boughs have a place to pool their resources together. Leave your unwanted goodies, trinkets, food and coin near the glowing rune monolith outside a hollowed out tree acting as the Old Boughs Infirmary unit Faction",
+    image: "/locations/faction-academy-bank.webp",
   },
   reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+    title: "Old Boughs Reset Point",
+    location: "For those that wish to lay their head down and rest, to regain the strength from a long and hard day, another glowing monolith awaits just outside of the firefly cave. Bask in its warmth and rest your weary head in the beds of flowers beneath it.",
+    image: "/locations/faction-academy-reset.webp",
   },
+  joiner: {
+    title: "Old Boughs Faction Joiner",
+    location: "There is a kind old Troll trusted by the Elders of the Old Boughs, hermitting himself away in the fire fly cave.",
+    image: ""
+  }
 }
 
-const royalSarkadianGuard = {
+const housesOfSarkada = {
   otherNames: "City Guards, the Immortals, Pigs",
+  image: "",
+  brief: "The might of Sarkada and the nobles they serve enforce the strict laws of the city, seeking to abolish the corrupted being, maintain their power and progress, and use the crystals to preserve their way of life.",
   descriptions: [
-    "The Houses of Sarkada are the most organized fighting force in these lands. Trained from the best citizens of Sarkada, the guards swear their loyalty to the king and his subjects. These citizens are tasked with the defense of the city from any who would threaten their way of life. From unruly rebellions without and within, to regular armies from lands afar: the Sarkadian Guards defend the city and its people to the last.",
-    "Outside of pitched battles, the guards are the peacekeepers and lawbringers of Sarkada. Imbued with the legal rights as judge, jury, and executioner, they can be brutal in their application of the law and meting out punishments.",
-  ],
+    "The houses of Sarkada are the heart of the city. They make up the Royal Army and the great houses of the nobles! Strict and authoritarian, they protect the wealth and power of the ruling figures of the city, enforcing laws and curating new ones to keep their citizens in line.",
+    "The Royal Army acts as both local law enforcement and the foot soldiers of the royal court. They enforce the laws of the land and seek out the corrupted within their walls to destroy or capture for the Academy’s experiments. With a strict hierarchy, you may climb the ranks.",
+    "The Nobles are civil servants, political figures, or investors looking to feed the royal court updated bureaucracy to enforce their power within the city."
+  ], 
+  alignment: "??????????",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -288,18 +351,35 @@ const royalSarkadianGuard = {
     },
   ],
   giver: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+    title: "Houses of Sarkada XP Giver",
+    location: "Experience the opulence of the palace and find within two crystals, the one on the left gives you your XP. This resets every Sunday.",
+    image: "",
+  },
+  bank: {
+    title: "Houses of Sarkada Bank",
+    location: "The crystal to the right is the faction bank, share items with your fellow citizens should you feel generous. Take only what you need from the city coffers.",
+    image: "/locations/faction-academy-bank.webp",
   },
   reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+    title: "Houses of Sarkada Reset Point",
+    location: "In the bunks atop the guard house, there is a table against the wall. Here is where you may rest yourself and reset all your stats.",
+    image: "/locations/faction-academy-reset.webp",
   },
+  joiner: {
+    title: "Houses of Sarkada Faction Joiner",
+    location: "An golden armored soldier waits my the palace to induct all those who will serve the city.",
+    image: ""
+  }
 }
 
 const silverHold = {
   otherNames: "The Princess’ Court, The Hold, Rebels, Exiles",
+  image: "",
+  brief: "Rebels seeking to bring an end to the evil ways of the city and the land, they are accepting of all those in need and extend offerings of kindness and tolerance. They protect their own fiercely and defend those in need with their mighty swords.",
   descriptions: [
-    "Growing from exiled royalty, the Silver Hold is, despite its origination, a group of wealthy nobles in exile, they were removed by the aristocracy and were primarily supported by the poorest of the people of Sarkada. Their flight has grown from small tents and starving loyalists, to a settlement of its own. The Silver Hold was named such when they settled atop of Mount Silver itself, stationed high up and defended in defiance of the new rule in the valley. Directed by Princess Aida, heir to the throne, she has perhaps shocked many by taking little royal airs and her rebellion is less a government in exile and more revolutionaries in the hills.They aim to both reclaim Sarkada, liberate its people, and prevent the usage of the crystals from causing more pain.",
-  ],
+    "The silver hold was founded by those driven from the city by the royal guard. They built their home in the valley of the mountain to be safe from those in the city. Decades later as the afflicted crisis grew worse, Princess Aida left the city and joined the hold. Today the hold is led by princess Aida, growing into a true rebellion against the tyranny of the Sarkadians, with a strong moral backing. The hold defends the weak, protects the innocent, and fights against oppression and prejudice. No afflicted is judged for being afflicted, whether blessed or corrupted. The strong moral code, but rebellious nature of the Silver Hold lends toward Neutral-Good alignments, while lawful and chaotic good alignments may also find a home here.",
+  ], 
+  alignment: "?????????",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -333,11 +413,25 @@ const silverHold = {
     },
   ],
   giver: {
+    title: "Silver Hold XP Giver",
+    location: "Inside the great hall there are two flags, the flag to the left is the XP giver, the symbol of new hope to hopefully reclaim their home. This inspiring symbol is where you will gain your XP.",
     image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
   },
-  reset: {
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg"
+  bank: {
+    title: "Silver Hold Bank",
+    location: "Inside the great hall there are two flags, the flag to the right is where the faction bank is hidden. Behind this is stored a little vault for those generous souls who wish to share their resources.",
+    image: "/locations/faction-academy-bank.webp",
   },
+  reset: {
+    title: "Silver Hold Reset Point",
+    location: "Inside the safety of the barracks, beside the keep, there is a table full of helpful items. You may rest here and regain your strength within the Hold.",
+    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg",
+  },
+  joiner: {
+    title: "Silver Hold Faction Joiner",
+    location: "A soldier waits outside the keep, his sword at the ready, he will ask your loyalty.",
+    image: ""
+  }
 }
 
 const playerFactionApplicationUrl = "https://docs.google.com/forms/d/1BF4RM9rBSo1AYkbgSxzF2j6E8p6Ej9BzqxvBJZcNMzU/edit"
@@ -375,7 +469,7 @@ const factions = {
   },
   "houses-of-sarkada": {
     "title": "Houses of Sarkada",
-    ...royalSarkadianGuard,
+    ...housesOfSarkada,
   },
   "silver-hold": {
     "title": "Silver Hold",

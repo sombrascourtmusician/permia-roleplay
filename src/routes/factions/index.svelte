@@ -12,8 +12,11 @@
 {#each Object.keys(factions) as faction}
   <Card body class="mb-3" to="/factions/{faction}">
     <h2 class="fs-1">{factions[faction].title}</h2>
-    {#if factions[faction].otherNames}
-      <h3 class="fs-5 pb-3">Also known as {factions[faction].otherNames}</h3>
+    <p>{factions[faction].otherNames}</p>
+    {#if factions[faction].brief}
+      <p>
+        {@html factions[faction].brief}
+      </p>
     {/if}
   </Card>
 {/each}
