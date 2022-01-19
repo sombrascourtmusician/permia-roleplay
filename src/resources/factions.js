@@ -170,12 +170,12 @@ const coalition = {
   bank: {
     title: "Coalition Bank",
     location: "In the back room, hidden away from prying eyes, there is a secret vault behind a decorative flag. Click this to drop off your loot you want to share with your comrades.",
-    image: "/locations/faction-coalition-bank.webp",
+    image: "",
   },
   reset: {
     title: "Coalition Reset Point",
     location: "In one of the warmly lit rooms off to the side of the main hall is a room full of comfortable beds and a glowing lamp. Click the lamp to rest yourself.",
-    image: "/locations/faction-coalition-reset.webp",
+    image: "",
   },
   joiner: {
     title: "Coalition Faction Joiner",
@@ -232,12 +232,12 @@ const courtOfFlies = {
   bank: {
     title: "Court of Flies Bank",
     location: "In the treasury room, there is a chest that you can click on to gain access to the bank. With the bank you can make your contribution of gold for the group and store items and gear to help your fellow members of the Court of Flies.",
-    image: "/locations/faction-court-of-flies-bank.webp",
+    image: "",
   },
   reset: {
     title: "Court of Flies Reset Point",
     location: "Tired? Low stamina? Need to regenerate your mana? Perhaps you need to lick your wounds? There is a closet you may click on in one of the bedrooms inside the main hall of the court. It’ll reset your HP/Stamina/Mana.",
-    image: "/locations/faction-court-of-flies-bank.webp",
+    image: "",
   },
   joiner: {
     title: "Court of Flies Faction Joiner",
@@ -294,12 +294,12 @@ const oldBoughs = {
   bank: {
     title: "Old Boughs Bank",
     location: "Sharing is caring and the Old Boughs have a place to pool their resources together. Leave your unwanted goodies, trinkets, food and coin near the glowing rune monolith outside a hollowed out tree acting as the Old Boughs Infirmary unit Faction",
-    image: "/locations/faction-old-boughs-bank.webp",
+    image: "",
   },
   reset: {
     title: "Old Boughs Reset Point",
     location: "For those that wish to lay their head down and rest, to regain the strength from a long and hard day, another glowing monolith awaits just outside of the firefly cave. Bask in its warmth and rest your weary head in the beds of flowers beneath it.",
-    image: "/locations/faction-old-boughs-reset.webp",
+    image: "",
   },
   joiner: {
     title: "Old Boughs Faction Joiner",
@@ -358,7 +358,7 @@ const housesOfSarkada = {
   bank: {
     title: "Houses of Sarkada Bank",
     location: "The crystal to the right is the faction bank, share items with your fellow citizens should you feel generous. Take only what you need from the city coffers.",
-    image: "/locations/faction-sarkada-bank.webp",
+    image: "",
   },
   reset: {
     title: "Houses of Sarkada Reset Point",
@@ -420,7 +420,7 @@ const silverHold = {
   bank: {
     title: "Silver Hold Bank",
     location: "Inside the great hall there are two flags, the flag to the right is where the faction bank is hidden. Behind this is stored a little vault for those generous souls who wish to share their resources.",
-    image: "/locations/faction-silver-hold-bank.webp",
+    image: "",
   },
   reset: {
     title: "Silver Hold Reset Point",
