@@ -103,17 +103,17 @@ const blackHorde = {
   giver: {
     title: "Black Horde XP Giver",
     location: "A grim totem placed before the ruined barracks is the place you will gain your weekly faction XP. It’s not sticky anymore, promise.",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+    image: "",
   },
   bank: {
     title: "Black Horde Bank",
     location: "A chest in the kitchen is perfect for storing the items you wish to share with your tribe or see if there is anything useful to you. Sure this respectfully, don’t take advantage of your tribe or you might find yourself without one.",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-horde-bank.png",
   },
   reset: {
     title: "Black Horde Reset Point",
     location: "Within the barracks you will find a lonely bed with a chest, take time to breath and rest yourself here when you are in need.",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg",
+    image: "/locations/faction-horde-reset.jpg",
   },
   joiner: {
     title: "Black Horde Faction Joiner",
@@ -170,12 +170,12 @@ const coalition = {
   bank: {
     title: "Coalition Bank",
     location: "In the back room, hidden away from prying eyes, there is a secret vault behind a decorative flag. Click this to drop off your loot you want to share with your comrades.",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-coalition-bank.webp",
   },
   reset: {
     title: "Coalition Reset Point",
     location: "In one of the warmly lit rooms off to the side of the main hall is a room full of comfortable beds and a glowing lamp. Click the lamp to rest yourself.",
-    image: "/locations/faction-academy-reset.webp",
+    image: "/locations/faction-coalition-reset.webp",
   },
   joiner: {
     title: "Coalition Faction Joiner",
@@ -227,17 +227,17 @@ const courtOfFlies = {
   giver: {
     title: "Court of Flies XP Giver",
     location: "You can get a that sweet-sweet free experience point to help level your character up! Located in the treasury room, there is a safe with gold bars in it. Click it and you shall get your free Faction EXP Point!",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+    image: "",
   },
   bank: {
     title: "Court of Flies Bank",
     location: "In the treasury room, there is a chest that you can click on to gain access to the bank. With the bank you can make your contribution of gold for the group and store items and gear to help your fellow members of the Court of Flies.",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-court-of-flies-bank.webp",
   },
   reset: {
     title: "Court of Flies Reset Point",
     location: "Tired? Low stamina? Need to regenerate your mana? Perhaps you need to lick your wounds? There is a closet you may click on in one of the bedrooms inside the main hall of the court. It’ll reset your HP/Stamina/Mana.",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg",
+    image: "/locations/faction-court-of-flies-bank.webp",
   },
   joiner: {
     title: "Court of Flies Faction Joiner",
@@ -294,12 +294,12 @@ const oldBoughs = {
   bank: {
     title: "Old Boughs Bank",
     location: "Sharing is caring and the Old Boughs have a place to pool their resources together. Leave your unwanted goodies, trinkets, food and coin near the glowing rune monolith outside a hollowed out tree acting as the Old Boughs Infirmary unit Faction",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-old-boughs-bank.webp",
   },
   reset: {
     title: "Old Boughs Reset Point",
     location: "For those that wish to lay their head down and rest, to regain the strength from a long and hard day, another glowing monolith awaits just outside of the firefly cave. Bask in its warmth and rest your weary head in the beds of flowers beneath it.",
-    image: "/locations/faction-academy-reset.webp",
+    image: "/locations/faction-old-boughs-reset.webp",
   },
   joiner: {
     title: "Old Boughs Faction Joiner",
@@ -358,12 +358,12 @@ const housesOfSarkada = {
   bank: {
     title: "Houses of Sarkada Bank",
     location: "The crystal to the right is the faction bank, share items with your fellow citizens should you feel generous. Take only what you need from the city coffers.",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-sarkada-bank.webp",
   },
   reset: {
     title: "Houses of Sarkada Reset Point",
     location: "In the bunks atop the guard house, there is a table against the wall. Here is where you may rest yourself and reset all your stats.",
-    image: "/locations/faction-academy-reset.webp",
+    image: "/locations/faction-sarkada-reset.webp",
   },
   joiner: {
     title: "Houses of Sarkada Faction Joiner",
@@ -415,17 +415,17 @@ const silverHold = {
   giver: {
     title: "Silver Hold XP Giver",
     location: "Inside the great hall there are two flags, the flag to the left is the XP giver, the symbol of new hope to hopefully reclaim their home. This inspiring symbol is where you will gain your XP.",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279534777225226/Faction_bank_Horde.png",
+    image: "",
   },
   bank: {
     title: "Silver Hold Bank",
     location: "Inside the great hall there are two flags, the flag to the right is where the faction bank is hidden. Behind this is stored a little vault for those generous souls who wish to share their resources.",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-silver-hold-bank.webp",
   },
   reset: {
     title: "Silver Hold Reset Point",
     location: "Inside the safety of the barracks, beside the keep, there is a table full of helpful items. You may rest here and regain your strength within the Hold.",
-    image: "https://cdn.discordapp.com/attachments/322561050941718528/922279583208857670/Faction_reset_Horde.jpg",
+    image: "/locations/faction-silver-hold-reset.webp",
   },
   joiner: {
     title: "Silver Hold Faction Joiner",
