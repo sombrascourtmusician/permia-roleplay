@@ -41,7 +41,7 @@ const academy = {
   giver: {
     title: "Academy of Wonders XP Giver",
     location: "The glowing crystals dangling in the main entrance are not just for decoration. Click these each Sunday to gain your faction XP.",
-    image: "",
+    image: "/locations/faction-academy-giver.jpg",
   },
   bank: {
     title: "Academy of Wonders Bank",
@@ -103,7 +103,7 @@ const blackHorde = {
   giver: {
     title: "Black Horde XP Giver",
     location: "A grim totem placed before the ruined barracks is the place you will gain your weekly faction XP. It’s not sticky anymore, promise.",
-    image: "",
+    image: "/locations/faction-horde-giver.jpg",
   },
   bank: {
     title: "Black Horde Bank",
@@ -165,17 +165,17 @@ const coalition = {
   giver: {
     title: "Coalition XP Giver",
     location: "?????????",
-    image: "",
+    image: "/locations/faction-coalition-giver.jpg",
   },
   bank: {
     title: "Coalition Bank",
     location: "In the back room, hidden away from prying eyes, there is a secret vault behind a decorative flag. Click this to drop off your loot you want to share with your comrades.",
-    image: "",
+    image: "/locations/faction-coalition-bank.webp",
   },
   reset: {
     title: "Coalition Reset Point",
     location: "In one of the warmly lit rooms off to the side of the main hall is a room full of comfortable beds and a glowing lamp. Click the lamp to rest yourself.",
-    image: "",
+    image: "/locations/faction-coalition-reset.webp",
   },
   joiner: {
     title: "Coalition Faction Joiner",
@@ -353,7 +353,7 @@ const housesOfSarkada = {
   giver: {
     title: "Houses of Sarkada XP Giver",
     location: "Experience the opulence of the palace and find within two crystals, the one on the left gives you your XP. This resets every Sunday.",
-    image: "",
+    image: "/locations/faction-sarkada-giver.jpg",
   },
   bank: {
     title: "Houses of Sarkada Bank",
@@ -415,7 +415,7 @@ const silverHold = {
   giver: {
     title: "Silver Hold XP Giver",
     location: "Inside the great hall there are two flags, the flag to the left is the XP giver, the symbol of new hope to hopefully reclaim their home. This inspiring symbol is where you will gain your XP.",
-    image: "",
+    image: "/locations/faction-silver-hold-giver.jpg",
   },
   bank: {
     title: "Silver Hold Bank",
