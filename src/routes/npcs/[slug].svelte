@@ -32,9 +32,6 @@
       <div class="col-sm-8">
         <h2 class="fs-2">{npc.title}</h2>
         <p>
-          Located: {npc.location}
-        </p>
-        <p>
           {npc.description}
         </p>
       </div>

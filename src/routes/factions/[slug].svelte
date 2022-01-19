@@ -67,59 +67,60 @@
   {/if}
 </Card>
 
-<Card body class="mt-3">
+<Card body class="mt-3 text-center text-md-start">
   
   {#if faction.giver}
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="px-5">
           <img src={faction.giver.image} alt={faction.giver.title} width="100%" />
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <h3 class="fs-5 pb-3">{faction.giver.title}</h3>
-        <p class="pe-5">{faction.giver.location}</p>
+        <p class="pe-sm-5">{faction.giver.location}</p>
       </div>
     </div>
   {/if}
   <hr/>
   {#if faction.bank}
     <div class="row">
-      <div class="col-sm-8">
-        <h3 class="fs-5 pb-3 ps-5">{faction.bank.title}</h3>
-        <p class="ps-5">{faction.bank.location}</p>
-      </div>
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="px-5">
           <img src={faction.bank.image} alt={faction.bank.title} width="100%" />
         </div>
+      </div>
+      <div class="col-md-8">
+        <h3 class="fs-5 pb-3">{faction.bank.title}</h3>
+        <p class="pe-sm-5">{faction.bank.location}</p>
       </div>
     </div>
   {/if}
   <hr/>
   {#if faction.reset}
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="px-5">
           <img src={faction.reset.image} alt={faction.reset.title} width="100%" />
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <h3 class="fs-5 pb-3">{faction.reset.title}</h3>
-        <p class="pe-5">{faction.reset.location}</p>
+        <p class="pe-sm-5">{faction.reset.location}</p>
       </div>
     </div>
   {/if}
+  <hr/>
   {#if faction.joiner}
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="px-5">
           <img src={faction.joiner.image} alt={faction.joiner.title} width="100%" />
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <h3 class="fs-5 pb-3">{faction.joiner.title}</h3>
-        <p class="pe-5">{faction.joiner.location}</p>
+        <p class="pe-sm-5">{faction.joiner.location}</p>
       </div>
     </div>
   {/if}

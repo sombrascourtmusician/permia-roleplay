@@ -278,7 +278,7 @@ const mountains = {
       'content': [
         'The Silver Hold keep is the last bastion of the Silver Hold, a place for planning, for celebration, for meetings, for festivals, and everything in between. This is where Aida lives and works, and where the brass of the Silver Hold meet. Complete with a potions study area, researchers can also use this space for all sorts of experimentation.', 
       ],
-      'image': '/locations/keep-map.jpg' 
+      'image': '/locations/keep.jpg' 
     }, 
     { 
       'title': 'The Tavern', 
@@ -292,7 +292,7 @@ const mountains = {
       'content': [
         'The farm of the Silver Hold ensures that it\'s people are fed and well cared for during the harsher winter months. With a plethora of different, magically protected goods, the farm helps furnish both the Silver Hold\'s troops and the tavern as well. Recently security has been increased around the Silver Hold\'s farms, and nowadays, even with the extra muscle, it\'s an idyllic, lovely place to sit and relax.', 
       ],
-      'image': '' 
+      'image': '/locations/keep-farm.png' 
     }, 
     { 
       'title': 'Elder\'s Circle', 
@@ -355,7 +355,7 @@ const sewers = {
       'content': [
         'A dingy sewer underneath Sarkada. Waste goes through the waters, and it doesn’t particularly smell great. Court of Flies Can be accessed behind the residential area in Sarkada. Luckily, the Court of Flies has a magical barrier to block all the smells.', 
       ],
-      'image': '' 
+      'image': '/locations/sewers.jpg' 
     },
   ] 
 };
