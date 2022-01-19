@@ -72,7 +72,7 @@
   <Card class='mt-3'>
     <div class="row">
       <div class="col-sm-4">
-        <img src="/permia-carousel1.webp" width="100%" alt="Adventure Starting Location" />
+        <img src="/npcs/docks-worker.webp" width="100%" alt="Adventure Starting Location" />
       </div>
       <div class="col-sm-8">
         <div class='px-2'>
