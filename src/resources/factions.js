@@ -118,7 +118,7 @@ const blackHorde = {
   joiner: {
     title: "Black Horde Faction Joiner",
     location: "A great beast waits by the stairs to the ruins to throw out enemies and accept those who wish to lend their claw.",
-    image: ""
+    image: "/npcs/faction-horde.png"
   }
 }
 
@@ -180,7 +180,7 @@ const coalition = {
   joiner: {
     title: "Coalition Faction Joiner",
     location: "One of the cat people of the coalition waits by the front doors of Lantuga to offer contracts.",
-    image: ""
+    image: "/npcs/faction-coalition.jpg"
   }
 }
 
@@ -227,22 +227,22 @@ const courtOfFlies = {
   giver: {
     title: "Court of Flies XP Giver",
     location: "You can get a that sweet-sweet free experience point to help level your character up! Located in the treasury room, there is a safe with gold bars in it. Click it and you shall get your free Faction EXP Point!",
-    image: "",
+    image: "/locations/faction-court-of-flies-giver.jpg",
   },
   bank: {
     title: "Court of Flies Bank",
     location: "In the treasury room, there is a chest that you can click on to gain access to the bank. With the bank you can make your contribution of gold for the group and store items and gear to help your fellow members of the Court of Flies.",
-    image: "",
+    image: "/locations/faction-court-of-flies-bank.jpg",
   },
   reset: {
     title: "Court of Flies Reset Point",
     location: "Tired? Low stamina? Need to regenerate your mana? Perhaps you need to lick your wounds? There is a closet you may click on in one of the bedrooms inside the main hall of the court. It’ll reset your HP/Stamina/Mana.",
-    image: "",
+    image: "/locations/faction-court-of-flies-reset.jpg",
   },
   joiner: {
     title: "Court of Flies Faction Joiner",
     location: "A man stands by one of the pillars within, armed and sly, he might just let you join the court.",
-    image: ""
+    image: "/npcs/faction-court-of-flies.jpg"
   }
 }
 
@@ -358,7 +358,7 @@ const housesOfSarkada = {
   bank: {
     title: "Houses of Sarkada Bank",
     location: "The crystal to the right is the faction bank, share items with your fellow citizens should you feel generous. Take only what you need from the city coffers.",
-    image: "",
+    image: "/locations/faction-sarkada-bank.jpg",
   },
   reset: {
     title: "Houses of Sarkada Reset Point",
@@ -368,7 +368,7 @@ const housesOfSarkada = {
   joiner: {
     title: "Houses of Sarkada Faction Joiner",
     location: "An golden armored soldier waits my the palace to induct all those who will serve the city.",
-    image: ""
+    image: "/npcs/faction-sarkada.jpg"
   }
 }
 
@@ -430,7 +430,7 @@ const silverHold = {
   joiner: {
     title: "Silver Hold Faction Joiner",
     location: "A soldier waits outside the keep, his sword at the ready, he will ask your loyalty.",
-    image: ""
+    image: "/npcs/faction-silver-hold.jpg"
   }
 }
 

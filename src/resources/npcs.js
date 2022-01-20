@@ -116,43 +116,9 @@ const classGivers = [
   },
 ];
 
-const etcGivers = [
-  {
-    title: "Coalition of the Compass XP Giver",
-    image: "",
-    description: "The crystal in the middle of the Coalition’s base will give you XP if you’re in the faction."
-  },
-  {
-    title: "Silver Hold XP Giver",
-    image: "",
-    description: "The flag next to the throne in the Silver Hold’s keep will give you XP if you’re in the faction."
-  },
-  {
-    title: "Houses of Sarkada XP Giver",
-    image: "",
-    description: "This XP giver is in one of the crystals right beside the throne in the throne room!"
-  }, 
-  {
-    title: "Academy of Wonder XP Giver",
-    image: "",
-    description: "The great crystal chandelier in the entryway of the Academy will provide your XP here!"
-  },
-  {
-    title: "The Black Horde XP Giver",
-    image: "",
-    description: "For the Black Horde, the ritual skull right in front of their barracks will give you XP!"
-  },
-  {
-    title: "Affliction Giver",
-    image: "",
-    description: "This will give you the different afflicted statuses, both corrupted and blessed! Find the big crystal off the circular platform at the bottom of the crystal mine in the desert."
-  },
-];
-
 const npcs = {
   "general-npcs": { title: "General NPCs", content: general },
   "class-givers": { title: "Class Givers", content: classGivers },
-  "etc-givers": { title: "Etc Givers", content: etcGivers },
 }
 
 export default npcs;

@@ -54,7 +54,7 @@ const headers = [
     ] 
   },
   { 
-    title: 'Lore',
+    title: 'Lore and Factions',
     dropdowns: [
       { 
         content: 'Story',
