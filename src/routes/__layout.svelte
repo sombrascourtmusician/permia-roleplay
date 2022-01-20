@@ -120,7 +120,7 @@
     left: 0;
     top: 57px;
     overflow-y: auto;
-    background-image: url('/permia-background.webp');
+    background-image: url('/permia-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }

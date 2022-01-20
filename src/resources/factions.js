@@ -1,6 +1,5 @@
 const academy = {
   otherNames: "The Academy, Mages' Guild, Sorcerers' Guild, the Magi",
-  image: "",
   brief: "The premier educational and research facility in Permia. They seek to understand the magic in the world around them and cultivate it to invent new and better ways of life for the city of Sarkada. However, their goals cover a darkness within.",
   descriptions: [
     "The Academy of Wonders is both an institute of learning and a research center for all aspects of magic, but with special focus on Permian Crystals and their effects.  Founded by an aspiring Magus of the name Zu'ban shortly after the crystals were first discovered, the Academy is a free realm for wizards of all, where no form of magic is forbidden. After all, there is no bad magic - only bad practitioners. By the success borne of this dubious axiom not only has the Academy brought great wealth and fortune to Sarkada as a byproduct of it's own search for power, those of the Academy also consider themselves the best chance Permia has of overcoming the current plague of corruption. This has led them to consider themselves above reproach and become insufferably justified in their actions, for the ends justify the means. Hidden in secret laboratories, they conduct cruel experiments on the Afflicted in search of ways to cure them or destroy them.",
@@ -56,13 +55,12 @@ const academy = {
   joiner: {
     title: "Academy of Wonders Faction Joiner",
     location: "A well dressed man outside of the building is eager to let you sign up for courses or bring your knowledge to the school.",
-    image: ""
+    image: "/npcs/faction-academy.jpg"
   }
 }
 
 const blackHorde = {
   otherNames: "The Horde, Furies, Monsters, Devourers",
-  image: "",
   brief: "Vicious rebels who chose violence and force as their way. Bringing chaos and fear to the land that shunned them. Be they misunderstood creatures or vile beasts, they keep to their tribe of afflicted, attacking or enslaving those who are misfortune enough to cross them.",
   descriptions: [
     "The Black Horde is a collection of afflicted deviants, warriors, and outcasts. Formed originally of the outcasts from Sarkada, they were rejected and feared for their corruption. They are a close community but wary of the world outside the Jungle and its visitors. While many refer to them as monsters, and uncultured beasts, they see themselves as the mighty claws of revolution and evolution. They will stop at nothing to avenge those that have been wronged. Their sole mission is to crush those who cast them out, the Houses of Sarkada. They will bring violence and force slavery upon those foolish to stand against them and believe that affliction is the higher form of being, to be of their kin, you must be afflicted or you will be enslaved.",
@@ -124,7 +122,6 @@ const blackHorde = {
 
 const coalition = {
   otherNames: "Coalition, Traders, Adventurers",
-  image: "",
   brief: "Entrepreneurs out to make money in a strange new land. They hail from all over the world and unite along this traderout to seek adventure, money, and power. Merchant or mercenary, you can belong here.",
   descriptions: [
     "The adventurist trade organization came chasing wealth and opportunity and found just that. In a realm at its boiling point, they aimed to profit both from the conflict and the rare and exotic magical creations of Permia. Moreover, it would create a market of its own, a settlement to expand its own diverse culture and to pay for the grand expedition in this foreign realm. While some hold that they're underhanded, amoral, they hold that they are at the forefront of progress, with the wind of adventure at their back. Any and all can have a future with the coalition, no matter their origin. Those seeking to join The Coalition may do so to sell their sword to the war raging in the land, being a mercenary for hire, others might join the crafting guild to sell their goods, and some might just be looking for a simple job at the bathhouse.",
@@ -186,7 +183,6 @@ const coalition = {
 
 const courtOfFlies = {
   otherNames: "Courtiers, The Court of the Queen in Yellow",
-  image: "",
   brief: "Sneaks, cheats, gamblers, and grifters, they are the underbelly of the city and are here to take your coin, your secrets, and your resources. It’s all fair game among them and they will bleed you dry and still pick your pocket. Need a loan?",
   descriptions: [
     "The Court of Flies first started off as a group of vagrants who were pushed deep down into the sewers of Sarkada. Without food or fresh water, those poor souls did what they had to do to survive. They taught themselves how to steal, hide in the shadows, keep an ear out for information, and fend for themselves. Only so they can accumulate their wealth to make sure their community does not plunge into darkness.",
@@ -248,7 +244,6 @@ const courtOfFlies = {
 
 const oldBoughs = {
   otherNames: "Druids, The Children of the Leaf",
-  image: "",
   brief: "Peaceful people of the mountains who seek to be one with nature. Their way of life has been threatened by the war and the use of the crystals so they have joined the Silver Hold in protecting the land while encouraging others to learn and commune with it.",
   descriptions: [
     "The Old Boughs are an ancient order of Druids, committed to protecting the natural landscape of Permia and aiding those in need. Staunchly opposed to the abuse of the crystal's powers taking place in the City, especially by the Academy of Wonders, they have taken in the Silver Hold on their mountain top hope and pledge to aid them in the current civil war. The faction skirts the lines between neutral good and true neutral in its acts and intentions.",
@@ -310,7 +305,6 @@ const oldBoughs = {
 
 const housesOfSarkada = {
   otherNames: "City Guards, the Immortals, Pigs",
-  image: "",
   brief: "The might of Sarkada and the nobles they serve enforce the strict laws of the city, seeking to abolish the corrupted being, maintain their power and progress, and use the crystals to preserve their way of life.",
   descriptions: [
     "The houses of Sarkada are the heart of the city. They make up the Royal Army and the great houses of the nobles! Strict and authoritarian, they protect the wealth and power of the ruling figures of the city, enforcing laws and curating new ones to keep their citizens in line.",
@@ -374,7 +368,6 @@ const housesOfSarkada = {
 
 const silverHold = {
   otherNames: "The Princess’ Court, The Hold, Rebels, Exiles",
-  image: "",
   brief: "Rebels seeking to bring an end to the evil ways of the city and the land, they are accepting of all those in need and extend offerings of kindness and tolerance. They protect their own fiercely and defend those in need with their mighty swords.",
   descriptions: [
     "The silver hold was founded by those driven from the city by the royal guard. They built their home in the valley of the mountain to be safe from those in the city. Decades later as the afflicted crisis grew worse, Princess Aida left the city and joined the hold. Today the hold is led by princess Aida, growing into a true rebellion against the tyranny of the Sarkadians, with a strong moral backing. The hold defends the weak, protects the innocent, and fights against oppression and prejudice. No afflicted is judged for being afflicted, whether blessed or corrupted. The strong moral code, but rebellious nature of the Silver Hold lends toward Neutral-Good alignments, while lawful and chaotic good alignments may also find a home here.",

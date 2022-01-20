@@ -1,7 +1,7 @@
 const general = [
   {
     title: "Alchemist/Potion Seller",
-    image: "",
+    image: "/npcs/general-alchemist.jpg",
     description: "Do you require the strongest potions? Find this seller behind the Blue Bank in Sarkada."
   },
   {
@@ -12,7 +12,7 @@ const general = [
   },
   {
     title: "Banker",
-    image: "",
+    image: "/npcs/general-banker.jpg",
     description: "Wanna open a bank account? Or get some starter titles? See the teller at the bank! Located inside of the Sarkadian bank (the blue building!)."
   },
   {
@@ -47,12 +47,12 @@ const general = [
   },
   {
     title: "Blacksmith/Leatherworker/Armor NPC",
-    image: "",
+    image: "/npcs/general-blacksmith.jpg",
     description: "The blacksmith sells his wares in the Silver Hold’s territory, find his forge for some nice, starting armor and the Blacksmith crafting class."
   },
   {
     title: "Jeweler NPC",
-    image: "",
+    image: "/npcs/general-jeweler.jpg",
     description: "The jeweler has their precious wares in the city’s market, with the guards helping them protect it. Come on in and get the Jeweler class here!"
   },
   {

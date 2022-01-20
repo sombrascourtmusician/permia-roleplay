@@ -1387,6 +1387,147 @@ const warlock = {
   ]
 }
 
+const sorceror = {
+  "title": "Sorceror",
+  "icon": ``,
+  "location": "On the docks, by the cages",
+  "description": "Sorcerors are masters of magic and charismatic fellows both. With their wide array of spells, they have the ability to be prepared for any situation.",
+  "stats": {
+    "Mana": 200,
+    "Stamina": 100,
+    "Physical Resistance": 15,
+    "Magical Resistance": 25,
+    "Strength": 10,
+    "Dexterity": 8,
+    "Constitution": 13,
+    "Intelligence": 14,
+    "Wisdom": 12,
+    "Charisma": 17,
+  },
+  "skills": [
+    {
+      "name": "Tear Down",
+      "cost": "100 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals heavy damage and debuffs all enemy stats (-4 to all stats).",
+      "flavorText": "What's gone up, I will make fall."
+    },
+    {
+      "name": "Kitchen Sink",
+      "cost": "100 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals heavy damage, heals the user for a light amount, debuffs all of the targets stats (-2 to all stats, -5 to each defense), applies a weak DOT, and buffs the user (+2 Chr, +1 Con).",
+      "flavorText": "Fuck it."
+    },
+    {
+      "name": "Exploit",
+      "cost": "60 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals medium damage and heals for the entirety of the damage dealt.",
+      "flavorText": "Perhaps a bit of eldritch, as a treat."
+    },
+    {
+      "name": "Leech",
+      "cost": "30 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals medium damage and heals for a quarter of the damage dealt.",
+      "flavorText": "Some call it sucking your soul out. Others call it a blowjob."
+    },
+    {
+      "name": "Magnify",
+      "cost": "30 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Heals a target for a small amount and buffs their defenses (+5 to each defense).",
+      "flavorText": "A quick enchantment or cantrip on a suit of armor can increase it's defenses quite nicely."
+    },
+    {
+      "name": "Seismic Toss",
+      "cost": "40 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals minor damage and debuffs the enemies defenses (-10 to each defense).",
+      "flavorText": "Shards of the earth erupt from the ground and pierce even the strongest armor, leaving it sundered."
+    },
+    {
+      "name": "The Show",
+      "cost": "20 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Buffs the user and heals them for a minor amount based on Charisma (+4 Charisma, +2 Con).",
+      "flavorText": "Arrogant, perhaps, but a sorceror really does show utmost skill."
+    },
+    {
+      "name": "Heavy Heal",
+      "cost": "80 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Heals a heavy amount, but costs a lot for what it does.",
+      "flavorText": "A lot of healing at once, sent out in panic!"
+    },
+    {
+      "name": "Light Heal",
+      "cost": "20 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Heals a light amount, but is very effecient.",
+      "flavorText": "A light heal, focused and channeled well."
+    },
+    {
+      "name": "Bleed",
+      "cost": "30 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals minor damage and applies a heavy DOT for 5 turns.",
+      "flavorText": "An eruption of blood comes forth of any foolish enough to be caught in this spell."
+    },
+    {
+      "name": "Ethereal Claw",
+      "cost": "60 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals medium damage and applies a medium DOT for 5 turns.",
+      "flavorText": "Ethereal claws tend to go right through armor, scratching where it hurts."
+    },
+    {
+      "name": "Explosive Bolt",
+      "cost": "90 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals heavy damage and inflicts a light DOT for 5 turns.",
+      "flavorText": "Massive explosions always do the trick. If it didn't work? Add more explosions."
+    },
+    {
+      "name": "Screeching Wail",
+      "cost": "40 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals low magic damage and reduces enemy casting stats by 5 (-5 wis, chr, int).",
+      "flavorText": "Ghostly wailing makes even the most experienced of casters have to take a moment to breath."
+    },
+    {
+      "name": "Tiresome Song",
+      "cost": "40 mana",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals low magic damage and reduces enemy physical stats by 5 (-5 con, str, dex).",
+      "flavorText": "A sorceror's words can take the vitality from an opponent slowing them down step by step."
+    },
+    {
+      "name": "Fire Bolt",
+      "cost": "No cost",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Deals low magic damage and restores 10 mana",
+      "flavorText": " "
+    },
+  ]
+}
+
 const classes = {
   "cleric": cleric,
   "bard": bard,
@@ -1405,6 +1546,7 @@ const classes = {
   "hemomancer": hemomancer,
   "necromancer": necromancer,
   "warlock": warlock,
+  "sorceror": sorceror,
 }
 
 export default classes;

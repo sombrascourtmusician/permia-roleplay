@@ -33,11 +33,6 @@
     {#if faction.otherNames}
       <h3 class="fs-5 pb-3">Also known as {faction.otherNames}</h3>
     {/if}
-    <div class="row">
-      <div class="col-sm-4 offset-sm-4">
-        <img src={faction.image} alt={faction.title} width="100%" />
-      </div>
-    </div>
   </div>
   {#if faction.descriptions}
     {#each faction.descriptions as description}

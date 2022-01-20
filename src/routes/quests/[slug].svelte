@@ -34,7 +34,6 @@
       {/if}
       <div class="row">
         <div class="col-sm-6">
-          <h2>{step.title}</h2>
           <p>{step.content}</p>
           <p class="fst-italic">"{step.dialogue}"</p>
         </div>
