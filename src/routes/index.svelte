@@ -5,38 +5,32 @@
 <script lang="ts">
   import Card from "$lib/Card.svelte";
 
-	const items = [
-		{ source: '/permia-carousel1.webp', alt: "" },
-		{ source: '/permia-carousel2.webp', alt: "" },
-		{ source: '/permia-carousel3.webp', alt: "" },
-		{ source: '/permia-carousel4.webp', alt: "" },
-		{ source: '/permia-carousel5.webp', alt: "" },
-		{ source: '/permia-carousel6.webp', alt: "" },
-		{ source: '/permia-carousel7.webp', alt: "" },
-		{ source: '/permia-carousel8.webp', alt: "" },
-		{ source: '/permia-carousel9.webp', alt: "" },
-		{ source: '/permia-carousel10.webp', alt: "" },
-		{ source: '/permia-carousel11.webp', alt: "" },
-  ];
+  const imageCount = 39;
+
+	const images = [];
+  for (let i = 1; i <= imageCount; ++i) {
+    images.push(`/gallery/Permia (${i}).jpg`);
+  }
 
   const delay = 4000;
 
   let timer = setTimeout(() => updateIndex(1), delay);
 
-  let updateIndex = (offset) => {
+	let activeIndex = Math.floor(Math.random() * imageCount);
+
+  let updateIndex = (offset: number) => {
     activeIndex += offset;
     if (activeIndex < 0) {
-      activeIndex += items.length;
+      activeIndex += imageCount;
     }
-    if (activeIndex >= items.length) {
-      activeIndex -= items.length;
+    if (activeIndex >= imageCount) {
+      activeIndex -= imageCount;
     }
 
     clearTimeout(timer);
     timer = setTimeout(() => updateIndex(1), delay);
   }
 
-	let activeIndex = 0;
 </script>
 
 <svelte:head>
@@ -54,9 +48,9 @@
 
     <div class="carousel">
       <div class="carousel-inner">
-        {#each items as item, i}
+        {#each images as image, i}
           <div class="carousel-item {activeIndex === i ? "active" : ""}">
-            <img src={item.source} class="d-block w-100" alt="Permia sim life">
+            <img src={image} class="d-block w-100" alt="Permia sim life - gallery image {i+1}">
           </div>
         {/each}
       </div>

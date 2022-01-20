@@ -1,6 +1,7 @@
 export const gatheringNodes = [
   {
     title: "Sarkada Farm",
+    image: "/locations/node-city.jpg",
     description: "These gathering nodes are all located at the Sarkadian farm. To get there, simply come through the portal to the city, turn around and go back through the gates and take a right to the staircase. You’ll see all the nodes there.",
     nodes: [
       {
@@ -46,6 +47,7 @@ export const gatheringNodes = [
   },
   {
     title: "Crystal Veins and Caves",
+    image: "/locations/node-crystals.png",
     description: "This is in the middle of the crystal canyon, the big crystal right off the circular platform under the Bulwark.",
     nodes: [
       {
@@ -59,6 +61,7 @@ export const gatheringNodes = [
   },
   {
     title: "Silver Mountains",
+    image: "/locations/node-mountains.png",
     description: "These will be in a couple places, all in the mountain!",
     nodes: [   
       {
@@ -99,6 +102,7 @@ export const gatheringNodes = [
   }, 
   {
     title: "Jungle of the Lost",
+    image: "/locations/node-jungle.jpg",
     description: "These are all located directly to the left of the bridge that you arrive on. Simply take a left when you arrive and walk on over",
     nodes: [
       {
