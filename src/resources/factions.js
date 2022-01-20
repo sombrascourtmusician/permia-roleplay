@@ -413,7 +413,7 @@ const silverHold = {
   bank: {
     title: "Silver Hold Bank",
     location: "Inside the great hall there are two flags, the flag to the right is where the faction bank is hidden. Behind this is stored a little vault for those generous souls who wish to share their resources.",
-    image: "",
+    image: "/locations/faction-silver-hold-giver.jpg",
   },
   reset: {
     title: "Silver Hold Reset Point",

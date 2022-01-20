@@ -1407,7 +1407,7 @@ const sorceror = {
   "skills": [
     {
       "name": "Tear Down",
-      "cost": "100 mana",
+      "cost": "120 mana",
       "scaling": "Charisma",
       "restrictions": "Single target",
       "description": "Deals heavy damage and debuffs all enemy stats (-4 to all stats).",
