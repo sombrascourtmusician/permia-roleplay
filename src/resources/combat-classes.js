@@ -536,10 +536,10 @@ const poisoner = {
     },
     {
       "name": "Neurotoxin",
-      "cost": "40 stamina",
+      "cost": "20 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Deals high physical damage and inflicts Neurotoxin (-3 to all stats).",
+      "description": "Deals medium physical damage and inflicts Neurotoxin (-3 to all stats).",
       "flavorText": "Some poisons are made to affect the mind directly, destroying vital nerve clusters to slow and end a target."
     },
     {
@@ -552,7 +552,7 @@ const poisoner = {
     },
     {
       "name": "Poison Blade",
-      "cost": "30 stamina",
+      "cost": "20 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals Medium physical damage and heavily poisons the target.",
@@ -1457,7 +1457,7 @@ const sorceror = {
       "name": "The Show",
       "cost": "20 mana",
       "scaling": "Charisma",
-      "restrictions": "Single target",
+      "restrictions": "Self",
       "description": "Buffs the user and heals them for a minor amount based on Charisma (+4 Charisma, +2 Con).",
       "flavorText": "Arrogant, perhaps, but a sorceror really does show utmost skill."
     },
