@@ -33,11 +33,11 @@
         <hr />
       {/if}
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <p>{step.content}</p>
           <p class="fst-italic">"{step.dialogue}"</p>
         </div>
-        <div class="col-sm-6 {i % 2 === 0 ? 'order-first' : ''}">
+        <div class="col-sm-4 {i % 2 === 0 ? 'order-first' : ''}">
           <img src={step.image} width="100%" alt={step.title} />
         </div>
       </div>

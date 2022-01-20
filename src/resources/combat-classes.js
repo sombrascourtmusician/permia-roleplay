@@ -1390,8 +1390,8 @@ const warlock = {
 const sorceror = {
   "title": "Sorceror",
   "icon": ``,
-  "location": "On the docks, by the cages",
-  "description": "Sorcerors are masters of magic and charismatic fellows both. With their wide array of spells, they have the ability to be prepared for any situation.",
+  "location": "Speak with the Academy NPC",
+  "description": "Sorcerors are masters of magic and charismatic fellows both. With their wide array of spells, they have the ability to be prepared for any situation.<br />((OOC NOTE: You choose 6 of these spells with a weekly reset.))",
   "stats": {
     "Mana": 200,
     "Stamina": 100,

@@ -41,7 +41,7 @@
         {_class.location}
       </p>
       <p>
-        {_class.description}
+        {@html _class.description}
       </p>
     </div>
     <div class="col-md-5">
