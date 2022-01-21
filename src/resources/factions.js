@@ -289,7 +289,7 @@ const oldBoughs = {
   bank: {
     title: "Old Boughs Bank",
     location: "Sharing is caring and the Old Boughs have a place to pool their resources together. Leave your unwanted goodies, trinkets, food and coin near the glowing rune monolith outside a hollowed out tree acting as the Old Boughs Infirmary unit Faction",
-    image: "",
+    image: "/locations/faction-old-boughs-bank.jpg",
   },
   reset: {
     title: "Old Boughs Reset Point",
