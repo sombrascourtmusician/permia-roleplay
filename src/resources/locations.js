@@ -47,7 +47,7 @@ export const gatheringNodes = [
   },
   {
     title: "Crystal Veins and Caves",
-    image: "/locations/node-crystals.png",
+    image: "/locations/node-crystals.jpg",
     description: "This is in the middle of the crystal canyon, the big crystal right off the circular platform under the Bulwark.",
     nodes: [
       {
@@ -61,7 +61,7 @@ export const gatheringNodes = [
   },
   {
     title: "Silver Mountains",
-    image: "/locations/node-mountains.png",
+    image: "/locations/node-mountains.jpg",
     description: "These will be in a couple places, all in the mountain!",
     nodes: [   
       {
@@ -155,14 +155,14 @@ const city = {
       'content': [
         "Never a dull moment in the market of Sarkada. You’ll have to travel hundreds and hundreds of miles to find anywhere as busy, and even further to find anywhere near the same breadth of goods. The smell of hookah and fresh baked goods fills the air, as does the sound of chatter and bartering on every side. If you’re looking for a good time, the market of Sarkada can provide that and leave you with a souvenir to take home with you."
       ], 
-      'image': '/locations/city-market.png' 
+      'image': '/locations/city-market.jpg' 
     }, 
     { 
       'title': 'Palace', 
       'content': [
         "The seat of power itself, the palace of Sarkada looms above the rest of the city in it’s splendor and grandeur both. The throne room boasts thousands of gems on it’s own, with a throne that seems to radiate power from within. The Parthians rule from here, and every word they speak becomes the iron will of Sarkadian law. The guards share the palace as well, with a barracks and their prison on the other side from the noble’s quarters and throne room. Perhaps if you’re lucky, you’ll catch a glimpse of the King himself!"
       ], 
-      'image': '/locations/city-palace.webp' 
+      'image': '/locations/city-palace.jpg' 
     }, 
     { 
       'title': 'School', 
@@ -296,28 +296,28 @@ const mountains = {
       'content': [
         'The farm of the Silver Hold ensures that it\'s people are fed and well cared for during the harsher winter months. With a plethora of different, magically protected goods, the farm helps furnish both the Silver Hold\'s troops and the tavern as well. Recently security has been increased around the Silver Hold\'s farms, and nowadays, even with the extra muscle, it\'s an idyllic, lovely place to sit and relax.', 
       ],
-      'image': '/locations/keep-farm.png' 
+      'image': '/locations/keep-farm.jpg' 
     }, 
     { 
       'title': 'Elder\'s Circle', 
       'content': [
         'Near the entrance of the Old Boughs Grove sits a ring of living thrones. This circle is where the Elder\'s of the Old Boughs meet to hold moots, discuss the problems of the land, and host delegates  of other factions. Though this is the meeting place for the Elder Council of the Old Boughs, all are welcome to seek an audience.', 
       ],
-      'image': '/locations/keep-elders-circle.png' 
+      'image': '/locations/keep-elders-circle.jpg' 
     }, 
     { 
       'title': 'Infirmary', 
       'content': [
         'The Old Boughs efforts to heal the land extends out to its people as well. A hollow underneath an old tree serves as the clinic for this group of natural healers. Focused on mending bodies and minds of those hurt in this war.', 
       ],
-      'image': '/locations/keep-infirmary.png' 
+      'image': '/locations/keep-infirmary.jpg' 
     }, 
     { 
       'title': 'Firefly Cave', 
       'content': [
         'The firefly cave is a place of peace. A place perfect for silent meditation, contemplation and relaxation. The natural bioluminescence of its residents only lend to its beauty. The cave is also home to one kind old forest troll, entrusted with inducting new members to the role of Sapling within the Old Boughs. Sit with him awhile and speak of your desires to become at one with nature to be welcome into the grove as a Sapling of the Old Boughs.', 
       ],
-      'image': '/locations/keep-firefly-cave.png' 
+      'image': '/locations/keep-firefly-cave.jpg' 
     }, 
   ] 
 };

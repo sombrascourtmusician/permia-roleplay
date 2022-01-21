@@ -38,7 +38,7 @@
         {/if}
       </div>
       <div class="col-md-6 d-flex align-items-center">
-        <img src={node.image} alt={node.title} class="mw-100 w-100" />
+        <img src={node.image} alt={node.title} class="mw-100" width="100%" />
       </div>
     </div>
   </Card>

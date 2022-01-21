@@ -50,7 +50,7 @@
       <div class="carousel-inner">
         {#each images as image, i}
           <div class="carousel-item {activeIndex === i ? "active" : ""}">
-            <img src={image} class="d-block w-100" alt="Permia sim life - gallery image {i+1}">
+            <img src={image} class="d-block" width="100%" alt="Permia sim life - gallery image {i+1}">
           </div>
         {/each}
       </div>
@@ -66,7 +66,7 @@
   <Card class='mt-3'>
     <div class="row">
       <div class="col-sm-4">
-        <img src="/npcs/docks-worker.webp" width="100%" alt="Adventure Starting Location" />
+        <img src="/npcs/docks-worker.jpg" width="100%" alt="Adventure Starting Location" />
       </div>
       <div class="col-sm-8">
         <div class='px-2'>

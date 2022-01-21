@@ -22,7 +22,7 @@ const general = [
   },
   {
     title: "Docks NPC",
-    image: "/npcs/docks-worker.webp",
+    image: "/npcs/docks-worker.jpg",
     description: "The Docks NPC is here to help you get started in the world and give you your first quest. You can find them by going to the docks, or going through the “New Players start here” portal!"
   },
   {
@@ -32,12 +32,12 @@ const general = [
   },
   {
     title: "Black Horde NPC",
-    image: "/npcs/faction-horde.png",
+    image: "/npcs/faction-horde.jpg",
     description: "The Black Horde NPC is at the entrance to the jungle, right across the bridge that leads you to it. This eccentric individual can teach you the Daggerspell class as well as get you into the Black Horde. They’ll also help you out on your first quest!"
   },
   {
     title: "Old Boughs NPC",
-    image: "/npcs/faction-old-boughs.png",
+    image: "/npcs/faction-old-boughs.jpg",
     description: "The Old Boughs NPC is a kindly druid who wants you to live well and happy. Here, you can get the druid class as well as join the Old Boughs. He’s hiding in a cave in the Old Boughs territory!"
   },
   {
@@ -66,7 +66,7 @@ const general = [
 const classGivers = [
   {
     title: "Assassin/Poisoner/Rogue",
-    image: "/npcs/giver-thief.webp",
+    image: "/npcs/giver-thief.jpg",
     description: "Look for this skeezy man in a back alley of Sarkada. These types of folk never want to be noticed, but if you want these classes, find this one! (Requires 13 Dexterity)"
   },
   {
@@ -81,37 +81,37 @@ const classGivers = [
   }, 
   {
     title: "Bard",
-    image: "/npcs/giver-bard.png",
+    image: "/npcs/giver-bard.jpg",
     description: "The Silver Hold’s Lost Lamb tavern can give you the bard class. Get up on the stage and show your best! (13 Charisma required)"
   },
   {
     title: "Elementalist/Battlemage",
-    image: "/npcs/giver-battlemage.png",
+    image: "/npcs/giver-battlemage.jpg",
     description: "The Old Boughs bonfire holds many secrets of the world. If you think you’re ready, come and gaze into it and find what you can. (13 Intelligence required)"
   },
   {
     title: "Dancer",
-    image: "/npcs/giver-dancer.png",
+    image: "/npcs/giver-dancer.jpg",
     description: "The Bath House has many pleasures, including dancers for their bathers. The dancers here have many skills, and if you show your worth, you can join them too! (13 Charisma required)"
   },
   {
     title: "Hunter",
-    image: "/npcs/giver-hunter.png",
+    image: "/npcs/giver-hunter.jpg",
     description: "Sarkada’s training range is fit for royalty, and that includes their archery ranges. Find a bow here and you can join their elite ranks of archers! (13 Dexterity required)"
   },
   {
     title: "Druid",
-    image: "/npcs/giver-druid.png",
+    image: "/npcs/giver-druid.jpg",
     description: "Find the druid in the woods in the mountains. Search for the cave of fireflies and find a little friend waiting for you! (13 Wisdom required)"
   },
   {
     title: "Daggerspell",
-    image: "/npcs/giver-daggerspell.png",
+    image: "/npcs/giver-daggerspell.jpg",
     description: "You can find the Daggerspell at the Black Horde NPC giver! This will be right at the front of the jungle. (13 Dexterity required)"
   },
   {
     title: "Hemomancer/Necromancer/Warlock",
-    image: "/npcs/giver-warlock.png",
+    image: "/npcs/giver-warlock.jpg",
     description: "Find the Hemomancer giver inside of the dock's secret shack! Underneath the starting point will lead you astray. (13 Intelligence required)"
   },
 ];

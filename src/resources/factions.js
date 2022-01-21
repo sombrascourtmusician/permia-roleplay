@@ -45,12 +45,12 @@ const academy = {
   bank: {
     title: "Academy of Wonders Bank",
     location: "Sharing resources and knowledge between scholars helps progress our understanding of our world. To share your crafted items with others, go to the book shelf in the dorms and deposit or pick up something you need.",
-    image: "/locations/faction-academy-bank.webp",
+    image: "/locations/faction-academy-bank.jpg",
   },
   reset: {
     title: "Academy of Wonders Reset Point",
     location: "Neatly tucked inside of the luxurious dorm rooms you will find the reset point for your faction. A simple table to click on.",
-    image: "/locations/faction-academy-reset.webp",
+    image: "/locations/faction-academy-reset.jpg",
   },
   joiner: {
     title: "Academy of Wonders Faction Joiner",
@@ -106,7 +106,7 @@ const blackHorde = {
   bank: {
     title: "Black Horde Bank",
     location: "A chest in the kitchen is perfect for storing the items you wish to share with your tribe or see if there is anything useful to you. Sure this respectfully, don’t take advantage of your tribe or you might find yourself without one.",
-    image: "/locations/faction-horde-bank.png",
+    image: "/locations/faction-horde-bank.jpg",
   },
   reset: {
     title: "Black Horde Reset Point",
@@ -116,7 +116,7 @@ const blackHorde = {
   joiner: {
     title: "Black Horde Faction Joiner",
     location: "A great beast waits by the stairs to the ruins to throw out enemies and accept those who wish to lend their claw.",
-    image: "/npcs/faction-horde.png"
+    image: "/npcs/faction-horde.jpg"
   }
 }
 
@@ -167,12 +167,12 @@ const coalition = {
   bank: {
     title: "Coalition Bank",
     location: "In the back room, hidden away from prying eyes, there is a secret vault behind a decorative flag. Click this to drop off your loot you want to share with your comrades.",
-    image: "/locations/faction-coalition-bank.webp",
+    image: "/locations/faction-coalition-bank.jpg",
   },
   reset: {
     title: "Coalition Reset Point",
     location: "In one of the warmly lit rooms off to the side of the main hall is a room full of comfortable beds and a glowing lamp. Click the lamp to rest yourself.",
-    image: "/locations/faction-coalition-reset.webp",
+    image: "/locations/faction-coalition-reset.jpg",
   },
   joiner: {
     title: "Coalition Faction Joiner",
@@ -299,7 +299,7 @@ const oldBoughs = {
   joiner: {
     title: "Old Boughs Faction Joiner",
     location: "There is a kind old Troll trusted by the Elders of the Old Boughs, hermitting himself away in the fire fly cave.",
-    image: "/npcs/faction-old-boughs.png"
+    image: "/npcs/faction-old-boughs.jpg"
   }
 }
 
@@ -357,7 +357,7 @@ const housesOfSarkada = {
   reset: {
     title: "Houses of Sarkada Reset Point",
     location: "In the bunks atop the guard house, there is a table against the wall. Here is where you may rest yourself and reset all your stats.",
-    image: "/locations/faction-sarkada-reset.webp",
+    image: "/locations/faction-sarkada-reset.jpg",
   },
   joiner: {
     title: "Houses of Sarkada Faction Joiner",
@@ -418,7 +418,7 @@ const silverHold = {
   reset: {
     title: "Silver Hold Reset Point",
     location: "Inside the safety of the barracks, beside the keep, there is a table full of helpful items. You may rest here and regain your strength within the Hold.",
-    image: "/locations/faction-silver-hold-reset.webp",
+    image: "/locations/faction-silver-hold-reset.jpg",
   },
   joiner: {
     title: "Silver Hold Faction Joiner",

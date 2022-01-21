@@ -27,7 +27,7 @@
   <Card body class="mb-3">
     <div class="row">
       <div class="col-sm-4">
-        <img src={npc.image} alt={npc.title} class="mw-100 w-100" />
+        <img src={npc.image} alt={npc.title} class="mw-100" width="100%" />
       </div>
       <div class="col-sm-8">
         <h2 class="fs-2">{npc.title}</h2>

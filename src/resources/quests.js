@@ -30,7 +30,7 @@ const starterQuest = [
       {
         content: "This is a one time quest that aims to introduce you to the world. It begins at the NPC on the docks in the desert region. If you choose the new player portal, it’ll deposit you right in front of the NPC. The NPC will give you the quest start and tell you where to go!",
         dialogue: "I haven't seen you around, so that must mean you're new here! Wanna help a girl out for some coin and a bit of an introduction?",
-        image: "/npcs/docks-worker.webp",
+        image: "/npcs/docks-worker.jpg",
       },
       {
         content: "The next stop is to the Coalition building on the same level to talk to the NPC there. She’ll direct you to head towards the mountains, which can be reached by following the path to the wooden gate and going through it. From there, you’ll go talk to the Silver Hold NPC who will be right in front of the big, wooden keep in the mountain region.",
@@ -50,12 +50,12 @@ const starterQuest = [
       {
         content: "Finally, you’ll meet a Black Horde NPC there who will direct you back to the Coalition NPC to finish the quest.",
         dialogue: "Deep in the jungles of Permia, a beast spots you while you're searching. 'Lost little lamb, what brings you to the jungle, hmm? Haven't you heard that they're unsafe?",
-        image: "/npcs/faction-horde.png",
+        image: "/npcs/faction-horde.jpg",
       },
       {
         content: " ",
         dialogue: "The woman seemed impatient after your long journey, staring at you with clear frustration. 'Finally you're back. Did you at least make the delivery?",
-        image: "/npcs/docks-worker.webp",
+        image: "/npcs/docks-worker.jpg",
       }
     ],
   },
