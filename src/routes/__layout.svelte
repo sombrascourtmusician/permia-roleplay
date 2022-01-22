@@ -85,7 +85,7 @@
                     {:else}
                       <li>
                         {#if dropdown.newTab}
-                          <a class="dropdown-item text-decoration-none" href="/{dropdown.route}/" on:click={() => handleContentClick()} target="_blank" rel="external noopener noreferrer">{@html dropdown.content}</a>
+                          <a class="dropdown-item text-decoration-none" href={dropdown.route} on:click={() => handleContentClick()} target="_blank" rel="external noopener noreferrer">{@html dropdown.content}</a>
                         {:else}
                         <a class="dropdown-item text-decoration-none" href="/{dropdown.route}/" on:click={() => handleContentClick()}>{dropdown.content}</a>
                         {/if}
