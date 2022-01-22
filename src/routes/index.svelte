@@ -71,7 +71,7 @@
       <div class="col-sm-8">
         <div class='px-2'>
           <a href='/quests/starter' class="fs-2 text-light">Start your adventure</a>
-          <p class="mt-2 text-white-50">Tutorial quest description if needed. Other stuff. Blah</p>
+          <p class="mt-2 text-white-50">Start your Permia journey by accepting a quest that will lead you through the world! Click here for more info!</p>
         </div>
       </div>
     </div>

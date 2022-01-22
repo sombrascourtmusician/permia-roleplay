@@ -248,7 +248,7 @@ const oldBoughs = {
   descriptions: [
     "The Old Boughs are an ancient order of Druids, committed to protecting the natural landscape of Permia and aiding those in need. Staunchly opposed to the abuse of the crystal's powers taking place in the City, especially by the Academy of Wonders, they have taken in the Silver Hold on their mountain top hope and pledge to aid them in the current civil war. The faction skirts the lines between neutral good and true neutral in its acts and intentions.",
   ], 
-  alignment: "??????????",
+  alignment: "A peaceful, druidic faction that tries to take care of nature above all else.",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -311,7 +311,7 @@ const housesOfSarkada = {
     "The Royal Army acts as both local law enforcement and the foot soldiers of the royal court. They enforce the laws of the land and seek out the corrupted within their walls to destroy or capture for the Academy’s experiments. With a strict hierarchy, you may climb the ranks.",
     "The Nobles are civil servants, political figures, or investors looking to feed the royal court updated bureaucracy to enforce their power within the city."
   ], 
-  alignment: "??????????",
+  alignment: "A lawful evil faction that supports an oppressive, evil regime.",
   perceptions: [
     {
       title: "Academy of Wonders",
@@ -372,7 +372,7 @@ const silverHold = {
   descriptions: [
     "The silver hold was founded by those driven from the city by the royal guard. They built their home in the valley of the mountain to be safe from those in the city. Decades later as the afflicted crisis grew worse, Princess Aida left the city and joined the hold. Today the hold is led by princess Aida, growing into a true rebellion against the tyranny of the Sarkadians, with a strong moral backing. The hold defends the weak, protects the innocent, and fights against oppression and prejudice. No afflicted is judged for being afflicted, whether blessed or corrupted. The strong moral code, but rebellious nature of the Silver Hold lends toward Neutral-Good alignments, while lawful and chaotic good alignments may also find a home here.",
   ], 
-  alignment: "?????????",
+  alignment: "A good faction that attracts people who wish to do good for their community and their country.",
   perceptions: [
     {
       title: "Academy of Wonders",
