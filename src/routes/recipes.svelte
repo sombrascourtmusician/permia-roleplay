@@ -28,7 +28,7 @@
 	export function load() {
 		return {
 			props: {
-				recipeTypes: recipeTypes
+				recipeList: recipeTypes
 			}
 		};
 	}
@@ -36,7 +36,7 @@
 </script>
 
 <script>
-  export let recipeTypes;
+  export let recipeList;
 
   let bindings = {};
   let searchExpanded = false;
@@ -79,7 +79,7 @@
 
 <svelte:window bind:outerWidth={outerWidth} />
 
-{#each recipeTypes as recipes, i}
+{#each recipeList as recipes, i}
   <Card body class="{i > 0 ? "mt-3" : ""}" id={recipes.title}>
     <h1 class="text-center" bind:this={bindings[recipes.title]}>{recipes.title}</h1>
     <ul class="list-group">
