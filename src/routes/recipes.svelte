@@ -1,12 +1,42 @@
-<script>
+<script context="module">
   import Card from "$lib/Card.svelte";
   import { recipeSearch } from "$lib/RecipeSearch.js";
 	import recipeTypes from '../resources/recipes.js';
 
-  let sortedRecipes = recipeTypes;
-  sortedRecipes.forEach(recipeType => {
+  recipeTypes.forEach(recipeType => {
     recipeType.content = recipeType.content.sort((first, second) => first.name.localeCompare(second.name))
   });
+
+  const reagents = recipeTypes.find(value => value.title === 'Reagents').content;
+
+  reagents.forEach(reagent => {
+    reagent.usedIn = [];
+    recipeTypes.forEach(recipeType => {
+      recipeType.content.forEach(recipe => {
+        const usedInRecipe = recipe.ingredients.find(ingredient => ingredient.name === reagent.name);
+        
+        if (usedInRecipe) {
+          reagent.usedIn.push({ name: recipe.name, count: usedInRecipe.count});
+        }
+      });
+    });
+
+    reagent.usedIn = reagent.usedIn.sort((first, second) => first.name.localeCompare(second.name));
+  });
+
+	/** @type {import('@sveltejs/kit').ErrorLoad} */
+	export function load() {
+		return {
+			props: {
+				recipeTypes: recipeTypes
+			}
+		};
+	}
+
+</script>
+
+<script>
+  export let recipeTypes;
 
   let bindings = {};
   let searchExpanded = false;
@@ -73,6 +103,14 @@
               <li>{ingredient.name} ({ingredient.count})</li>
             {/each}
           </ul>
+          {#if recipes.title === 'Reagents'}
+            <span>Used In:</span>
+            <ul>
+              {#each recipe.usedIn as usedIn}
+                <li>{usedIn.name} ({usedIn.count})</li>
+              {/each}
+            </ul>
+          {/if}
         </li>
       {/each}
     </ul>

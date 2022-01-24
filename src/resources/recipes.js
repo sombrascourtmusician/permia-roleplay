@@ -218,7 +218,7 @@ const consumable = [
   },
   {
     "name": "Love Potion",
-    "effects": "-15 accuracy, -5 to all stats",
+    "effects": "Deals 15 damage per turn for 4 turns, -5 to all stats",
     "crafter": "Alchemist",
     "level": 9,
     "ingredients": [
@@ -381,18 +381,18 @@ const consumable = [
     "level": 7,
     "ingredients": [
       { name: "Cotton Fiber", count: 6 },
-      { name: "Arcane Bowder", count: 1 },
+      { name: "Arcane Powder", count: 1 },
       { name: "Magic Beans", count: 1 },
     ],
   },
   {
-    "name": "Encahnted Rope",
+    "name": "Enchanted Rope",
     "effects": "-5 Str/Dex on target, +2 charisma on user",
     "crafter": "Tailor",
     "level": 7,
     "ingredients": [
       { name: "Cotton Fiber", count: 6 },
-      { name: "Arcane Bowder", count: 1 },
+      { name: "Arcane Powder", count: 1 },
       { name: "Magic Beans", count: 1 },
     ],
   },
@@ -778,12 +778,21 @@ const reagent = [
     ],
   },
   {
+    "name": "Arcane Thread",
+    "crafter": "Tailor",
+    "level": 5,
+    "ingredients": [
+      { name: "Spun Thread", count: 2 },
+      { name: "Arcane Powder", count: 1 },
+    ],
+  },
+  {
     "name": "Runic Thread",
     "crafter": "Tailor",
     "level": 8,
     "ingredients": [
-      { name: "Arcane Thread", count: 2 },
-      { name: "Vitriol Oil", count: 2 },
+      { name: "Arcane Thread", count: 1 },
+      { name: "Vitriol Oil", count: 1 },
       { name: "Runestone", count: 1 },
     ],
   },
@@ -800,7 +809,7 @@ const reagent = [
     "crafter": "Blacksmith",
     "level": 5,
     "ingredients": [
-      { name: "Iron Scraps", count: 2 },
+      { name: "Smelt Iron", count: 2 },
       { name: "Carbon", count: 2 }
     ],
   },

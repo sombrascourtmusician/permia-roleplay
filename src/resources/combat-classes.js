@@ -264,19 +264,19 @@ const elementalist = {
       "flavorText": "The addiction to the manipulation of mana and the elements draws elementalists to push themselves to more and more dangerous limits."
     },
     {
-      "name": "Overload ",
-      "cost": "50 or 100 mana",
+      "name": "Overload",
+      "cost": "10 or 20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Deals high magical damage, may be overcasted for increased damage. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target. If cast on a rock strike'd target, consumes the debuff and ???",
+      "description": "Deals magic damage based on the number of elementalist debuffs on the target. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target. If cast on a rock strike'd target, consumes the debuff and ???",
       "flavorText": "An elementalist does not so much tame the forces they toy with as ride the highs and lows and little embodies this as much as the absolute devastating high of this spell, pulling the elemental attunement of their target and enhancing it to a devastating level. Some, perhaps foolish Elementalists, are willing to even push this spell past its limits."
     },
     {
       "name": "Ice Lance",
       "cost": "30 or 60 mana",
       "scaling": "Intelligence",
-      "restrictions": "Single target",
-      "description": "Deals medium magical damage, applies Chilled debuff to target (-3 Dexterity, -3 Strength). When overcast, adds Singed debuff to target (-2 Con) as well.",
+      "restrictions": "1-3 targets",
+      "description": "Deals medium magical damage, applies Chilled debuff to target (-5 Str/Dex). When overcast, the debuff increases to -5 to all stats.",
       "flavorText": "Temperature is of great interest to an elementalist, its ability to wrack a body, to turn the water of a foe into a weapon against them, or when the freezing is extreme enough, seemingly burn their foe as a flame."
     },
     {
@@ -284,7 +284,7 @@ const elementalist = {
       "cost": "10 or 20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Deals medium magical damage. Applies Singed debuff (-2 Con) to target. If overcast, buffs the caster with +3 Intelligence.",
+      "description": "Deals medium magical damage. Applies Singed debuff (-3 Wis/Int/Chr) to target. If overcast, buffs the caster with +5 Intelligence.",
       "flavorText": "Flames are passion and emotion, as beautiful as they are mesmerizing. Few arts to an Elementalist embody the dangers and the wonders they are capable of as those manipulating fire. The literal rush of fire through the veins of the user has left many washed out elementalists cradling a fire, blinded, desperate for the warmth that they can no longer tap into."
     },
     {
@@ -560,7 +560,7 @@ const poisoner = {
     },
     {
       "name": "Envenom ",
-      "cost": "10 stamina",
+      "cost": "20 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals medium physical damage and inflicts medium Damage Over Time poison on the opponent.",
@@ -929,7 +929,7 @@ const hunter = {
   "skills": [
     {
       "name": "Aimed Shot",
-      "cost": "50 stamina",
+      "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single Target",
       "description": "Aimed shot is a signature attack that can target six different areas. Head: Deals increased damage. Neck: Deals high damage and debuffs casting stats (-6 Chr/Wis/Int). Hand: Deals high damage and debuffs physical stats (-6 Str/Dex). Eye: Deals high damage and debuffs accuracy (-25 accuracy). Armor Straps: Deals medium damage and debuffs defenses (-10 to each defense). Chest: Deals high damage and adds a heavy damage over time (15 damage per turn for 5 turns).",
@@ -937,7 +937,7 @@ const hunter = {
     },
     {
       "name": "Corrosive Shot",
-      "cost": "40 stamina",
+      "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals medium physical damage that heavily reduces enemies defenses",
@@ -1001,7 +1001,7 @@ const daggerspell = {
       "cost": "40 stamina, 90 mana",
       "scaling": "Dexterity and Intelligence",
       "restrictions": "Single target",
-      "description": "Can only be used when Imbue Blade has already been used. When used, choose one Imbue to release. If Fire is released, massive damage is inflicted on the target along with a minor con debuff (-2 Con). If Acid is released, medium damage is done with a heavy debuff to enemy defenses (-15 to each defense). Finally, if ice is released, only small damage is done but a heavy debuff is inflicted to every stat (-7 to every stat).",
+      "description": "Can only be used when Imbue Blade has already been used. When used, choose one Imbue to release. If Fire is released, high damage is inflicted on the target along with a minor con debuff (-2 Con). If Acid is released, light damage is done with a heavy debuff to enemy defenses (-15 to each defense). Finally, if ice is released, only small damage is done but a heavy debuff is inflicted to every stat (-7 to every stat).",
       "flavorText": "Releasing pent up magical energy causes an overwhelming amount of energy to flow."
     },
     {

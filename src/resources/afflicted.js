@@ -88,7 +88,7 @@ const blessed = {
       skill: {
         name: "Future Sight",
         cost: "20 stamina, 40 mana",
-        description: "Gain +2 in all stats and heal 30 hp",
+        description: "Gain +3 in all stats and heal 40 hp",
       },
     },
     {

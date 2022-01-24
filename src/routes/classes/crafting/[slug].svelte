@@ -66,6 +66,11 @@
             Requires level {recipe.level}
           </div>
         </div>
+        <ul>
+          {#each recipe.ingredients as ingredient}
+            <li>{ingredient.name} ({ingredient.count})</li>
+          {/each}
+        </ul>
       </li>
     {/each}
   </ul>
