@@ -508,7 +508,8 @@ const other = [
     "crafter": "Tailor",
     "level": 5,
     "ingredients": [
-
+      { name: "Arcane Thread", count: 3 },
+      { name: "Cut Gem", count: 1 },
     ]
   },
   {
