@@ -25,7 +25,7 @@ const corrupted = {
         name: "Mud Fling",
         cost: "15 stamina",
         scaling: "Strength",
-        description: "Weak attack",
+        description: "Deals medium damage and reduces the target's Wis/Int/Chr by -3.",
       }
     },
     {
@@ -76,7 +76,7 @@ const blessed = {
       stats: "-1 Con",
       skill: {
         name: "Invigorate",
-        cost: "30 mana",
+        cost: "30 mana, 15 stamina",
         scaling: "Wisdom or Intelligence (higher of the two)",
         description: "Buff a target with +1 to con and medium heal",
       },
