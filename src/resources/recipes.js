@@ -101,7 +101,7 @@ const armor = [
   },
   {
     "name": "Enchanted Leather Armor",
-    "effects": "+6 Con, +1 Dex/Str, +4 defenses. When below 50% hp, gain 3000 dodge for 1 turn.",
+    "effects": "+6 Con, +1 Dex/Str, +4 defenses. When below 75% hp, gain 3000 dodge for 1 turn.",
     "crafter": "Leatherworker",
     "level": 9,
     "ingredients": [
