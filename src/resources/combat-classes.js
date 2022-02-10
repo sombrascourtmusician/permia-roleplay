@@ -219,6 +219,14 @@ const druid = {
       "flavorText": "While the healing arts of a druid are potent, they are distinctly different from those of most others. Using the body's natural processes, enhanced and sped up to rapidly regenerate injuries, rather than bringing in a divine miracle from beyond the mundane."
     },
     {
+      "name": "Thorns",
+      "cost": "40 mana",
+      "scaling": "Wisdom",
+      "restrictions": "1-3 targets",
+      "description": "Buffs targets with 10 damage return on hit. When used on one target, add 10 of each defense, when used on more than one, add 5.",
+      "flavorText": " "
+    },
+    {
       "name": "Goodberry",
       "cost": "30 mana",
       "scaling": "Wisdom",
@@ -275,8 +283,8 @@ const elementalist = {
       "name": "Ice Lance",
       "cost": "30 or 60 mana",
       "scaling": "Intelligence",
-      "restrictions": "1-3 targets",
-      "description": "Deals medium magical damage, applies Chilled debuff to target (-5 Str/Dex). When overcast, the debuff increases to -5 to all stats.",
+      "restrictions": "1-2 targets",
+      "description": "Deals medium magical damage, applies Chilled debuff to target (-5 Str/Dex). When overcast, add Singed (-3 Int/Wis/Chr).",
       "flavorText": "Temperature is of great interest to an elementalist, its ability to wrack a body, to turn the water of a foe into a weapon against them, or when the freezing is extreme enough, seemingly burn their foe as a flame."
     },
     {
@@ -549,6 +557,14 @@ const poisoner = {
       "restrictions": "Single target",
       "description": "Provides a weak heal that changes all damage over time effects to heal over time effects instead.",
       "flavorText": "With certain ingredients, even the most deadly of poisons can be reversed, and made beneficial instead."
+    },    
+    {
+      "name": "Poison Flask",
+      "cost": "30 stamina",
+      "scaling": "Dexterity",
+      "restrictions": "1-3 targets",
+      "description": "Deals minor damage and causes medium bleeding for 5 turns.",
+      "flavorText": " "
     },
     {
       "name": "Poison Blade",
@@ -618,6 +634,14 @@ const rogue = {
       "restrictions": "Single target",
       "description": "Medium physical damage attack that steals a low level consumable from the target.",
       "flavorText": "A quick distraction always leaves one open for sly hands. What's yours is mine."
+    },
+    {
+      "name": "Poison Flask",
+      "cost": "30 stamina",
+      "scaling": "Dexterity",
+      "restrictions": "1-3 targets",
+      "description": "Deals minor damage and causes medium bleeding for 5 turns.",
+      "flavorText": " "
     },
     {
       "name": "Smoke Bomb ",
@@ -725,7 +749,7 @@ const barbarian = {
       "cost": "Health",
       "scaling": "Strength",
       "restrictions": "Self",
-      "description": "Gain 20 stamina at the cost of 40 health, restoring an extra 20 stamina per turn for 2 turns.",
+      "description": "Gain 20 stamina at the cost of 20 health, restoring an extra 20 stamina per turn for 2 turns.",
       "flavorText": " "
     },
   ]
@@ -1235,7 +1259,7 @@ const hemomancer = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Deals low physical damage and inflicts the carved debuff (-1 Con) while buffing the user with +1 con and 5 health a turn for 5 turns. Con buff/debuff stacks 3 times.",
+      "description": "Carve is a is a medium attack that buffs the users Con by 4, adds a medium HOT for 5 turns, and debuffs the enemy con by 4.",
       "flavorText": "Carve slices through an enemy's defenses, sucking their blood out through the wound and using it to heal and fortify the caster."
     },
     {
@@ -1356,16 +1380,16 @@ const warlock = {
       "name": "Mana Drain",
       "cost": "50 mana",
       "scaling": "Intelligence",
-      "restrictions": "Single Target",
-      "description": "Steals enemy mana and replenishes a quarter of what is stolen.",
+      "restrictions": "1-3 targets",
+      "description": "Mana drain drains target's Mana by up to 10 + Intelligence * .75 and replenishes 25% of the amount drained. If used on three targets, amount drained is reduced.",
       "flavorText": "Even casters aren't immune to the sapping that a warlock can give, stealing mana from their victims."
     },
     {
       "name": "Fatigue",
       "cost": "50 mana",
       "scaling": "Intelligence",
-      "restrictions": "Single target",
-      "description": "Saps the enemies stamina and damages based off the amount reduced.",
+      "restrictions": "1-3 targets",
+      "description": "Fatigue drains target's Stamina by up to 15 + (Intelligence * .5) and damages them based on the amount drained. If used on seperate targets, less is drained.",
       "flavorText": "Eldritch enemies steal the vitality of the enemy, and in extreme cases, can even sap years off their life."
     },
     {
