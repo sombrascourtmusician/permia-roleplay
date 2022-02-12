@@ -88,15 +88,15 @@
           <div class="row">
             <div class="col-sm-8">
               <span class="fw-bold" id="{recipe.name}"  bind:this={bindings[recipe.name]}>{recipe.name}</span>
-              {#if recipe.effects}
-              <br/>
-              <span>Gives {recipe.effects}</span>
-              {/if}
             </div>
             <div class="col-sm-4 text-sm-end">
               <a class='text-dark' href='/classes/crafting/{recipe.crafter.toLowerCase()}'>Requires level {recipe.level} {recipe.crafter}</a>
             </div>
           </div>
+          {#if recipe.effects}
+            <span>Gives {recipe.effects}</span>
+            <br />
+          {/if}
           <span>Ingredients:</span>
           <ul>
             {#each recipe.ingredients as ingredient}
