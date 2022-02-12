@@ -160,7 +160,7 @@ const bard = {
     {
       "name": "Fiery Heart",
       "cost": "50 stamina",
-      "scaling": "Dexterity",
+      "scaling": "Charisma",
       "restrictions": "1-3 targets",
       "description": "Restores 20 stamina and 30 mana per target. If all three charges are used on one target, 40 and 60 total are restored instead with a small heal added. Fiery Heart is added to the target, which adds five damage onto their attacks.",
       "flavorText": "The sound of hoof beats cross the glade, good folk, lock up your son and daughter! Beware the deadly flashing blade, unless you want to end up shorter!"
