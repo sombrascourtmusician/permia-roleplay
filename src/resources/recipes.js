@@ -90,7 +90,7 @@ const armor = [
   },
   {
     "name": "Mythril Armor",
-    "effects": "+7 Con, +6 defenses. When dropping below 50% hp, gain a 20 health HOT for 3 turns.",
+    "effects": "+7 Con, +4 defenses. When dropping below 50% hp, gain a 20 health HOT for 3 turns.",
     "crafter": "Blacksmith",
     "level": 9,
     "ingredients": [
@@ -108,6 +108,26 @@ const armor = [
       { name: "Enchanted Leather", count: 3 },
       { name: "Runestones", count: 2 },
       { name: "Processed Crystal", count: 1 },
+    ],
+  },
+  {
+    "name": "Spiked Leather Armor",
+    "effects": "+7 Con, +4 defenses. Return 7 damage per hit.",
+    "crafter": "Leatherworker",
+    "level": 9,
+    "ingredients": [
+      { name: "Steel Plate", count: 1 },
+      { name: "Spiked Leather", count: 1 },
+    ],
+  },
+  {
+    "name": "Spelled Mythril Armor",
+    "effects": "+6 Con, +1 to all stats, +4 defenses. 15 damage shield at start with 10 defenses. 30 hp hot when hitting 70% hp.",
+    "crafter": "Enchanter",
+    "level": 9,
+    "ingredients": [
+      { name: "Steel Plate", count: 1 },
+      { name: "Spelled Mythril", count: 1 },
     ],
   },
 
@@ -293,6 +313,49 @@ const consumable = [
     "ingredients": [
       { name: "Cooked Meat", count: 1 },
       { name: "Eggs", count: 1 }
+    ],
+  },
+  {
+    "name": "Stamina Salts",
+    "effects": "40 HP, Medium HOT for 2 turns, 20 stamina instantly, 20 stamina next turn",
+    "crafter": "Chef",
+    "level": 8,
+    "ingredients": [
+      { name: "Yellow Potion", count: 1 },
+      { name: "Magic Beans", count: 1 },
+      { name: "Spun Crystal", count: 1 }
+    ],
+  },
+  {
+    "name": "Mana Cakes",
+    "effects": "40 HP, Medium HOT for 2 turns, 30 mana instantly, 30 mana next turn",
+    "crafter": "Chef",
+    "level": 8,
+    "ingredients": [
+      { name: "Rice", count: 1 },
+      { name: "Aqua Vitae", count: 1 },
+      { name: "Magic Beans", count: 1 },
+      { name: "Spun Crystal", count: 1 }
+    ],
+  },
+  {
+    "name": "Stamina Blight",
+    "effects": "Medium DOT for 3 turns, 20 stamina drained per turn for 2 turns",
+    "crafter": "Alchemist",
+    "level": 9,
+    "ingredients": [
+      { name: "Refined Crystal", count: 1 },
+      { name: "Magic Bean", count: 1 }
+    ],
+  },
+  {
+    "name": "Mana Blight",
+    "effects": "Medium DOT for 3 turns, 30 mana drained per turn for 2 turns",
+    "crafter": "Alchemist",
+    "level": 9,
+    "ingredients": [
+      { name: "Refined Crystal", count: 1 },
+      { name: "Magic Bean", count: 1 }
     ],
   },
   {
@@ -503,6 +566,17 @@ const other = [
     ],
   },
   {
+    "name": "Holy Shield",
+    "effects": "+3 Wis/Str",
+    "crafter": "Blacksmith",
+    "level": 9,
+    "ingredients": [
+      { name: "Spelled Mythril", count: 1 },
+      { name: "Runestone", count: 1 },
+      { name: "Smelt Steel", count: 4 }
+    ],
+  },
+  {
     "name": "Seer's Circlet",
     "effects": "+1 Int/Wis",
     "crafter": "Tailor",
@@ -530,6 +604,16 @@ const other = [
     "ingredients": [
       { name: "Smelt Steel", count: 4 },
       { name: "Shaped Gem", count: 1 }
+    ],
+  },
+  {
+    "name": "Spiked Leather Shield",
+    "effects": "+3 Con, +5 defenses, return 3 damage on hit",
+    "crafter": "Leatherworker",
+    "level": 9,
+    "ingredients": [
+      { name: "Steel Shield", count: 1 },
+      { name: "Spiked Leather", count: 1 }
     ],
   },
   {
@@ -810,7 +894,7 @@ const reagent = [
     "crafter": "Blacksmith",
     "level": 5,
     "ingredients": [
-      { name: "Smelt Iron", count: 2 },
+      { name: "Smelt Iron", count: 1 },
       { name: "Carbon", count: 2 }
     ],
   },
@@ -1043,6 +1127,17 @@ const weapons = [
     "ingredients": [
       { name: "Smelt Steel", count: 2 },
       { name: "Shaped Gem", count: 1 },
+    ],
+  },
+  {
+    "name": "Spellblade",
+    "effects": "+3 Int/Str/Dex",
+    "crafter": "Blacksmith",
+    "level": 9,
+    "ingredients": [
+      { name: "Spelled Mythril", count: 1 },
+      { name: "Runestone", count: 1 },
+      { name: "Smelt Steel", count: 4 },
     ],
   },
   {
