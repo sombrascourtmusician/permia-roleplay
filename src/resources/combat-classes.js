@@ -382,7 +382,7 @@ const assassin = {
     },
     {
       "name": "Bandage",
-      "cost": "40 stamina",
+      "cost": "20 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Medium heal that adds Bandaged (-1 con) to the target.",
@@ -648,7 +648,7 @@ const rogue = {
       "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Low physical damage attack that increases the evasion of you or your ally (100% immunity for 2 hits).",
+      "description": "Increases the evasion of you or your ally (100% immunity for 2 hits).",
       "flavorText": "Packed powder with a quick fuse fills the area with smoke - great for a quick escape, or to strike from the shadows."
     },
     {
@@ -1038,7 +1038,7 @@ const daggerspell = {
     },
     {
       "name": "Cauterize",
-      "cost": "20 mana",
+      "cost": "40 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Cauterize the target's wounds. Heals a medium amount but also adds a burn (-1 Con) to the target.",
@@ -1070,7 +1070,7 @@ const daggerspell = {
     },
     {
       "name": "Bandage",
-      "cost": "40 stamina",
+      "cost": "20 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Medium heal that adds Bandaged (-1 con) to the target.",
