@@ -4,7 +4,7 @@
 	import recipeTypes from '../resources/recipes.js';
 
   recipeTypes.forEach(recipeType => {
-    recipeType.content = recipeType.content.sort((first, second) => first.name.localeCompare(second.name))
+    recipeType.content = recipeType.content.sort((first, second) => first.crafter.localeCompare(second.crafter) || (first.level - second.level) || first.name.localeCompare(second.name))
   });
 
   const reagents = recipeTypes.find(value => value.title === 'Reagents').content;

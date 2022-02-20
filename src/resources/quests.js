@@ -55,7 +55,7 @@ const starterQuest = [
       {
         content: " ",
         dialogue: "The woman seemed impatient after your long journey, staring at you with clear frustration. 'Finally you're back. Did you at least make the delivery?",
-        image: "/npcs/docks-worker.jpg",
+        image: "/npcs/faction-coalition.jpg",
       }
     ],
   },
