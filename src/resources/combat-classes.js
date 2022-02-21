@@ -69,7 +69,7 @@ const cleric = {
       "cost": "40 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "Heals a medium amount and removes up to 3 debuffs. Also adds 10 mana and stamina to the target.",
+      "description": "Heals a medium amount and removes up to 3 debuffs (not including Death Mark). Also adds 10 mana and stamina to the target.",
       "flavorText": "While forgivable in times of dire need, it is generally frowned upon to utilize ones liturgical tools and holy implements as blunt instruments."
     },
     {
@@ -1115,7 +1115,7 @@ const paladin = {
   "skills": [
     {
       "name": "Holy Light",
-      "cost": "25 stamina, 20 mana",
+      "cost": "10 stamina, 20 mana",
       "scaling": "Strength",
       "restrictions": "Single Target",
       "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength and wisdom by 1. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
@@ -1139,7 +1139,7 @@ const paladin = {
     },
     {
       "name": "Wrath Hammer",
-      "cost": "25 stamina",
+      "cost": "20 stamina",
       "scaling": "Wisdom and Strength",
       "restrictions": "Single target",
       "description": "Deals medium physical damage.",
@@ -1155,7 +1155,7 @@ const paladin = {
     },
     {
       "name": "Vital Shout",
-      "cost": "25 stamina",
+      "cost": "20 stamina",
       "scaling": "",
       "restrictions": "1-3 targets",
       "description": "Heals 15hp and adds a medium hot.",
