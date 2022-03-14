@@ -709,7 +709,7 @@ const barbarian = {
       "cost": "10 stamana",
       "scaling": "Strength",
       "restrictions": "Self",
-      "description": "Rage buffs yourself based on missing HP. The buff is greatest at sub 50% health and the different tiers of rage stack.",
+      "description": "Rage buffs yourself based on missing HP. At over 75% hp, one debuff is removed. At 50-75% hp, removes three debuffsf and heals 30. Under 50% hp, removes all debuffs and heals 60.",
       "flavorText": "LET LOOSE THE MONSTER INSIDE OF YOU. FEAST. FIGHT. END THEM."
     },
     {
@@ -1397,7 +1397,7 @@ const warlock = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
-      "description": "Choose a stat to hex. Reduce the stat by 6 and heal based off the number of hexes on the target and deals minor damage.",
+      "description": "Choose a stat to hex. Reduce the stat by 9 and heal based off the number of hexes on the target and deals minor damage.",
       "flavorText": "A warlock saps the enemy strength minute by minute, weakening them moment by moment."
     },
     {
