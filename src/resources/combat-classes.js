@@ -352,7 +352,7 @@ const assassin = {
       "name": "Death Mark",
       "cost": "40 stamina",
       "scaling": "Dexterity",
-      "restrictions": "Single Target",
+      "restrictions": "1-2 targets",
       "description": "Deals light physical damage, ignoring defense, and applies a death mark for 5 turns. When the death mark expires, the target takes 100 damage. Marks cannot stack.",
       "flavorText": "Knowledge of anatomy, prediction of an opponents movements and a steady hand ensure that few forces can dare to prevent or interrupt an assassin's attacks."
     },
@@ -825,7 +825,7 @@ const dancer = {
       "name": "Encourage",
       "cost": "20 stamina",
       "scaling": "",
-      "restrictions": "Self",
+      "restrictions": "Single target",
       "description": "Encourage is a small heal that restores stamina/mana to the target, more with shuffle and a higher heal with flash. Cannot be self targeted. If under the effects of Flash/Shuffle, heal more. Poise gives more stamina/mana.",
       "flavorText": "A dancer, like their bard compatriots, can lift anyone's spirits, even in the darkest of times."
     },
