@@ -509,7 +509,8 @@ const consumable = [
     "crafter": "Enchanter",
     "level": 7,
     "ingredients": [
-      { name: "Flawless Crystal", count: 3 },
+      { name: "
+       ", count: 3 },
       { name: "Arcane Powder", count: 1 },
       { name: "Magic Beans", count: 1 },
     ],
@@ -1085,7 +1086,7 @@ const reagent = [
     "crafter": "Chef",
     "level": 8,
     "ingredients": [
-      { name: "Flawless Crystal", count: 3 },
+      { name: "Flawless Crystal", count: 1 },
       { name: "Saffron", count: 1 },
     ],
   },
