@@ -614,7 +614,7 @@ const rogue = {
     {
       "name": "Cheap Shot ",
       "cost": "40 stamina",
-      "scaling": "Dexterity and Charisma",
+      "scaling": "Dexterity",
       "restrictions": "Single Target",
       "description": "High physical damage attack scaling off of both Dexterity and Charisma which ignores 50% of armor.",
       "flavorText": "Hit 'em where they expect it the least. Distraction can take many forms, a quick taunt, or a feint. The choice is yours."
@@ -630,7 +630,7 @@ const rogue = {
     {
       "name": "Swindle",
       "cost": "30 stamina",
-      "scaling": "Charisma",
+      "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Medium physical damage attack that steals a low level consumable from the target.",
       "flavorText": "A quick distraction always leaves one open for sly hands. What's yours is mine."
@@ -654,7 +654,7 @@ const rogue = {
     {
       "name": "Charm",
       "cost": "10 stamina",
-      "scaling": "Charisma",
+      "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Low physical damage attack that debuffs (-5 defense and -1 to all stats) the target.",
       "flavorText": "A blown kiss or a wink can go further than anyone really wants to admit."
@@ -892,26 +892,26 @@ const battlemage = {
     },
     {
       "name": "Arcane Strike",
-      "cost": "15 stamina, 30 mana",
+      "cost": "25 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Deals high physical damage to a target and has a higher than normal chance of hitting a target.",
+      "description": "Deals high physical damage to a target ignoring part of the target's armor (50%) and has a higher than normal chance of hitting a target.",
       "flavorText": "A calculated, accurate blow used to finish an opponent, with a greater than normal chance of striking true, a warrior can end a fight that could drag on considerably longer."
     },
     {
       "name": "Phoenix Strike",
-      "cost": "10 stamina, 20 mana",
+      "cost": "50 mana",
       "scaling": "Strength and Intelligence",
       "restrictions": "Single target",
-      "description": "Deals weak damage and afflicts Singed (-2 Constitution).",
+      "description": "Deals medium damage and afflicts Singed (-3 Wis/Int/Chr).",
       "flavorText": "Channeling magic to superheat your blade leaves a warrior slower to react."
     },
     {
       "name": "Triple Blow",
-      "cost": "10 stamina",
+      "cost": "25 stamina",
       "scaling": "Strength",
       "restrictions": "1-3 targets",
-      "description": "Deals light damage.",
+      "description": "Deals medium damage. If all three hits are on the same target, turns into a bigger strike and refunds 50 mana.",
       "flavorText": "A few love taps can end a fight before it even begins."
     },
     {
@@ -929,6 +929,22 @@ const battlemage = {
       "restrictions": "Single target",
       "description": "Low physical damage attack.",
       "flavorText": "In the end, warfare can be as simple as it is complicated and a rapid strike will be the end to many a fight. No matter the weapon used or the skill of a warrior."
+    },
+    {
+      "name": "Absolute Power",
+      "cost": "No cost",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Gives 20 stamina and 30 mana for 3 turns if under the effects of ultimatum. If not, gain a 10hp HOT for 3 turns and 20 stamina + 30 mana instantly.",
+      "flavorText": ""
+    },
+    {
+      "name": "Crush",
+      "cost": "50 stamina",
+      "scaling": "Defenses",
+      "restrictions": "Single target",
+      "description": "Deals heavy damage with a high hit chance, scaling with both defenses",
+      "flavorText": ""
     },
   ]
 }
@@ -1193,6 +1209,14 @@ const paladin = {
       "description": "Low physical damage attack.",
       "flavorText": "In the end, warfare can be as simple as it is complicated and a rapid strike will be the end to many a fight. No matter the weapon used or the skill of a warrior."
     },
+    {
+      "name": "Holy Surge",
+      "cost": "No cost",
+      "scaling": "Strength",
+      "restrictions": "Single target",
+      "description": "Gives 10 stamina and 20 mana instantly, and 20/30 a turn for every buff on the user.",
+      "flavorText": ""
+    },
   ]
 }
 
@@ -1293,7 +1317,7 @@ const necromancer = {
   "skills": [
     {
       "name": "Sacrifice",
-      "cost": "100 mana",
+      "cost": "80 mana",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
       "description": "Sacrifices the user's current minion, using their power in a final, unholy spell. Deals heavy damage and effects are changed to use the sacrificed minion. If enhanced by Ravager, a heavy damage over time is also applied, but defenses are lowered by 10. If enhanced with Zombie, the user gets 15 increased defenses but lowers their intelligence.  If enhanced with Ghoul, the user heals for half the damage dealt but applies a medium damage over time to themselves.",
@@ -1304,12 +1328,12 @@ const necromancer = {
       "cost": "50 mana",
       "scaling": "Intelligence",
       "restrictions": "1-2 Targets",
-      "description": "Sends out a wave of dark magic that can target two people that damages the target with medium damage. If enhanced by Ravager, a medium bleed is added to each target. If enhanced by Zombie, debuff the enemies defense by -10. If enhanced by Ghoul, heal a flat medium amount as well as the heal on hit.",
+      "description": "Sends out a wave of dark magic that can target two people that damages the target with medium damage. If enhanced by Ravager, a small bleed is added to each target. If enhanced by Zombie, reduce enemy stats by -2. If enhanced by Ghoul, heal a flat medium amount as well as the heal on hit.",
       "flavorText": "A cry out can rupture ears when boosted by dark power."
     },
     {
       "name": "Dark Pact",
-      "cost": "20 mana",
+      "cost": "10 mana",
       "scaling": "Intelligence",
       "restrictions": "Self",
       "description": "Buffs the user based on the summoned minion. If Ravager, increase intelligence by 4 but reduce constitution by 2. If Zombie, increase defenses by 10 and lower intelligence by 2. If Ghoul, heal for a large amount but reduces intelligence by 2.",
@@ -1317,10 +1341,10 @@ const necromancer = {
     },
     {
       "name": "Shadow Snare",
-      "cost": "40 mana",
+      "cost": "50 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Shadow Snare is a medium attack that lowers the enemies dexterity by 4. If enhanced by Ravage, it adds a weak damage over time. If enhanced by Zombie, strength is also debuffed by the same amount. If enhanced by Ghoul, constituon is debuffed by 4 and the user is minorly healed.",
+      "description": "Shadow Snare is a medium attack that lowers the enemies stats by -3. If enhanced by Ravage, it adds a medium bleed effect. If enhanced by Zombie, further reduces stats by -2. If enhanced by Ghoul, constitution is debuffed by 4 and the user is minorly healed.",
       "flavorText": "Shadowy claws erupt from the ground and look to drag their target back down with them."
     },
     {
@@ -1338,6 +1362,22 @@ const necromancer = {
       "restrictions": "Single target",
       "description": "Deals low magic damage, benefiting from summons",
       "flavorText": "A necromancer's flame is special in that it removes it's target from existence."
+    },
+    {
+      "name": "Soul Tear",
+      "cost": "50 mana",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Deals heavy damage and reduces enemy defenses by 10",
+      "flavorText": ""
+    },
+    {
+      "name": "Necromantic Power",
+      "cost": "No cost",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Restores 30hp and 30 mana if in ghoul. Restores 30 mana and 30 stamina for 2 more turns if ravager. Restores 20hp for 2 turns and 30 mana if in zombie.",
+      "flavorText": ""
     },
   ]
 }
