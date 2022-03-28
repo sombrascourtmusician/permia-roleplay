@@ -709,7 +709,7 @@ const barbarian = {
       "cost": "10 stamana",
       "scaling": "Strength",
       "restrictions": "Self",
-      "description": "Rage buffs yourself based on missing HP. At over 75% hp, one debuff is removed. At 50-75% hp, removes three debuffsf and heals 30. Under 50% hp, removes all debuffs and heals 60.",
+      "description": "Rage buffs yourself based on missing HP. At 50-75% hp, removes one debuff and heals 30. Under 50% hp, removes three debuffs and heals 50.",
       "flavorText": "LET LOOSE THE MONSTER INSIDE OF YOU. FEAST. FIGHT. END THEM."
     },
     {
@@ -1333,10 +1333,10 @@ const necromancer = {
     },
     {
       "name": "Dark Pact",
-      "cost": "10 mana",
+      "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Self",
-      "description": "Buffs the user based on the summoned minion. If Ravager, increase intelligence by 4 but reduce constitution by 2. If Zombie, increase defenses by 10 and lower intelligence by 2. If Ghoul, heal for a large amount but reduces intelligence by 2.",
+      "description": "Buffs the user based on the summoned minion. If Ravager, increase intelligence by 4 but reduce constitution by 2. If Zombie, increase defenses by 10 and lower intelligence by 2. If Ghoul, heal for a medium amount but reduces intelligence by 2.",
       "flavorText": "Beseeching their dark sources of power can accentuate a necromancers magic to higher heights."
     },
     {
@@ -1376,7 +1376,7 @@ const necromancer = {
       "cost": "No cost",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Restores 30hp and 30 mana if in ghoul. Restores 30 mana and 30 stamina for 2 more turns if ravager. Restores 20hp for 2 turns and 30 mana if in zombie.",
+      "description": "Restores 10hp and 30 mana if in ghoul. Restores 10 mana and 30 stamina for 2 more turns if ravager. Restores 5hp for 2 turns and 30 mana if in zombie.",
       "flavorText": ""
     },
   ]
