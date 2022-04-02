@@ -40,6 +40,14 @@ const welcome = [
   "Welcome to Permia, a powder-keg ready to explode.",
 ]; 
 
+const newDevelopments = [
+  "In the months since strangers flocked to Permia, many things have changed. The founder of the Horde departed the faction, leadership shakeups in the city saw strife within their ranks, and a peaceful handover of power in the Hold opened new horizons for the rebels.",
+  "In the mountains, the Old Boughs have fully rekindled their activity, allying with the Hold and stopping the Academy's actions in many instances, proving to be a thorn in their side. The Silver Hold has fully declared war on the Black Horde as well, the conflict escalating from a cold war into one very, very hot.",
+  "The Houses have strengthened their guard once more in the city, winning battle after battle and rebuffing a Horde assault on the city. It's not all sunshine and roses, as a few successful raids have dealt blows to both the Houses' captives and the Academy's operations. The Court of Flies has come once more out of the shadows and into the light - at least as much as they wish - and have begun conducting thievery across the realm, offering information on all... for a price.",
+  "Finally, the Jungle swarms with Horde, their numbers growing by the day, great rituals and hunts lighting the pyres of the ziggurats once more. While held back for now, the tide only grows and soon it may become overwhelming for the city and the Hold both to contain even working together.",
+  "In the jungle, the rumblings of an ancient civilization have stirred once more, and while quelled for now, an evil, civilization-killing spirit can only be checked for so long. History may become the future once more, and quakes across the realm have threatened to show more and more of the once-great power."
+];
+ 
 const lore = {
   "ancient-history": {
     "title": "Ancient History",
@@ -49,13 +57,17 @@ const lore = {
     "title": "Renaissance and Ruin",
     "body": renaissance,
   },
-  "sim": {
+  "afflicted-crisis": {
     "title": "The Afflicted Crisis",
     "body": afflicted,
   },
-  "combat": {
+  "welcome-to-the-world": {
     "title": "Welcome to the World",
     "body": welcome,
+  },
+  "new-developments": {
+    "title": "New Developments",
+    "body": newDevelopments,
   },
 }
 
