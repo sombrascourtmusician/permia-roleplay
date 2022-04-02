@@ -43,7 +43,9 @@ const discordRules = [
   "You may NOT post any illegal/extreme content in any channel. This includes, but is not limited to: underage, cub, scat, hard vore, etc.",
   "Do not spam the text channels.",
   "Any form of discrimination posted that goes against someone’s race, gender, sex, or orientation will NOT be tolerated. Ex: Posting a racial meme or commenting about someone’s race.",
-  "Please avoid talking about real world politics or religion as much as possible. Comparisons for your character are perfectly fine and acceptable, just please try and not go too far. If you have any questions about what is okay, feel free to ping the team!"
+  "Please avoid talking about real world politics or religion as much as possible. Comparisons for your character are perfectly fine and acceptable, just please try and not go too far. If you have any questions about what is okay, feel free to ping the team!",
+  "Please spoiler any sensitive topics - bugs, zits, snakes, spiders, that kind of thing!",
+  "In NSFW channels, any heavy or niche kinks should be spoilered. If you aren't sure if it should be spoilered, ask an admin! Additionally, any art should be posted with a source.",
 ]
 
 const rentalRules = [
