@@ -95,7 +95,7 @@ const blackHorde = {
     {
       title: "Silver Hold",
       link: "silver-hold",
-      body: "The Hold are not the Horde’s enemies. Though the sentiment is not likely returned. The Hold giving aid only to the well behaved and ‘safer’ afflicted is a particularly sour point."
+      body: "Spineless cowards who aren't willing to do what must be done. Their actions against us and our kind have earned ire that burns bright, but not quite as bright as the anger against the city."
     },
   ],
   giver: {
@@ -382,7 +382,7 @@ const silverHold = {
     {
       title: "The Black Horde",
       link: "black-horde",
-      body: "A rebellion without organization, rules, unity of purpose and culture will fail. The Black Horde abandons our traditions, turns from our history, and replaces it with anger. They are allies of sorts and we share purposes, but they need to learn restraint."
+      body: "A rebellion without organization, rules, unity of purpose and culture will fail. The Black Horde abandons our traditions, turns from our history, and replaces it with anger. Their methods are too brutish, too barbariac and we must end them as surely as we plan against the city."
     },
     {
       title: "Coalition of the Compass",
