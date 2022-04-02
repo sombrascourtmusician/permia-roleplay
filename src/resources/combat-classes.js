@@ -37,7 +37,7 @@ const cleric = {
       "cost": "60 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "High Magical Damage, Damages intelligence by 3 points. Heals the attacker for 15.",
+      "description": "High Magical Damage, Damages intelligence by 3 points. Heals the attacker for 10.",
       "flavorText": "It is said that which angers the divine most are those who refuse justice and who seek power over other men, holy utterance lends credence to that story as its destructive force holds special enmity for arcanists."
     },
     {
@@ -1240,7 +1240,7 @@ const hemomancer = {
   "skills": [
     {
       "name": "Red Path",
-      "cost": "10 mana",
+      "cost": "20 health",
       "scaling": "Intelligence",
       "restrictions": "Single Target",
       "description": "Uses all stacks of Offering to heal for 20 per stack. Additionally, deal twenty base damage per stack that increases it's damage based off of Intelligence.",
@@ -1248,10 +1248,10 @@ const hemomancer = {
     },
     {
       "name": "Offering",
-      "cost": "10 mana",
+      "cost": "10 health, 20 mana",
       "scaling": "",
-      "restrictions": "Self",
-      "description": "Buffs Intelligence by 3 while damaging health by 10 points. Stacks 2 times.",
+      "restrictions": "Single target (not self)",
+      "description": "Buffs Intelligence by 1/3 and allows you to enter blood pact. Blood pact allows you to sacrifice life during another attack to further your offering buff.",
       "flavorText": "Blood is the ultimate source of power for a Hemomancer and that includes their own."
     },
     {
@@ -1267,7 +1267,7 @@ const hemomancer = {
       "cost": "50 mana",
       "scaling": "Constitution",
       "restrictions": "Single target",
-      "description": "Deals low damage and heals the user for the damage dealt.",
+      "description": "Deals low damage and heals the user for the damage dealt with an added base value. Also heals more when consuming offering stacks.",
       "flavorText": "An eruption of blood is just as benefecial for the user as it is painful for the victim."
     },
     {
@@ -1280,7 +1280,7 @@ const hemomancer = {
     },
     {
       "name": "Carve",
-      "cost": "20 mana",
+      "cost": "40 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Carve is a is a medium attack that buffs the users Con by 4, adds a medium HOT for 5 turns, and debuffs the enemy con by 4.",
