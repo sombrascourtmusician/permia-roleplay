@@ -23,9 +23,9 @@ const corrupted = {
       stats: "-1 Con",
       skill: {
         name: "Mud Fling",
-        cost: "15 stamina",
+        cost: "20 stamina, 40 mana",
         scaling: "Strength",
-        description: "Deals medium damage and reduces the target's Wis/Int/Chr by -3.",
+        description: "Deals 40 damage and reduces the target's stats by -3.",
       }
     },
     {
@@ -97,9 +97,9 @@ const blessed = {
       stats: "-1 Con",
       skill: {
         name: "Overpower",
-        cost: "15 stamina",
+        cost: "20 stamina, 40 mana",
         scaling: "Strength",
-        description: "Deals medium damage and debuffs str and dex by -3",
+        description: "Deals 40 damage and debuffs enemy stats by -3",
       },
     },
     {
@@ -108,8 +108,8 @@ const blessed = {
       stats: "-1 Con",
       skill: {
         name: "Ascended Form",
-        cost: "60 mana, 30 stamina",
-        description: "Gain 10 defenses",
+        cost: "30 mana, 60 stamina",
+        description: "Gain +10 defenses and +3 to all stats",
       },
     },
   ]
