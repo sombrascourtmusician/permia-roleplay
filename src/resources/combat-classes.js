@@ -17,11 +17,11 @@ const cleric = {
   },
   "skills": [
     {
-      "name": "Restoration",
+      "name": "Restoration / Damnation",
       "cost": "100 mana",
       "scaling": "Wisdom",
       "restrictions": "1-3 targets",
-      "description": "Restores 10 stamina and mana, heals for low amount, and removes all stat debuffs from each target.",
+      "description": "When Holy: Restores 10 stamina and mana, heals for low amount, and removes all stat debuffs from each target. When Shadow: Removes 2 buffs from targets and deals medium damage.",
       "flavorText": "One of the greatest miracles available to a cleric, able to purge nearly any ailment from those it blesses. Timely use may even be able to reverse death itself."
     },
     {
@@ -33,27 +33,27 @@ const cleric = {
       "flavorText": "The most sought after service of the devout is healing, wise clerics remember not to allow the power they have been given to be abused on the unworthy. A gift can be taken away."
     },
     {
-      "name": "Holy Word",
+      "name": "Holy Word / Shadow Word: Pain",
       "cost": "60 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "High Magical Damage, Damages intelligence by 3 points. Heals the attacker for 10.",
+      "description": "When Holy: High Magical Damage, Damages intelligence by 3 points. Heals the attacker for 10. | When Shadow: Deals medium damage and heals the user for half the damage dealt.",
       "flavorText": "It is said that which angers the divine most are those who refuse justice and who seek power over other men, holy utterance lends credence to that story as its destructive force holds special enmity for arcanists."
     },
     {
-      "name": "Radiance",
+      "name": "Radiance / Darkness",
       "cost": "20 mana",
       "scaling": "",
       "restrictions": "1-3 targets",
-      "description": "Gives 5 defense and gives +2 to all stats except con. If used on one person, they are also healed.",
+      "description": "When Holy: Gives 5 defense and gives +2 to all stats except con. If used on one person, they are also healed. | When Shadow: Decreases both defenses by 5 and decreases all stats by 2. If used on one person, the target is also damaged.",
       "flavorText": "Simply being in the presence of a cleric can invigorate their allies."
     },
     {
-      "name": "Holy Flame",
+      "name": "Holy Flame / Shadow fire",
       "cost": "20 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "Low Magical Damage, causes medium Damage Over Time effect",
+      "description": "Low Magical Damage, causes heavy Damage Over Time effect",
       "flavorText": "Flames purify that which cannot be healed. Burning away corruption of the spirit, of the mind, and the body."
     },
     {
@@ -65,11 +65,11 @@ const cleric = {
       "flavorText": ""
     },
     {
-      "name": "Lesser Restoration",
-      "cost": "40 mana",
+      "name": "Lesser Restoration / Lesser Curse",
+      "cost": "40 mana | 60 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "Heals a medium amount and removes up to 3 debuffs (not including Death Mark). Also adds 10 mana and stamina to the target.",
+      "description": "When Holy: Heals a medium amount and removes up to 3 debuffs (not including Death Mark). Also adds 10 mana and stamina to the target. | When shadow: Deals medium damage and removes one buff from the enemy.",
       "flavorText": "While forgivable in times of dire need, it is generally frowned upon to utilize ones liturgical tools and holy implements as blunt instruments."
     },
     {
@@ -77,7 +77,7 @@ const cleric = {
       "cost": "50 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "Restores 20 stamina and 30 mana every turn for the target for 2 turns.",
+      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 2 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns.",
       "flavorText": ""
     },
     {
@@ -87,6 +87,14 @@ const cleric = {
       "restrictions": "Single Target",
       "description": "Heals a medium amount to the target.",
       "flavorText": "The most sought after service of the devout is healing, wise clerics remember not to allow the power they have been given to be abused on the unworthy. A gift can be taken away."
+    },
+    {
+      "name": "Form Swap",
+      "cost": "",
+      "scaling": "",
+      "restrictions": "Self",
+      "description": "Can only be done at the start of battle and does not count as a turn. Swaps between Shadow and Holy forms and changes skills based on the form you are in.",
+      "flavorText": " "
     },
   ]
 }
@@ -1250,7 +1258,7 @@ const hemomancer = {
       "name": "Offering",
       "cost": "10 health, 20 mana",
       "scaling": "",
-      "restrictions": "Single target (not self)",
+      "restrictions": "Self",
       "description": "Buffs Intelligence by 1/3 and allows you to enter blood pact. Blood pact allows you to sacrifice life during another attack to further your offering buff.",
       "flavorText": "Blood is the ultimate source of power for a Hemomancer and that includes their own."
     },
@@ -1274,7 +1282,7 @@ const hemomancer = {
       "name": "Infusion",
       "cost": "10 mana",
       "scaling": "Intelligence",
-      "restrictions": "Self",
+      "restrictions": "Single target (not self)",
       "description": "Uses all stacks of Offering to heal for 30 per stack.",
       "flavorText": " "
     },
@@ -1447,6 +1455,14 @@ const warlock = {
       "restrictions": "Single target",
       "description": "Deals low magic damage",
       "flavorText": "A warlock's flame is special in that it removes it's target from existence."
+    },
+    {
+      "name": "Eldritch Restoration",
+      "cost": "No cost",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Restore mana and health based on the debuffs/hexes on the target. Restores 15 mana per debuff and 5 health, capping at 60 mana and 40 health.",
+      "flavorText": " "
     },
   ]
 }
