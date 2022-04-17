@@ -612,11 +612,11 @@ const rogue = {
     "Physical Resistance": 20,
     "Magical Resistance": 20,
     "Strength": 12,
-    "Dexterity": 15,
+    "Dexterity": 17,
     "Constitution": 13,
     "Intelligence": 10,
     "Wisdom": 8,
-    "Charisma": 15,
+    "Charisma": 14,
   },
   "skills": [
     {
@@ -624,7 +624,7 @@ const rogue = {
       "cost": "40 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single Target",
-      "description": "High physical damage attack scaling off of both Dexterity and Charisma which ignores 50% of armor.",
+      "description": "High physical damage attack which ignores 50% of armor.",
       "flavorText": "Hit 'em where they expect it the least. Distraction can take many forms, a quick taunt, or a feint. The choice is yours."
     },
     {
@@ -1604,6 +1604,14 @@ const sorceror = {
       "restrictions": "Single target",
       "description": "Deals low magic damage and restores 10 mana",
       "flavorText": " "
+    },
+    {
+      "name": "Quick Step",
+      "cost": "No cost",
+      "scaling": "Charisma",
+      "restrictions": "Single target",
+      "description": "Weak physical damage attack.",
+      "flavorText": "A quick step forward and a kick to follow."
     },
   ]
 }
