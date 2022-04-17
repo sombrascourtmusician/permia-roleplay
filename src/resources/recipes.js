@@ -1112,7 +1112,7 @@ const weapons = [
   },
   {
     "name": "Bound Book",
-    "effects": "+2 Int, +2 accuracy",
+    "effects": "+2 Int/Cha, +2 accuracy",
     "crafter": "Tailor",
     "level": 4,
     "ingredients": [
