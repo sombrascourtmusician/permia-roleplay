@@ -77,7 +77,7 @@ const cleric = {
       "cost": "50 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 2 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns.",
+      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 3 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns.",
       "flavorText": ""
     },
     {
@@ -170,7 +170,7 @@ const bard = {
       "cost": "50 stamina",
       "scaling": "Charisma",
       "restrictions": "1-3 targets",
-      "description": "Restores 20 stamina and 30 mana per target. If all three charges are used on one target, 40 and 60 total are restored instead with a small heal added. Fiery Heart is added to the target, which adds five damage onto their attacks.",
+      "description": "Restores 20 stamina and 30 mana per target. If all three charges are used on one target, 40 and 60 total are restored instead with a small heal added. Fiery Heart is added to the target, which adds five damage onto their attacks. Heal reduced on self.",
       "flavorText": "The sound of hoof beats cross the glade, good folk, lock up your son and daughter! Beware the deadly flashing blade, unless you want to end up shorter!"
     },
   ]
@@ -249,6 +249,14 @@ const druid = {
       "restrictions": "Single target",
       "description": "A weak magical damage skill.",
       "flavorText": "Manipulating the natural world is easy as a druid, flames, vines, water and wind bend to aid their cause."
+    },
+    {
+      "name": "Nature's Healing",
+      "cost": "No mana cost",
+      "scaling": "Wisdom",
+      "restrictions": "Single target",
+      "description": "Consumes Goodberry or Thorns. If Goodberry, regen 100 mana and restore 20 hp. If Thorns, restore 60 mana and 50 hp.",
+      "flavorText": " "
     },
   ]
 }
@@ -335,6 +343,14 @@ const elementalist = {
       "description": "Deals Low magical damage to a target and applies Rock Strike. On a regular cast, this is a -5 debuff to defenses, on overcast it's -10.",
       "flavorText": "Manipulating raw magical force as a blunt instrument of destruction is not unique to the Elementalist, but they still utilize the simpler magical arts, charms and cantrips are fundamental to their art."
     },
+    {
+      "name": "Absorb Element",
+      "cost": "20 mana",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Choose one element to channel. If fire, gain 30 mana immediately, as well as 30 stamina per turn for two more turns. If ice, gain 10 mana and 30 health, as well as 30 mana on the next turn. If earth, gain 20 mana, 5 hp, as well as 30 mana on the next turn.",
+      "flavorText": " "
+    },
   ]
 }
 
@@ -413,12 +429,20 @@ const assassin = {
       "flavorText": " "
     },
     {
-      "name": "Slash ",
+      "name": "Slash",
+      "cost": "No stamina cost",
+      "scaling": "Dexterity",
+      "restrictions": "1-2 targets",
+      "description": "Deals Low physical damage.",
+      "flavorText": "Even an assassin needs to know the basics of bladework and combat, and remain agile and dangerous opponents, even when exhausted."
+    },
+    {
+      "name": "Prey on the Weak",
       "cost": "No stamina cost",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Deals Low physical damage.",
-      "flavorText": "Even an assassin needs to know the basics of bladework and combat, and remain agile and dangerous opponents, even when exhausted."
+      "description": " Restore 30 stamina per death mark on targeted enemies. Does not count down a death mark turn. Each enemy can only give 30 stamina. Always gives one turn of 20 stamina restoration.",
+      "flavorText": " "
     },
   ]
 }
@@ -502,7 +526,7 @@ const warrior = {
       "cost": "10 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Deals medium damage and applies offensive stance (-10 defense, +6 strength).",
+      "description": "Deals medium damage and applies offensive stance (-5 defense, +6 strength).",
       "flavorText": "Thrust forward, exposing yourself but being swift as can be."
     },
     {
@@ -518,7 +542,7 @@ const warrior = {
       "cost": "10 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Deals weak physical damage that gives the user Defensive Stance (+10 defense, -4 strength, 10 hp heal for 3 turns).",
+      "description": "Deals weak physical damage that gives the user Defensive Stance (+10 defense, -2 strength, 10 hp heal for 3 turns).",
       "flavorText": "Prepare yourself to knock their blades aside."
     },
   ]
@@ -591,12 +615,20 @@ const poisoner = {
       "flavorText": "Poisoners often learn to mix their own poisons, carefully measuring their mixtures to ensure their victims do not survive and they don't poison themselves."
     },
     {
-      "name": "Slash ",
+      "name": "Slash",
       "cost": "No stamina cost",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals Low physical damage.",
       "flavorText": "Even a poisoner needs to know the basics of bladework and combat, and remain agile and dangerous opponents, even when exhausted."
+    },
+    {
+      "name": "Poison Vapors",
+      "cost": "No cost",
+      "scaling": "",
+      "restrictions": "Single target",
+      "description": "Restores 15 stamina per DOT on the target.",
+      "flavorText": " "
     },
   ]
 }
@@ -640,7 +672,7 @@ const rogue = {
       "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Medium physical damage attack that steals a low level consumable from the target.",
+      "description": "Medium physical damage attack that steals a low level consumable from the target. If no items can be stolen, gain 70 stamina (40 after the cost of the spell).",
       "flavorText": "A quick distraction always leaves one open for sly hands. What's yours is mine."
     },
     {
@@ -833,8 +865,8 @@ const dancer = {
       "name": "Encourage",
       "cost": "20 stamina",
       "scaling": "",
-      "restrictions": "Single target",
-      "description": "Encourage is a small heal that restores stamina/mana to the target, more with shuffle and a higher heal with flash. Cannot be self targeted. If under the effects of Flash/Shuffle, heal more. Poise gives more stamina/mana.",
+      "restrictions": "Self",
+      "description": "Restores stamina. If shuffled, extra stamina is restored. If flashed or poised, an additional effect of 20 stamina per turn is added per effect.",
       "flavorText": "A dancer, like their bard compatriots, can lift anyone's spirits, even in the darkest of times."
     },
     {
@@ -977,7 +1009,7 @@ const hunter = {
   "skills": [
     {
       "name": "Aimed Shot",
-      "cost": "40 stamina",
+      "cost": "50 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single Target",
       "description": "Aimed shot is a signature attack that can target six different areas. Head: Deals increased damage. Neck: Deals high damage and debuffs casting stats (-6 Chr/Wis/Int). Hand: Deals high damage and debuffs physical stats (-6 Str/Dex). Eye: Deals high damage and debuffs accuracy (-25 accuracy). Armor Straps: Deals medium damage and debuffs defenses (-10 to each defense). Chest: Deals high damage and adds a heavy damage over time (15 damage per turn for 5 turns).",
@@ -1115,6 +1147,14 @@ const daggerspell = {
       "restrictions": "Single target",
       "description": "Deals Low magical damage to a target.",
       "flavorText": "Manipulating raw magical force as a blunt instrument of destruction is not unique to the Daggerspell, but they still utilize the simpler magical arts, charms and cantrips are fundamental to their art."
+    },
+    {
+      "name": "Consume Imbue",
+      "cost": "No mana cost",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Allows consuming imbued elements for additional effects. If fire, gain 40 hp, 40 stamina, and 40 mana. If ice, gain 40 mana, 40 stamina, and +2 to all stats. If acid, gain 20 stamina and 30 mana instantly, as well as 20 stamina and 30 mana for two turns.",
+      "flavorText": " "
     },
   ]
 }
@@ -1302,6 +1342,14 @@ const hemomancer = {
       "description": "Low magic damage attack.",
       "flavorText": "Hemomancer's unique ability to cause pain through blood alone can be worked even when exhausted."
     },
+    {
+      "name": "Blood Sacrifice",
+      "cost": "No cost",
+      "scaling": "Intelligence",
+      "restrictions": "Self",
+      "description": "Consume a stack of offering in order to restore 60 mana and 30 health.",
+      "flavorText": " "
+    },
   ]
 }
 
@@ -1461,7 +1509,7 @@ const warlock = {
       "cost": "No cost",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Restore mana and health based on the debuffs/hexes on the target. Restores 15 mana per debuff and 5 health, capping at 60 mana and 40 health.",
+      "description": "Restore mana and health based on the debuffs/hexes on the target. Restores 15 mana per debuff and 5 health, capping at 60 mana and 15 health.",
       "flavorText": " "
     },
   ]
