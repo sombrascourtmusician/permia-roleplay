@@ -248,7 +248,7 @@ const consumable = [
   },
   {
     "name": "Apple Pie",
-    "effects": "30 HP, +2 to Str for 30 minutes",
+    "effects": "30 HP, +4 to Str for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -258,7 +258,7 @@ const consumable = [
   },
   {
     "name": "Brain Food",
-    "effects": "30 HP, +2 to Int/Wis for 30 minutes",
+    "effects": "30 HP, +4 to Int/Wis for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -268,7 +268,7 @@ const consumable = [
   },
   {
     "name": "Lightning Brew",
-    "effects": "30 HP, +2 to Dex for 30 minutes",
+    "effects": "30 HP, +4 to Dex for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -278,7 +278,7 @@ const consumable = [
   },
   {
     "name": "Mead",
-    "effects": "30 HP, +2 to Chr for 30 minutes",
+    "effects": "30 HP, +4 to Chr for 30 minutes",
     "crafter": "Chef",
     "level": 2,
     "ingredients": [
@@ -288,7 +288,7 @@ const consumable = [
   },
   {
     "name": "Nigiri",
-    "effects": "35 HP, Weak HOT for 4 turns, +2 Int/Wis for 30 minutes",
+    "effects": "35 HP, Weak HOT for 4 turns, +4 Int/Wis for 30 minutes",
     "crafter": "Chef",
     "level": 3,
     "ingredients": [
@@ -298,7 +298,7 @@ const consumable = [
   },
   {
     "name": "Lavash",
-    "effects": "35 HP, Weak HOT for 4 turns, +2 Dex for 30 minutes",
+    "effects": "35 HP, Weak HOT for 4 turns, +4 Dex for 30 minutes",
     "crafter": "Chef",
     "level": 3,
     "ingredients": [
@@ -307,7 +307,7 @@ const consumable = [
   },
   {
     "name": "Steak and Eggs",
-    "effects": "40 HP, Weak HOT for 4 turns, +2 Str for 30 minutes",
+    "effects": "40 HP, Weak HOT for 4 turns, +4 Str for 30 minutes",
     "crafter": "Chef",
     "level": 4,
     "ingredients": [
@@ -360,7 +360,7 @@ const consumable = [
   },
   {
     "name": "Falafel",
-    "effects": "40 HP, Weak HOT for 4 turns, +2 Chr for 30 minutes",
+    "effects": "40 HP, Weak HOT for 4 turns, +4 Chr for 30 minutes",
     "crafter": "Chef",
     "level": 4,
     "ingredients": [
@@ -371,7 +371,7 @@ const consumable = [
   },
   {
     "name": "Grilled Fish",
-    "effects": "40 HP, Medium HOT for 4 turns, +2 Dex for 30 minutes",
+    "effects": "40 HP, Medium HOT for 4 turns, +4 Dex for 30 minutes",
     "crafter": "Chef",
     "level": 5,
     "ingredients": [
@@ -382,7 +382,7 @@ const consumable = [
   },
   {
     "name": "Pilaf",
-    "effects": "40 HP, Medium HOT for 4 turns, +2 Str for 30 minutes",
+    "effects": "40 HP, Medium HOT for 4 turns, +4 Str for 30 minutes",
     "crafter": "Chef",
     "level": 5,
     "ingredients": [
@@ -393,7 +393,7 @@ const consumable = [
   },
   {
     "name": "Sweet Roll",
-    "effects": "45 HP, Medium HOT for 4 turns, +2 Int/Wis for 30 minutes",
+    "effects": "45 HP, Medium HOT for 4 turns, +4 Int/Wis for 30 minutes",
     "crafter": "Chef",
     "level": 7,
     "ingredients": [
@@ -404,7 +404,7 @@ const consumable = [
   },
   {
     "name": "Chocolate Cake",
-    "effects": "45 HP, Medium HOT for 4 turns, +2 Chr for 30 minutes",
+    "effects": "45 HP, Medium HOT for 4 turns, +4 Chr for 30 minutes",
     "crafter": "Chef",
     "level": 7,
     "ingredients": [
@@ -415,7 +415,7 @@ const consumable = [
   },
   {
     "name": "Baklava",
-    "effects": "45 HP, Medium HOT for 4 turns, +2 Dex for 30 minutes",
+    "effects": "45 HP, Medium HOT for 4 turns, +4 Dex for 30 minutes",
     "crafter": "Chef",
     "level": 7,
     "ingredients": [
@@ -426,7 +426,7 @@ const consumable = [
   },
   {
     "name": "Royal Feast",
-    "effects": "50 HP, Strong HOT for 4 turns, +3 Con for 30 minutes",
+    "effects": "50 HP, Strong HOT for 4 turns, +4 Con for 30 minutes",
     "crafter": "Chef",
     "level": 9,
     "ingredients": [
@@ -450,7 +450,7 @@ const consumable = [
   },
   {
     "name": "Enchanted Rope",
-    "effects": "-5 Str/Dex on target, +2 charisma on user",
+    "effects": "-5 Str/Dex on target, +4 charisma on user",
     "crafter": "Tailor",
     "level": 7,
     "ingredients": [
@@ -472,7 +472,7 @@ const consumable = [
   },
   {
     "name": "Weapon Oil",
-    "effects": "+20 to accuracy and +2 dex/str for 2 hours",
+    "effects": "+20 to accuracy and +4 dex/str for 2 hours",
     "crafter": "Blacksmith",
     "level": 6,
     "ingredients": [
