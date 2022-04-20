@@ -73,7 +73,7 @@ const cleric = {
       "flavorText": "While forgivable in times of dire need, it is generally frowned upon to utilize ones liturgical tools and holy implements as blunt instruments."
     },
     {
-      "name": "Pray",
+      "name": "Pray / Damn",
       "cost": "50 mana (0 when used on self)",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
@@ -450,6 +450,14 @@ const assassin = {
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": " Restore 30 stamina per death mark on targeted enemies. Does not count down a death mark turn. Each enemy can only give 30 stamina. Always gives one turn of 20 stamina restoration.",
+      "flavorText": " "
+    },
+    {
+      "name": "Death Scry",
+      "cost": "None",
+      "scaling": "",
+      "restrictions": "Single target",
+      "description": "Allows targeting an enemy to see the number of turns on their death mark. This action is free and can be done at any time.",
       "flavorText": " "
     },
   ]
