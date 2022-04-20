@@ -56,7 +56,7 @@ const corrupted = {
       skill: {
         name: "Seduce",
         cost: "20 mana",
-        description: "Debuff enemy stats by -1 and chr by -3 and health by 20",
+        description: "Deals 20 damage and buffs the user with Seduce (+20 to overwhelm checks)",
       },
     },
   ]
