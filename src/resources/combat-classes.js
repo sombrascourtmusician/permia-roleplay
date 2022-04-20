@@ -74,10 +74,10 @@ const cleric = {
     },
     {
       "name": "Pray",
-      "cost": "50 mana",
+      "cost": "50 mana (0 when used on self)",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 3 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns.",
+      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 3 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns. Can be used at most three times per fight.",
       "flavorText": ""
     },
     {
@@ -255,7 +255,7 @@ const druid = {
       "cost": "No mana cost",
       "scaling": "Wisdom",
       "restrictions": "Single target",
-      "description": "Consumes Goodberry or Thorns. If Goodberry, regen 100 mana and restore 20 hp. If Thorns, restore 60 mana and 50 hp.",
+      "description": "Consumes Goodberry or Thorns. If Goodberry, regen 40 mana instantly and 30 per turn for 2 turns. If Thorns, restore 30 mana and 15 hp, with 30 more returned on the next turn. Can be used at most three times per fight.",
       "flavorText": " "
     },
   ]
@@ -289,7 +289,7 @@ const elementalist = {
     },
     {
       "name": "Overload",
-      "cost": "10 or 20 mana",
+      "cost": "40 or 80 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Deals magic damage based on the number of elementalist debuffs on the target. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target. If cast on a rock strike'd target, consumes the debuff and ???",
@@ -349,6 +349,14 @@ const elementalist = {
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Choose one element to channel. If fire, gain 30 mana immediately, as well as 30 stamina per turn for two more turns. If ice, gain 10 mana and 30 health, as well as 30 mana on the next turn. If earth, gain 20 mana, 5 hp, as well as 30 mana on the next turn.",
+      "flavorText": " "
+    },
+    {
+      "name": "Flame Shield",
+      "cost": "40 mana",
+      "scaling": "Intelligence",
+      "restrictions": "Self",
+      "description": "Provides a buff giving +10 defenses. Additionally, all attackers take 10 damage on successful attacks.",
       "flavorText": " "
     },
   ]
@@ -866,7 +874,7 @@ const dancer = {
       "cost": "20 stamina",
       "scaling": "",
       "restrictions": "Self",
-      "description": "Restores stamina. If shuffled, extra stamina is restored. If flashed or poised, an additional effect of 20 stamina per turn is added per effect.",
+      "description": "Restores stamina. If shuffled, extra stamina is restored. If flashed or poised, an additional effect of 20 stamina per turn is added per effect. Removes poise and flash on use. Can be used at most three times per fight.",
       "flavorText": "A dancer, like their bard compatriots, can lift anyone's spirits, even in the darkest of times."
     },
     {
@@ -1262,7 +1270,7 @@ const paladin = {
       "cost": "No cost",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Gives 10 stamina and 20 mana instantly, and 20/30 a turn for every buff on the user.",
+      "description": "Gives 10 stamina and 20 mana instantly, and 20/30 a turn for every buff on the user. Can be used at most three times per fight.",
       "flavorText": ""
     },
   ]
