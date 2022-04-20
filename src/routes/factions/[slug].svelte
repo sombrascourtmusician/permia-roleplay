@@ -37,7 +37,7 @@
   {#if faction.descriptions}
     {#each faction.descriptions as description}
       <p>
-        {description}
+        {@html description}
       </p>
     {/each}
   {/if}
