@@ -130,7 +130,7 @@ const bard = {
       "cost": "50 mana",
       "scaling": "Charisma",
       "restrictions": "1-3 Targets",
-      "description": "Targets up to 3 targets, buffing all stats by +2, healing for 20, restoring 5 stamina and 10 mana, and giving a weak heal over time effect. If all targets are a single target, the spell is empowered, healing 30 hit points, buffing all stats by +3, restores 15 stamina and 25 mana, and giving a weak heal over time.",
+      "description": "Targets up to 3 targets, buffing all stats by +3, healing for 20, restoring 5 stamina and 10 mana, and giving a weak heal over time effect. If all targets are a single target, the spell is empowered, healing 30 hit points, buffing all stats by +5, restores 15 stamina and 25 mana, and giving a weak heal over time.",
       "flavorText": "It has been said that battles have been turned by the presence of music, weaving heroic ballads that inspire greater feats of strength and bravery. Weave magic into such a song and the effects can be incredible."
     },
     {
