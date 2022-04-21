@@ -317,7 +317,7 @@ const consumable = [
   },
   {
     "name": "Stamina Salts",
-    "effects": "40 HP, Medium HOT for 2 turns, 30 stamina instantly, 20 stamina next turn",
+    "effects": "50 HP, Medium HOT for 2 turns, 30 stamina instantly, 20 stamina next turn",
     "crafter": "Chef",
     "level": 8,
     "ingredients": [
@@ -328,7 +328,7 @@ const consumable = [
   },
   {
     "name": "Mana Cakes",
-    "effects": "40 HP, Medium HOT for 2 turns, 50 mana instantly, 30 mana next turn",
+    "effects": "50 HP, Medium HOT for 2 turns, 50 mana instantly, 30 mana next turn",
     "crafter": "Chef",
     "level": 8,
     "ingredients": [
