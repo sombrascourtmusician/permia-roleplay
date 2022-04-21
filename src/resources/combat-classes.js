@@ -870,28 +870,12 @@ const dancer = {
       "flavorText": "A dancer always holds themselves with the utmost of poise, graceful, delicate, and deadly."
     },
     {
-      "name": "Shuffle",
-      "cost": "10 stamina",
-      "scaling": "",
-      "restrictions": "Self",
-      "description": "Enhances other skills with additional effects.",
-      "flavorText": "A quick scoot to the side ensures better positioning for freeflowing movements."
-    },
-    {
       "name": "Encourage",
       "cost": "20 stamina",
       "scaling": "",
       "restrictions": "Self",
       "description": "Restores stamina. If shuffled, extra stamina is restored. If flashed or poised, an additional effect of 20 stamina per turn is added per effect. Removes poise and flash on use. Can be used at most three times per fight.",
       "flavorText": "A dancer, like their bard compatriots, can lift anyone's spirits, even in the darkest of times."
-    },
-    {
-      "name": "Flash",
-      "cost": "10 stamina",
-      "scaling": "",
-      "restrictions": "Self",
-      "description": "Enhances other skills with additional effects.",
-      "flavorText": "Showmanship is everything for a dancer."
     },
     {
       "name": "Quick Step",
@@ -1526,6 +1510,22 @@ const warlock = {
       "scaling": "Intelligence",
       "restrictions": "Single target",
       "description": "Restore mana and health based on the debuffs/hexes on the target. Restores 15 mana per debuff and 5 health, capping at 60 mana and 15 health.",
+      "flavorText": " "
+    },
+    {
+      "name": "Vampire",
+      "cost": "60 mana",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Deals light damage while draining mana and burning stamina on the target",
+      "flavorText": " "
+    },
+    {
+      "name": "Fracture",
+      "cost": "40 mana",
+      "scaling": "Intelligence",
+      "restrictions": "Single target",
+      "description": "Deals light damage and reduces both defenses by -10.",
       "flavorText": " "
     },
   ]
