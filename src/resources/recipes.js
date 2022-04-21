@@ -136,7 +136,7 @@ const armor = [
 const consumable = [
   {
     "name": "Yellow Potion",
-    "effects": "Heals 40 Stamina",
+    "effects": "Heals 60 Stamina",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -154,7 +154,7 @@ const consumable = [
   },
   {
     "name": "Blue Potion",
-    "effects": "Heals 80 Mana",
+    "effects": "Heals 100 Mana",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -163,7 +163,7 @@ const consumable = [
   },
   {
     "name": "Green Potion",
-    "effects": "Heals 30 stamina and 60 mana",
+    "effects": "Heals 40 stamina and 80 mana",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -172,7 +172,7 @@ const consumable = [
   },
   {
     "name": "Purple Potion",
-    "effects": "Heals 30 hp and 60 Mana",
+    "effects": "Heals 30 hp and 80 Mana",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -181,7 +181,7 @@ const consumable = [
   },
   {
     "name": "Orange Potion",
-    "effects": "Heals 30 HP and 30 Stamina",
+    "effects": "Heals 30 HP and 40 Stamina",
     "crafter": "Alchemist",
     "level": 2,
     "ingredients": [
@@ -317,7 +317,7 @@ const consumable = [
   },
   {
     "name": "Stamina Salts",
-    "effects": "40 HP, Medium HOT for 2 turns, 20 stamina instantly, 20 stamina next turn",
+    "effects": "40 HP, Medium HOT for 2 turns, 30 stamina instantly, 20 stamina next turn",
     "crafter": "Chef",
     "level": 8,
     "ingredients": [
@@ -328,7 +328,7 @@ const consumable = [
   },
   {
     "name": "Mana Cakes",
-    "effects": "40 HP, Medium HOT for 2 turns, 30 mana instantly, 30 mana next turn",
+    "effects": "40 HP, Medium HOT for 2 turns, 50 mana instantly, 30 mana next turn",
     "crafter": "Chef",
     "level": 8,
     "ingredients": [
@@ -461,7 +461,7 @@ const consumable = [
   },
   {
     "name": "Armor Polish",
-    "effects": "+20 to each defense for 2 hours",
+    "effects": "+20 to each defense for 4 hours",
     "crafter": "Blacksmith",
     "level": 6,
     "ingredients": [
@@ -472,7 +472,7 @@ const consumable = [
   },
   {
     "name": "Weapon Oil",
-    "effects": "+20 to accuracy and +4 dex/str for 2 hours",
+    "effects": "+20 to accuracy and +4 dex/str for 4 hours",
     "crafter": "Blacksmith",
     "level": 6,
     "ingredients": [
@@ -494,7 +494,7 @@ const consumable = [
   },
   {
     "name": "Aether Converter",
-    "effects": "Restores 20 stamina and 30 mana per turn for 4 turns",
+    "effects": "Restores 20 stamina and 30 mana per turn and gives +3 to all stats for 4 turns",
     "crafter": "Enchanter",
     "level": 7,
     "ingredients": [
