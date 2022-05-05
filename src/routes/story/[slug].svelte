@@ -1,7 +1,7 @@
 <script context="module">
-	import lores from '../../resources/lore.js';
+	import stories from '../../resources/story.js';
 
-  const keys = Object.keys(lores);
+  const keys = Object.keys(stories);
 
 	/** @type {import('@sveltejs/kit').Load} */
 	export async function load({ page }) {
@@ -9,11 +9,11 @@
 
 		return {
       props: {
-        lore: lores[page.params.slug],
-        nextLink: (keys.length > index+1) && `/lore/${keys[index+1]}`,
-        nextTitle: (keys.length > index+1) && lores[keys[index+1]].title,
-        prevLink: (index > 0) && `/lore/${keys[index-1]}`,
-        prevTitle: (index > 0) && lores[keys[index-1]].title,
+        story: stories[page.params.slug],
+        nextLink: (keys.length > index+1) && `/story/${keys[index+1]}`,
+        nextTitle: (keys.length > index+1) && stories[keys[index+1]].title,
+        prevLink: (index > 0) && `/story/${keys[index-1]}`,
+        prevTitle: (index > 0) && stories[keys[index-1]].title,
       }
 		};
 	}
@@ -22,7 +22,7 @@
 <script>
 	import Card from '$lib/Card.svelte';
   
-  export let lore;
+  export let story;
   export let nextLink;
   export let nextTitle;
   export let prevLink;
@@ -30,16 +30,16 @@
 </script>
 
 <svelte:head>
-	<title>Permia - {lore?.title || 'lore'}</title>
+	<title>Permia - {story?.title || 'story'}</title>
   <meta name="keywords" content="Permia, Roleplay, Lore, Story" />
-  <meta name="description" content="A summary of permia's history - specifically {lore.title}">
+  <meta name="description" content="A summary of permia's history - specifically {story.title}">
 </svelte:head>
 
 <Card body>
-	{#if lore && lore.title}
+	{#if story && story.title}
     <div class="row">
       <div class="col-sm-6">
-        <h1>{lore.title}</h1>
+        <h1>{story.title}</h1>
       </div>
       <div class="col-sm-6 text-end">
         {#if prevLink}
@@ -50,8 +50,8 @@
         {/if}
       </div>
     </div>
-    {#each lore.body as paragraph}
-      <p>{@html paragraph}</p>
+    {#each story.body as paragraph}
+      <p>{paragraph}</p>
     {/each}
 	{/if}
 </Card>

@@ -1,3 +1,4 @@
+import story from "../resources/story.js";
 import lore from "../resources/lore.js";
 import combatClasses from '../resources/combat-classes.js';
 import craftingClasses from '../resources/crafting-classes.js';
@@ -58,14 +59,19 @@ const headers = [
     dropdowns: [
       { 
         content: 'Story',
-        route: 'lore',
-        dropdowns: lore,
+        route: 'story',
+        dropdowns: story,
       },
       { 
         content: 'Factions',
         index: true,
         route: 'factions',
         dropdowns: factions,
+      },
+      { 
+        content: 'Lore',
+        route: 'lore',
+        dropdowns: lore,
       },
     ] 
   },

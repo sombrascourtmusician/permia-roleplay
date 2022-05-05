@@ -1,73 +1,105 @@
-const ancientHistory = [
-  "Long ago, the Shasu people were nomads. They eked out a harsh existence among the unending desert sands. It was a tough and strict livelihood, but a fair and honorable one, a rewarding one.",
-  "Guided by the great hero Sarka, they found a place that didn’t change: An oasis with an abundance all year round, one that was somehow fertile enough to grow crops in too! They, naturally, settled around this, setting up their tents and celebrating day and night as their luck had turned around.",
-  "Over time, the tribe grew. Outsiders came and saw how well the land took care of the people and joined with them.. It started as a small village, then a town, and soon Sarkada grew into a grand city. Walls for defense, a magnificent palace for the founding family, things were truly beautiful.",
-  "But they weren’t perfect, the city had stretched the limit of what the oasis could provide. People started to go hungry, and having land around the oasis became more and more valuable. The ones who owned it were given status because they produced the food, elevated beyond simple farmers. Crime, slowly, started to rise: thievery, murder, even darker things that one dare not mention lest it becomes reality.",
-  "The ruling family, now royalty, were split on a solution. It had reached a breaking point, enough that a response was required from the royals. Some of them wanted to keep laws lax and add more support structures around the city, something to help these poor souls get out of their hardship. Others wanted to strengthen the laws and make it all the more severe if one got caught.",
-  "As it happens with such politics, a fight broke out. Not a true civil war, but a quiet rebellion, a coup designed to usurp power and take it over finally. It was swift, it was decisive, and within the span of a single week, King Gilgamesh had managed to wrest control of the land from the rest of the royal family in a violent coup led by the Houses of Sarkada.",
-  "The remnants of the rebellion fled, the court ravaged, and quite a few of the royal family fled along with their courtiers and their followers. They fled from the desert entirely, a journey fraught with hardship and suffering. But somehow, through some miracle they escaped their pursuers, survived the wilderness into the mountains where they could survive and regrow.",
-  "Both sides grew over time, the city’s strict policies, rules and codes helped solve the shortages, calling back to harsh nomadic traditions, suppressed dissent, quashed criminals and while brutal, helped the city grow more grand. Meanwhile, the rebel’s court grew from a few tents, to a keep and a small town, now known as the Silver Hold, attracting its own immigrants and peoples, for now, things were peaceful.",
+const starsAndPlanets = [
+  "Permia has two moons - the larger one is named Mah meaning ‘the fortunate lady’, and is quite similar to an Earth-like moon. It appears dominantly in the sky, taking up a bit more of the sky than an Earth full moon. The second moon is close to the same size but further away so it seems smaller. It’s also covered in dust from an impact millenia ago, giving it a strange, purple hue. It’s referred to as Lah meaning ‘the malicious man’ and is considered a cursed moon because of its color.",
+  "In addition to Permia, there’s four other planets in the system, though only two can be seen. The first is roughly Permia sized and appears as a small orange dot in the sky. The other is much larger but further away, and can be seen on particularly clear days as a blue and green, marble sized spot in the stars.",
+  "<h2>Constellations</h2>",
+  "These are in development and not set in stone. If you have some you want to add, feel free to ping an admin!",
 ];
 
-const renaissance = [
-  "Yet before the Shasu people had come to the oasis, a great ravine had cut through the land, separating Sarkada, the city, from the coast. Inside of it, purple crystals sparkling with energy and sharp as a knife flooded the canyon. Only when the city was settled, did the people begin investigating this odd formation with any effort.",
-  "A young mage journeyed towards the ravine one day and started to study the crystals. What he found didn’t blow the world apart, but it did hint at what would come. And before long, another had joined him, then another, and another on top of that. Soon, an entire guild formed around the study of these amazing crystals, it named itself the Academy of Wonders, the wizards within banded together to probe and prod at whatever secrets they could find.",
-  "Discovery after discovery came from their study. Refrigeration of food and cooling of buildings, irrigation of the vast farms was simplified, even sanitation of the streets and sewers were now in the grasp of the mages.. The discoveries were so wondrous that the side effects took time to notice. The first mutation is thought to be an old miner, his name lost to the public, who grew an extra tail. Something minor, something peculiar, and nothing that was significant until an origin for what was to come was sought.",
-  "What was to come was much greater than an extra tail. Mutations and transformations became more common, twists in who and what people were, in their minds and their bodies both. Soon knowledge of this strange twisting plague was near universal.",
-  "The city and the royal guard tried to downplay and hide these corruptive properties, but before long everyone knew about the afflicted. The effects were varied and wide—some turned into half beast, half people, others lost their sanity entirely, still others became the shape shifting legends of lore, werewolves. There were even vampires, mythology springing up around them and becoming commonplace. Powers beyond the comprehension and ability of monster mortal men. ",
-  "Not all of the afflicted were fearsome, some were benevolent, a blessed heart, halos and wings, they came to be known as the Blessed rather than the afflicted. These beings radiate calm and care around them, and they’ve become paragons of the city’s way of life, and many sought to join their number and too, ascend beyond mortality.",
-  "Still others had little to nothing to show at all. An extra finger, something an odd pattern on their skin or fur, a slightly changed scent. Things that perhaps marked them as different, but not dangerous or remarkable in any major way.",
-  "More than just the people were affected, the land too seemed to suffer. In the desert, the cool southernly oceanic winds seemed to be replaced by hot desert gales. In the jungles, monsoon season seemed somehow even harsher, bringing terrible storms and torrential downpours, and in the mountains, the creeping cold seemed even more harsh. The only area seemingly unaffected was that directly around the great rift.",
-  "Stranger still, some who arrived seemed confused or lost. Unsure how their ship arrived at this port, how they could have washed up on these shores, confused that the alley they cut through seemed to bring them to a street they had never seen before. While many more rational sorts believe it simply became a common excuse for hiding one’s background by making up a fantastical tale, others believed the crystals seemed to convolute the flow of time and space.",
+const shasuReligion = [
+  "Sarkada doesn’t have an official religion per say. There are several different cults and sects throughout the city and the Hold, the largest of which being the Cult of Mah.",
+  "It focuses on the worship of the moons, with the main centered belief being that Mah granted Permia life and watches over everyone. The followers pray to Mah, generally asking for her fortitude and her grace in trying times. There are sacrifices as well, though not of the human variety but animal instead, or even flora. One of the most popular ceremonies is taking peacock feathers and hyacinth petals and burning them as an offering to the Goddess. There are also different rituals that are used to bless individuals - usually noble children - by taking some of Mah’s power.",
+  "It’s undeniable that there is a goddess there. One, with particularly strong magic, can talk to her. She does, however, see the people of Permia as nothing more than a bother, with the constant demands for attention and power more annoying than anything else. Those who do talk to her talk about an irritated, busy woman that doesn’t want anything to do with the people of Permia. And yet, people worship her nonetheless. Strange.",
+  "The other religions are lesser and spread out, with none of them being particularly popular at the moment. Mah and the others are present in both the Silver Hold and Sarkada, as a religion of the Shasu.",
 ];
 
-const afflicted = [
-  "Laws were passed to manage these growing afflicted. The dreaded ones, the fierce monsters would be banished from its walls, cast out in fear. Those less dramatically affected would, if found out, simply be restricted from living within or owning property in the glorious city. The blessed, of course, were not subject to these restrictions.  Many of those who were less afflicted in their minds and simply desired to live and exist in peace fled to the mountains, protected and supported by the rebel’s hold.",
-  "Others, often those not content with a peaceful existence, fled to the jungle, led by a woman from another land with nearly the same affliction as the rest of them. These sort became violent, hateful of what was done to them. Their new leader led strikes against the caravans of the city, attacks against the wall itself, forming an ecoterrorist organization known as the Black Horde that has violence only matched by passion.",
-  "Decades of peace finally ended as Princess Aida, a recently exiled royal found herself as the royal of the Silver Hold. With her new knowledge of the suffering of below and despair at the way her former people treated the afflicted, the Silver hold finally decided to take action. The oppression of the people was too great, the abuse of the crystals too pressing and war was the only option.",
-  "She sought help from the druids of the mountains, known as the Old Boughs; they were an ancient order that predated her peoples’ arrival. Distraught at what the land had become, they understood her plight and pleas and pledged to aid Aida, joining together with her Silver Hold despite their peaceful ways.",
-  "Yet, at the same time, interlopers came.",
-  "In the south, the simple port expanded, led by an influx of capital and merchants of the Coalition of the Compass, a mercantile adventurist company, bringing in exotic goods and exporting the strange and mysterious crystals to far-off buyers. Culture flows through this trade route and together with the commune, a service industry has started in the fledgling region, profiting off this new war. Central to this new industry is the bathhouseIt is supplied with food, water--from the commune's aqueduct--exotic spices, perfumes, incense, and textiles from the Coalition's mighty ships. Over time, it grew from a simple house to bathe oneself, to a house of more sultry and promiscuous activity.",
-  "Naturally, that close to the city, the Royal Sarkadian Guard patrol and enforce their rules. With the commune working with the monsters in the forest, the guards have all the more reason to raid and nip terroristic activity in the bud.",
-  "With all these contenders and players, Permia found itself steeped in conflict.",
+const housesOfSarkada = [
+  "There are four major Houses and an innumerable number of minor ones. Players can join the major factions but will need to follow a rubric for how their character is set up. Alternatively, they can make a minor House at any time and it’s fairly free form so long as they’re Persian themed and fit the sim’s theme.",
+  "<h2>The Major Houses</h2>",
+  "<h3>Amani</h3>",
+  "The Amani House primarily involves themselves within magic study, both for inventions and progress as well as for war, and the Court system. They are decently involved within the army as well, their magical prowess making them strong warriors. The previous Amani patriarch, recently deceased, was the leader of the Highest Court in the land, the position remaining open to this day. Their colors are purple and blue, much like the crest of Sarkada itself, and their numbers are seemingly split dead even on those focusing on justice and the courts, and those focusing on different branches of magic.",
+  "<h3>Parthia</h3>",
+  "The Parthia House is the current ruling House in Sarkada. Their line has ruled since the beginning, with the first King Gilgamesh founding Sarkada along with the other Houses. Nowadays, King Xerses Parthia is the current sitter on the throne, widowed decades ago. He is aging, over eighty years old, which means that the throne has a current succession crisis. Aida is the next Parthian in line, but as she’s a rebel there is no clear line. This has left Amani as the second most prominent House snipping at their heels. In addition to ruling, the Parthian line has strong military traditions as commanders, and their colors are a classic black and gold pairing.",
+  "<h3>Zare</h3>",
+  "The dominant merchant House, Zare deals in all different sectors. There isn’t a good in Sarkada that hasn’t been touched by a Zare merchant at least once. There are other Houses competing for the spot, but none have even come close to challenging the dominance of the merchants of Zare. Additionally, Zare raises horses and has the best stock you can get around the desert. Their colors are red and yellow, and you’ll see them in the market consistently dealing their wares.",
+  "<h3>Mirzaei</h3>",
+  "Mirzaei and Zare work really closely together, with Mirzaei crafting the goods that Zare sells. Each of their people from near birth choose a craft to specialize in and devote to it for their entire life. As such, they craft extraordinary wares, outstanding works of art, the best clothes you can find. They work closely with the other Houses, using Amani’s magical expertise for some things and Zare to make sure their wares are moved for a fair price. Silver and blue are their colors, which has had them be mistaken for the Silver Hold.",
 ];
 
-const welcome = [
-  "To the west, the Black Horde strikes out at whatever targets they can find. The terroristic organization hides in the depths of the jungle, always ready to cause issues wherever they can manage.",
-  "To the east, Aida’s rebels in their Silver Hold grow their numbers, aided by the ancient magic of the druids of the Old Boughs, they strike out against the Royal Guard and the city of Arkada, and aim to control the ravine and its great crystalline bounty.",
-  "In the Northern deserts, the city of Sarkada continues to grow. The Sarkadian Guard continue to defend the great nation, particularly concerned with the interlopers and terrorists of the west and rebels from the east. All the while the Sarkadian Academy of Wonders continues to create wondrous technologies, even the most downtrodden, organized into the ‘royal’ Court of Flies seek to operate from the shadows and manipulate themselves a greater share of power.",
-  "In the center of it all,the Coalition of the Compass continues to control the coast, operating its markets and lucrative trade industry. While they bring goods and services from far away, exotic as can be, there are whispers that they only seek to profit from this war and take over the mess that remains at its end.",
-  "Welcome to Permia, a powder-keg ready to explode.",
+const oldBoughs = [
+  "The druids of the Old Boughs have been around longer than anyone can really count. Their oral histories place them around six hundred years old.",
+  "They weren’t originally a mountainous tribe. When they first came to what is now known as Permia, they too lived in the valley. Once upon a time, it was a lush paradise, with trees and water galore. Many different types of animals called the valley home, as it was nearly predator free at the time and most herbivorous. The Old Boughs lived in the valley during this time, quietly and peacefully minding their own business.",
+  "Many of their current rituals stem from this time, and the crystals were seen as a fairly positive thing at the time. They were involved in what the Boughs did, using them to spread the greenery further and further from the valley. The desert around the valley started to change from this work, slowly but steadily and the Old Boughs thrived with it.",
+  "But something happened, something that the Boughs haven’t figured out to this day. The crystals turned into defoliators, poison instead of the wondrous creations they’d been before. The druids retreated along with the forest, the land dying around them as they went further and further up the mountain, finally settling into where they live today.",
+  "There are rumors still. Rumors that the Boughs were the one who caused the disaster of the canyon. Other rumors say that they’re in possession of the last, pure, uncorrupted crystal that exists, the only one that doesn’t afflict people.",
+  "But rumors are just rumors, aren’t they?",
 ]; 
 
-const newDevelopments = [
-  "In the months since strangers flocked to Permia, many things have changed. The founder of the Horde departed the faction, leadership shakeups in the city saw strife within their ranks, and a peaceful handover of power in the Hold opened new horizons for the rebels.",
-  "In the mountains, the Old Boughs have fully rekindled their activity, allying with the Hold and stopping the Academy's actions in many instances, proving to be a thorn in their side. The Silver Hold has fully declared war on the Black Horde as well, the conflict escalating from a cold war into one very, very hot.",
-  "The Houses have strengthened their guard once more in the city, winning battle after battle and rebuffing a Horde assault on the city. It's not all sunshine and roses, as a few successful raids have dealt blows to both the Houses' captives and the Academy's operations. The Court of Flies has come once more out of the shadows and into the light - at least as much as they wish - and have begun conducting thievery across the realm, offering information on all... for a price.",
-  "Finally, the Jungle swarms with Horde, their numbers growing by the day, great rituals and hunts lighting the pyres of the ziggurats once more. While held back for now, the tide only grows and soon it may become overwhelming for the city and the Hold both to contain even working together.",
-  "In the jungle, the rumblings of an ancient civilization have stirred once more, and while quelled for now, an evil, civilization-killing spirit can only be checked for so long. History may become the future once more, and quakes across the realm have threatened to show more and more of the once-great power."
+const governments = [
+  "Sarkada is a true absolute monarchy. While the nobles have power of their own in the fact that they have land and money, the king - or queen - makes all the decisions at the end of the day. To facilitate this, there are many bureaucrats helping scribe the king’s thoughts, or writing laws to make his words take effect. The throne passes via direct succession, father to daughter or so. They make no distinction on gender in terms of succession, as a daughter or a son are both equally as accepted.",
+  "The Silver Hold, on the other hand, is a constitutional monarchy. Princess Aida still holds most of the power, but there is a council of twelve that helps her rule. She is also bound to a constitution that limits what she can do on her own, and a lot of it requires the approval of the council of twelve. Nevertheless, she’s still an important figurehead, and most of what she wants or commands passes without an issue."
+];
+
+const cuali = [
+  "The Cuali were the ones who lived in the jungle before the Black Horde arrived. They lived centuries ago, creating impressive magical creations, living in harmony with the crystals around them.",
+  "Magic permeated every part of their lives, their arts, their work. They were advanced enough to have ample leisure time, with every member of their society being schooled, learned, and having their own hobbies and lives outside of their work. The ziggurats and ritual sites they built were for things to improve their society - water filtering, farm land clearing, things of that nature.",
+  "At some point, one of their members turned traitor. Something went wrong with their magic and the crystals they touched changed, darkening from a brilliant blue to the purple and orange one might see today, drained or corrupted or both. This traitor would amass enough power to be the end of the Cuali people. Despite all their wondrous creations, their powerful magic, the first Afflicted - no, the first Corrupted - would be their end.",
+];
+
+const calendar = [
+  "The calendar system works nearly identical to our real world one just for ease of use. The only difference is the year field - the year is instead calculated as the current ruling year of the ruler.",
+  "The current year is 44.",
+  "Dates are written as DAY/MONTH/YEAR.",
+  "04/27/44 as an example.",
+];
+
+const treatmentOfAffliction = [
+  "Affliction in general is not curable. There isn’t a way to actually remove it from someone as it’s both a disease of the body and the soul. There are a few work arounds like the Houses doll project, but they all require great sacrifices of body and soul both, and usually end with the person worse off than they were before.",
+  "That being said, there are an innumerable amount of ways to treat affliction. Potions, rituals, and even diet can influence how badly affliction hinders an individual. OOCly, these are able to be done by nearly anyone, though cures have to be cleared first and will usually be denied as it’s a core tenet of the conflict.",
+];
+
+const magic = [
+  "Magic is generally in the world around you. It can come from two sources - those with magic born within them can bring it from within themselves, or ungifted can learn other ways, drawing from other power sources such as the crystals, ambient life around them, focuses like necromantic fetishes and so on.",
+  "Magic, once gathered from a power, then has to be focused and used, channeled. There are two main types of casters - runic ones and instinct ones. Runic casters channel their work through runes, pushing magic through them either by writing it down or creating them out of magic in the air. Generally, this type of magic has more control than any other, letting the users get exactly what they want out of magic.",
+  "Instinct casters, however, use their instincts and feelings to channel their power. This can sometimes lead to great things, huge works of magic, stuff that can accomplish things no other can. But it can be unpredictable as well, it can make mistakes, backfire on the user.",
+  "It is generally the belief of the Academy that one should study their runes as much as possible and use that, as being an instinct caster is a risk to becoming afflicted - or so they believe.",
 ];
  
 const lore = {
-  "ancient-history": {
-    "title": "Ancient History",
-    "body": ancientHistory,
+  "stars-and-planets": {
+    "title": "Stars and Planets",
+    "body": starsAndPlanets,
   },
-  "renaissance-and-ruin": {
-    "title": "Renaissance and Ruin",
-    "body": renaissance,
+  "shasu-religion": {
+    "title": "Shasu Religion",
+    "body": shasuReligion,
   },
-  "afflicted-crisis": {
-    "title": "The Afflicted Crisis",
-    "body": afflicted,
+  "houses-of-sarkada": {
+    "title": "The Houses of Sarkada",
+    "body": housesOfSarkada,
   },
-  "welcome-to-the-world": {
-    "title": "Welcome to the World",
-    "body": welcome,
+  "the-old-boughs": {
+    "title": "The Old Boughs",
+    "body": oldBoughs,
   },
-  "new-developments": {
-    "title": "New Developments",
-    "body": newDevelopments,
+  "governments": {
+    "title": "Governments",
+    "body": governments,
+  },
+  "cuali": {
+    "title": "The Cuali",
+    "body": cuali,
+  },
+  "calendar": {
+    "title": "Calendar",
+    "body": calendar,
+  },
+  "treatment-of-affliction": {
+    "title": "The Treatment of Affliction",
+    "body": treatmentOfAffliction,
+  },
+  "magic": {
+    "title": "Magic",
+    "body": magic,
   },
 }
 
