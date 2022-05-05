@@ -80,19 +80,14 @@ const classGivers = [
     description: "Find this holy man in the midst of the deserts on a pilgrimage for his faith. Sit and pray with him to speak to your god and maybe earn their favor! (Requires 13 Wisdom)"
   }, 
   {
-    title: "Bard",
-    image: "/npcs/giver-bard.jpg",
-    description: "The Silver Hold’s Lost Lamb tavern can give you the bard class. Get up on the stage and show your best! (13 Charisma required)"
-  },
-  {
     title: "Elementalist/Battlemage",
     image: "/npcs/giver-battlemage.jpg",
     description: "The Old Boughs bonfire holds many secrets of the world. If you think you’re ready, come and gaze into it and find what you can. (13 Intelligence required)"
   },
   {
-    title: "Dancer",
+    title: "Bard/Dancer",
     image: "/npcs/giver-dancer.jpg",
-    description: "The Bath House has many pleasures, including dancers for their bathers. The dancers here have many skills, and if you show your worth, you can join them too! (13 Charisma required)"
+    description: "The Bath House has many pleasures, including bards and dancers for their bathers. They have many skills and if you show your worth you can join them too! (13 Charisma required)"
   },
   {
     title: "Hunter",
