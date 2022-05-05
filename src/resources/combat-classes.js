@@ -53,7 +53,7 @@ const cleric = {
       "cost": "20 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "Low Magical Damage, causes heavy Damage Over Time effect",
+      "description": "Deals low magical damage. When holy, adds a medium DOT. When shadow, adds a heavy DOT.",
       "flavorText": "Flames purify that which cannot be healed. Burning away corruption of the spirit, of the mind, and the body."
     },
     {
@@ -69,7 +69,7 @@ const cleric = {
       "cost": "40 mana | 60 mana",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "When Holy: Heals a medium amount and removes up to 3 debuffs (not including Death Mark). Also adds 10 mana and stamina to the target. | When shadow: Deals medium damage and removes one buff from the enemy.",
+      "description": "When Holy: Heals a medium amount and removes up to 3 debuffs (not including Death Mark). | When shadow: Deals medium damage and removes one buff from the enemy.",
       "flavorText": "While forgivable in times of dire need, it is generally frowned upon to utilize ones liturgical tools and holy implements as blunt instruments."
     },
     {
@@ -77,7 +77,7 @@ const cleric = {
       "cost": "50 mana (0 when used on self)",
       "scaling": "Wisdom",
       "restrictions": "Single Target",
-      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 3 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns. Can be used at most three times per fight.",
+      "description": "When Holy: Restores 20 stamina and 30 mana every turn for the target for 3 turns. | When Shadow: Burns 20 stamina and 30 mana every turn on the target for 3 turns. Can be used on self at most three times per fight.",
       "flavorText": ""
     },
     {
@@ -292,7 +292,7 @@ const elementalist = {
       "cost": "40 or 80 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Deals magic damage based on the number of elementalist debuffs on the target. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target. If cast on a rock strike'd target, consumes the debuff and ???",
+      "description": "Deals magic damage based on the number of elementalist debuffs on the target. If cast on a wet target, deals increased damage and consumes the debuff. If overcasted deals further increased based damage and consumes the debuff. If cast on a singed target, consumes the debuff and applies a medium Damage Over Time effect. If overcast on a Singed target, consumes the debuff and applies a strong Damage over Time effect. If cast on a Chilled target, consumes the debuff and applies -1 to all stats as a debuff. If overcast on a chilled target, consumes the debuff and applies a -3 to all stats of the target. If cast on a rock strike'd target, consumes the debuff and reduces defenses",
       "flavorText": "An elementalist does not so much tame the forces they toy with as ride the highs and lows and little embodies this as much as the absolute devastating high of this spell, pulling the elemental attunement of their target and enhancing it to a devastating level. Some, perhaps foolish Elementalists, are willing to even push this spell past its limits."
     },
     {
@@ -348,7 +348,7 @@ const elementalist = {
       "cost": "20 mana",
       "scaling": "Intelligence",
       "restrictions": "Single target",
-      "description": "Choose one element to channel. If fire, gain 30 mana immediately, as well as 30 stamina per turn for two more turns. If ice, gain 10 mana and 30 health, as well as 30 mana on the next turn. If earth, gain 20 mana, 5 hp, as well as 30 mana on the next turn.",
+      "description": "Choose one element to channel. If fire, gain 30 mana immediately, as well as 30 stamina per turn for two more turns. If ice, gain 10 mana and 15 health, as well as 30 mana on the next turn. If earth, gain 20 mana, 5 hp, as well as 30 mana on the next turn.",
       "flavorText": " "
     },
     {
@@ -433,7 +433,7 @@ const assassin = {
       "cost": "30 stamina",
       "scaling": "Dexterity",
       "restrictions": "Single target",
-      "description": "Detonate triggers the death mark early for extra damage, and refunds stamina and health based on how close it was to detonating (lower = more).",
+      "description": "Detonate triggers the death mark early for extra damage, and refunds stamina and health based on how close it was to detonating (lower = more). If only one turn is left, it will explode before assassinate is used.",
       "flavorText": " "
     },
     {
@@ -483,7 +483,7 @@ const warrior = {
   "skills": [
     {
       "name": "Rend",
-      "cost": "60 stamina",
+      "cost": "50 stamina",
       "scaling": "Strength",
       "restrictions": "Single Target",
       "description": "Deals heavy physical damage. Applies a medium and a weak Damage over Time effect to target.",
@@ -491,10 +491,10 @@ const warrior = {
     },
     {
       "name": "Execute",
-      "cost": "30 stamina",
+      "cost": "20 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Deals high physical damage to a target and has a higher than normal chance of hitting a target.",
+      "description": "Deals medium to high physical damage to a target and has a higher than normal chance of hitting a target.",
       "flavorText": "A calculated, accurate blow used to finish an opponent, with a greater than normal chance of striking true, a warrior can end a fight that could drag on considerably longer."
     },
     {
@@ -805,7 +805,7 @@ const barbarian = {
       "cost": "Health",
       "scaling": "Strength",
       "restrictions": "Self",
-      "description": "Gain 20 stamina at the cost of 20 health, restoring an extra 20 stamina per turn for 2 turns.",
+      "description": "Gain 20 stamina at the cost of 10 health, restoring an extra 20 stamina per turn for 2 turns.",
       "flavorText": " "
     },
   ]
@@ -874,7 +874,7 @@ const dancer = {
       "cost": "20 stamina",
       "scaling": "",
       "restrictions": "Self",
-      "description": "Restores stamina. If shuffled, extra stamina is restored. If flashed or poised, an additional effect of 20 stamina per turn is added per effect. Removes poise and flash on use. Can be used at most three times per fight.",
+      "description": "Restores stamina. If shuffled, extra stamina is restored. If flashed or poised, an additional effect of 20 stamina per turn is added per effect. Can be used at most three times per fight.",
       "flavorText": "A dancer, like their bard compatriots, can lift anyone's spirits, even in the darkest of times."
     },
     {
@@ -1048,12 +1048,20 @@ const hunter = {
       "flavorText": "Nasty, sticky, tar-like, this black fluid sticks to everything that it touches."
     },
     {
-      "name": "Slash ",
+      "name": "Slash",
       "cost": "No stamina cost",
       "scaling": "Dexterity",
       "restrictions": "Single target",
       "description": "Deals Low physical damage.",
       "flavorText": "Even an assassin needs to know the basics of bladework and combat, and remain agile and dangerous opponents, even when exhausted."
+    },
+    {
+      "name": "Focus",
+      "cost": "No cost",
+      "scaling": "Dexterity",
+      "restrictions": "Self",
+      "description": "Restores 10 stamina and adds a 1 turn 20 stamina regen. Also heals 10 and restores 5 hp for 2 turns",
+      "flavorText": " "
     },
   ]
 }
@@ -1182,7 +1190,7 @@ const paladin = {
       "cost": "10 stamina, 20 mana",
       "scaling": "Strength",
       "restrictions": "Single Target",
-      "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength and wisdom by 1. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
+      "description": "Enchants the user's weapon to heal themselves on every hit as well as increases their strength and wisdom by +2. The user thrusts their weapon forward after their enchantment to deal a high amount of damage.",
       "flavorText": "Paladins can combine their might and their holy power together in order to power through any struggle."
     },
     {
@@ -1190,7 +1198,7 @@ const paladin = {
       "cost": "40 mana",
       "scaling": "Wisdom",
       "restrictions": "Single target",
-      "description": "Heals the target for a large amount and buffs con by +1, all stats by +3.",
+      "description": "Heals the target for a large amount and buffs con by +1, all other stats by +4.",
       "flavorText": "A paladin can channel all of their holy energy out of their body, forcing it into someone else and giving all they have."
     },
     {
@@ -1222,7 +1230,7 @@ const paladin = {
       "cost": "20 stamina",
       "scaling": "",
       "restrictions": "1-3 targets",
-      "description": "Heals 15hp and adds a medium hot.",
+      "description": "Heals 10hp and adds a medium hot.",
       "flavorText": " "
     },
     {
@@ -1666,7 +1674,7 @@ const sorceror = {
       "cost": "No cost",
       "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Deals low magic damage and restores 10 mana",
+      "description": "Deals low magic damage and restores 20 mana",
       "flavorText": " "
     },
     {

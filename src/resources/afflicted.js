@@ -108,7 +108,7 @@ const blessed = {
       stats: "-1 Con",
       skill: {
         name: "Ascended Form",
-        cost: "30 mana, 60 stamina",
+        cost: "30 stamina, 60 mana",
         description: "Gain +10 defenses and +3 to all stats",
       },
     },
