@@ -21,7 +21,7 @@ const cleric = {
       "cost": "100 mana",
       "scaling": "Wisdom",
       "restrictions": "1-3 targets",
-      "description": "When Holy: Restores 10 stamina and mana, heals for low amount, and removes all stat debuffs from each target. When Shadow: Removes 2 buffs from targets and deals medium damage.",
+      "description": "When Holy: Restores 10 stamina and mana, heals for a low amount, and removes one stat debuff from each target. When Shadow: Removes 2 buffs from targets and deals medium damage.",
       "flavorText": "One of the greatest miracles available to a cleric, able to purge nearly any ailment from those it blesses. Timely use may even be able to reverse death itself."
     },
     {
@@ -119,7 +119,7 @@ const bard = {
   "skills": [
     {
       "name": "Bladesong",
-      "cost": "100 mana, 50 stamina",
+      "cost": "50 stamina",
       "scaling": "Charisma",
       "restrictions": "Single target",
       "description": "Deals hybrid damage",
@@ -130,7 +130,7 @@ const bard = {
       "cost": "50 mana",
       "scaling": "Charisma",
       "restrictions": "1-3 Targets",
-      "description": "Targets up to 3 targets, buffing all stats by +3, healing for 20, restoring 5 stamina and 10 mana, and giving a weak heal over time effect. If all targets are a single target, the spell is empowered, healing 30 hit points, buffing all stats by +5, restores 15 stamina and 25 mana, and giving a weak heal over time.",
+      "description": "Targets up to 3 targets, buffing all stats by +3, healing for 20, restoring 5 stamina and 10 mana, and giving a weak heal over time effect. If all targets are a single target, the spell is empowered, healing 30 hit points, buffing all stats by +5, restores 15 stamina and 25 mana, and giving a weak heal over time. When used on self, gain two turns of stamina and mana over time as well.",
       "flavorText": "It has been said that battles have been turned by the presence of music, weaving heroic ballads that inspire greater feats of strength and bravery. Weave magic into such a song and the effects can be incredible."
     },
     {
@@ -146,7 +146,7 @@ const bard = {
       "cost": "25 stamina",
       "scaling": "Charisma",
       "restrictions": "Single target",
-      "description": "Dealing medium physical damage and buffing the bard's Charisma by 3.",
+      "description": "Deals medium physical damage.",
       "flavorText": "Music and the art of the duel have a great deal in common, they both require proper pacing, timing and skill. The flow of combat, much like the flow of music determines whether one blocks and strikes and when and how fast, whether prestissimo or larghissimo, keeping a tempo is a technique a bard must know."
     },
     {
@@ -170,7 +170,7 @@ const bard = {
       "cost": "50 stamina",
       "scaling": "Charisma",
       "restrictions": "1-3 targets",
-      "description": "Restores 20 stamina and 30 mana per target. If all three charges are used on one target, 40 and 60 total are restored instead with a small heal added. Fiery Heart is added to the target, which adds five damage onto their attacks. Heal reduced on self.",
+      "description": "Restores 20 stamina and 30 mana per target. If all three charges are used on one target, 40 and 60 total are restored instead with a small heal added. Fiery Heart is added to the target, which adds five damage onto their attacks. Heal is doubled on self.",
       "flavorText": "The sound of hoof beats cross the glade, good folk, lock up your son and daughter! Beware the deadly flashing blade, unless you want to end up shorter!"
     },
   ]
@@ -494,7 +494,7 @@ const warrior = {
       "cost": "20 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
-      "description": "Deals medium to high physical damage to a target and has a higher than normal chance of hitting a target.",
+      "description": "Deals medium to high physical damage to a target and has a higher than normal chance of hitting a target. Ignores 50% of enemy armor in offensive stance.",
       "flavorText": "A calculated, accurate blow used to finish an opponent, with a greater than normal chance of striking true, a warrior can end a fight that could drag on considerably longer."
     },
     {
@@ -539,7 +539,7 @@ const warrior = {
     },
     {
       "name": "Thrust",
-      "cost": "10 stamina",
+      "cost": "5 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
       "description": "Deals medium damage and applies offensive stance (-5 defense, +6 strength).",
@@ -555,7 +555,7 @@ const warrior = {
     },
     {
       "name": "Parry",
-      "cost": "10 stamina",
+      "cost": "5 stamina",
       "scaling": "Strength",
       "restrictions": "Single target",
       "description": "Deals weak physical damage that gives the user Defensive Stance (+10 defense, -2 strength, 10 hp heal for 3 turns).",
