@@ -212,8 +212,8 @@ const consumable = [
     "crafter": "Alchemist",
     "level": 6,
     "ingredients": [
-      { name: "Vitriol Oil", count: 2 },
-      { name: "Arcane Powder", count: 1 }
+      { name: "Vitriol Oil", count: 1 },
+      { name: "Crystal Shard", count: 1 }
     ],
   },
   {
@@ -455,7 +455,6 @@ const consumable = [
     "level": 7,
     "ingredients": [
       { name: "Cotton Fiber", count: 6 },
-      { name: "Arcane Powder", count: 1 },
       { name: "Magic Beans", count: 1 },
     ],
   },
